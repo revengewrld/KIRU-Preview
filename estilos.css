@@ -1,0 +1,220 @@
+/* =============================================
+RESET
+============================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'DM Sans', sans-serif;
+    color:#242234;
+    background:#FFFDFB;
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+
+/* =============================================
+IDENTIDAD VISUAL KIRU
+============================================= */
+
+:root{
+
+    /* PRINCIPALES */
+
+    --kiru-magenta:#C51E78;
+
+    --kiru-purple:#71328E;
+
+    --kiru-deep:#29204A;
+
+
+    /* SECUNDARIOS */
+
+    --kiru-blue:#285CA8;
+
+    --kiru-sky:#61B6E8;
+
+
+    /* TERCIARIOS / ACENTOS */
+
+    --kiru-yellow:#F4C542;
+
+    --kiru-green:#65A94B;
+
+    --kiru-pink:#EF6FA8;
+
+    --kiru-orange:#EF8D42;
+
+
+    /* NEUTROS */
+
+    --white:#FFFFFF;
+
+    --cream:#FFF9F3;
+
+    --surface:#F7F5FA;
+
+    --text:#242234;
+
+    --muted:#6E687B;
+
+
+    /* DEGRADADO PRINCIPAL */
+
+    --kiru-gradient:
+        linear-gradient(
+            135deg,
+            var(--kiru-magenta) 0%,
+            var(--kiru-purple) 52%,
+            var(--kiru-deep) 100%
+        );
+
+
+    /* TRANSICIONES */
+
+    --transition:.35s ease;
+}
+
+
+/* =============================================
+ESTRUCTURA BASE
+============================================= */
+
+section{
+    position:relative;
+    width:100%;
+}
+
+main{
+    width:100%;
+}
+
+
+/* =============================================
+BOTONES BASE KIRU
+============================================= */
+
+.kiru-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    padding:15px 24px;
+
+    border:none;
+    border-radius:10px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+}
+
+.kiru-btn i{
+    transition:var(--transition);
+}
+
+.kiru-btn:hover i{
+    transform:translateX(6px);
+}
+
+
+/* =============================================
+BOTÓN WHATSAPP
+============================================= */
+
+.kiru-whatsapp{
+    position:fixed;
+
+    left:24px;
+    bottom:24px;
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#25D366;
+    color:white;
+
+    font-size:1.6rem;
+
+    z-index:1000;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.18);
+
+    transition:var(--transition);
+}
+
+.kiru-whatsapp:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+
+/* =============================================
+VOLVER ARRIBA
+============================================= */
+
+.back-to-top{
+    position:fixed;
+
+    right:24px;
+    bottom:24px;
+
+    width:52px;
+    height:52px;
+
+    border:none;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--kiru-deep);
+    color:white;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+    transition:var(--transition);
+}
+
+.back-to-top:hover{
+    transform:translateY(-5px);
+    background:var(--kiru-purple);
+}
