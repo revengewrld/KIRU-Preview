@@ -41,14 +41,93 @@ HEADER
 
 <header class="kiru-header">
 
-    <!-- Aquí construiremos la navegación -->
+    <div class="kiru-nav">
+
+        <a href="#inicio" class="kiru-logo">
+            <img src="img/logo.png" alt="KIRU Escuela de Artes">
+
+            <div class="kiru-logo-text">
+                <strong>KIRU</strong>
+                <span>Escuela de Artes</span>
+            </div>
+        </a>
+
+        <nav class="kiru-menu" aria-label="Navegación principal">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#disciplinas">Disciplinas</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#precios">Precios</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <button
+    class="kiru-search-toggle"
+    type="button"
+    aria-label="Buscar cursos"
+>
+    <i class="bi bi-search"></i>
+</button>
+
+        <a href="https://wa.me/573123833646?text=Hola%2C%20quiero%20agendar%20una%20clase%20gratuita%20en%20KIRU."
+            target="_blank"
+            rel="noopener" 
+            class="kiru-header-cta"
+        >
+            <i class="bi bi-arrow-up-right"></i>
+            Clase gratuita
+        </a>
+
+        <button
+            class="kiru-menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+        >
+            <i class="bi bi-list"></i>
+        </button>
+
+    </div>
 
 </header>
 
+<div class="kiru-search-panel">
 
+    <div class="kiru-search-box">
+
+        <div class="kiru-search-input-wrap">
+
+            <i class="bi bi-search"></i>
+
+            <input
+                type="text"
+                id="kiruSearchInput"
+                placeholder="¿Qué quieres aprender?"
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                class="kiru-search-close"
+                aria-label="Cerrar buscador"
+            >
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+        </div>
+
+        <div
+            class="kiru-search-results"
+            id="kiruSearchResults"
+        ></div>
+
+    </div>
+
+</div>
 
 <main>
-
 
 <!-- =============================================
 HERO
@@ -56,15 +135,128 @@ HERO
 
 <section class="kiru-hero" id="inicio">
 
-    <!--
-    Crea. Expresa. Transforma.
+    <div class="hero-content">
 
-    Botón:
-    Explorar disciplinas
+        <span class="hero-eyebrow">
+            KIRU ESCUELA DE ARTES
+        </span>
 
-    Botón:
-    Agendar clase gratuita
-    -->
+        <h1>
+            CREA.<br>
+            EXPRESA.<br>
+            <span>TRANSFORMA.</span>
+        </h1>
+
+        <p>
+            Descubre tu talento y desarrolla tu creatividad a través
+            de la música, la danza, el teatro y las artes visuales.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#disciplinas" class="kiru-btn hero-primary">
+                Explorar disciplinas
+                <i class="bi bi-arrow-down-right"></i>
+            </a>
+
+            <a
+            href="https://wa.me/573123833646?text=Hola%2C%20quiero%20agendar%20una%20clase%20gratuita%20en%20KIRU."
+            target="_blank"
+            rel="noopener"
+            class="kiru-btn hero-secondary"
+>                Clase gratuita
+                <i class="bi bi-stars"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-details">
+
+            <span>
+                <i class="bi bi-geo-alt-fill"></i>
+                Bogotá
+            </span>
+
+            <span>
+                <i class="bi bi-person-fill"></i>
+                Desde los 5 años
+            </span>
+
+            <span>
+                <i class="bi bi-gift-fill"></i>
+                Primera clase gratuita
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+    <div class="hero-art-backdrop"></div>
+
+    <div class="hero-watercolor hero-watercolor-blue"></div>
+    <div class="hero-watercolor hero-watercolor-yellow"></div>
+
+    <div class="hero-art-main">
+
+        <img
+            src="img/logo2.png"
+            alt="KIRU Escuela de Artes"
+            class="hero-kiru-logo"
+        >
+
+    </div>
+
+
+    <div class="hero-floating hero-floating-1">
+
+        <i class="bi bi-music-note-beamed"></i>
+
+        <span>
+            <strong>Sound</strong>
+            Música
+        </span>
+
+    </div>
+
+
+    <div class="hero-floating hero-floating-2">
+
+        <i class="bi bi-person-arms-up"></i>
+
+        <span>
+            <strong>Movement</strong>
+            Danza
+        </span>
+
+    </div>
+
+
+    <div class="hero-floating hero-floating-3">
+
+        <i class="bi bi-star-fill"></i>
+        <span>
+            <strong>Stage</strong>
+            Teatro
+        </span>
+
+    </div>
+
+
+    <div class="hero-floating hero-floating-4">
+
+        <i class="bi bi-palette-fill"></i>
+
+        <span>
+            <strong>Canvas</strong>
+            Artes visuales
+        </span>
+
+    </div>
+
+</div>
 
 </section>
 
@@ -76,19 +268,161 @@ DISCIPLINAS
 
 <section class="disciplines" id="disciplinas">
 
-    <!--
-    KIRU SOUND
-    Música
+    <div class="section-heading">
 
-    KIRU MOVEMENT
-    Danza
+        <span>DESCUBRE TU FORMA DE CREAR</span>
 
-    KIRU STAGE
-    Teatro
+        <h2>
+            Cuatro caminos.<br>
+            Infinitas formas de expresarte.
+        </h2>
 
-    KIRU CANVAS
-    Artes visuales
-    -->
+        <p>
+            Explora nuestras áreas de formación y encuentra
+            el espacio artístico que conecta contigo.
+        </p>
+
+    </div>
+
+
+    <div class="discipline-grid">
+
+        <!-- SOUND -->
+
+        <article class="discipline-card discipline-sound">
+
+            <div class="discipline-number">01</div>
+
+            <i class="bi bi-music-note-beamed"></i>
+
+            <span>KIRU SOUND</span>
+
+            <h3>Música</h3>
+
+            <p>
+                Aprende, interpreta y desarrolla tu sensibilidad musical.
+            </p>
+
+            <ul>
+                <li>Piano</li>
+                <li>Violín</li>
+                <li>Guitarra</li>
+                <li>Batería</li>
+                <li>Técnica vocal</li>
+                <li>Iniciación musical</li>
+            </ul>
+
+<a href="paginas/musica.html" class="discipline-more">
+    <span>Ver cursos</span>
+
+    <span class="discipline-arrow">
+        <i class="bi bi-arrow-up-right"></i>
+    </span>
+</a>
+
+        </article>
+
+
+        <!-- MOVEMENT -->
+
+        <article class="discipline-card discipline-movement">
+
+            <div class="discipline-number">02</div>
+
+            <i class="bi bi-person-arms-up"></i>
+
+            <span>KIRU MOVEMENT</span>
+
+            <h3>Danza</h3>
+
+            <p>
+                Conecta cuerpo, ritmo y expresión a través del movimiento.
+            </p>
+
+            <ul>
+                <li>Ballet</li>
+                <li>Danza urbana</li>
+                <li>Danza contemporánea</li>
+                <li>Danza latina</li>
+                <li>K-Pop</li>
+            </ul>
+
+<a href="paginas/danza.html" class="discipline-more">
+    <span>Ver cursos</span>
+
+    <span class="discipline-arrow">
+        <i class="bi bi-arrow-up-right"></i>
+    </span>
+</a>
+
+        </article>
+
+
+        <!-- STAGE -->
+
+        <article class="discipline-card discipline-stage">
+
+            <div class="discipline-number">03</div>
+
+            <i class="bi bi-star-fill"></i>
+
+            <span>KIRU STAGE</span>
+
+            <h3>Teatro</h3>
+
+            <p>
+                Construye confianza, expresión y presencia sobre el escenario.
+            </p>
+
+            <ul>
+                <li>Teatro</li>
+                <li>Artes escénicas</li>
+            </ul>
+
+<a href="paginas/teatro.html" class="discipline-more">
+    <span>Ver cursos</span>
+
+    <span class="discipline-arrow">
+        <i class="bi bi-arrow-up-right"></i>
+    </span>
+</a>
+
+        </article>
+
+
+        <!-- CANVAS -->
+
+        <article class="discipline-card discipline-canvas">
+
+            <div class="discipline-number">04</div>
+
+            <i class="bi bi-palette-fill"></i>
+
+            <span>KIRU CANVAS</span>
+
+            <h3>Artes visuales</h3>
+
+            <p>
+                Convierte ideas, emociones e imaginación en nuevas creaciones.
+            </p>
+
+            <ul>
+                <li>Dibujo</li>
+                <li>Pintura</li>
+                <li>Artes plásticas</li>
+            </ul>
+
+<a href="paginas/artes-plasticas.html" class="discipline-more">
+    <span>Ver cursos</span>
+
+    <span class="discipline-arrow">
+        <i class="bi bi-arrow-up-right"></i>
+    </span>
+</a>
+
+        </article>
+
+    </div>
 
 </section>
 
@@ -100,52 +434,206 @@ DISCIPLINAS
 
 <section class="why-kiru" id="nosotros">
 
-    <!--
-    Formación artística
-    Creatividad
-    Disciplina
-    Expresión
-    Desarrollo del talento
-    Experiencias artísticas
-    -->
+    <div class="why-kiru-intro">
+
+        <span>¿POR QUÉ KIRU?</span>
+
+        <h2>
+            Un espacio para crear,
+            expresarte y desarrollar tu talento.
+        </h2>
+
+        <p>
+            En KIRU entendemos el arte como una experiencia
+            que permite descubrir capacidades, fortalecer
+            habilidades y encontrar nuevas formas de expresión.
+        </p>
+
+    </div>
+
+
+    <div class="why-kiru-values">
+
+    <!-- 01 -->
+    <div class="why-value value-creativity">
+        <span>01</span>
+
+        <i class="bi bi-lightbulb"></i>
+
+        <div class="why-value-content">
+            <h3>Creatividad</h3>
+            <p>
+                Descubre nuevas formas de imaginar,
+                crear y convertir tus ideas en arte.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 02 -->
+    <div class="why-value value-discipline">
+        <span>02</span>
+
+        <i class="bi bi-bullseye"></i>
+
+        <div class="why-value-content">
+            <h3>Disciplina</h3>
+            <p>
+                Desarrolla constancia y fortalece
+                tus habilidades en cada proceso.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 03 -->
+    <div class="why-value value-expression">
+        <span>03</span>
+
+        <i class="bi bi-chat-heart"></i>
+
+        <div class="why-value-content">
+            <h3>Expresión</h3>
+            <p>
+                Encuentra en el arte nuevas maneras
+                de comunicar lo que piensas y sientes.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 04 -->
+    <div class="why-value value-talent">
+        <span>04</span>
+
+        <i class="bi bi-stars"></i>
+
+        <div class="why-value-content">
+            <h3>Talento</h3>
+            <p>
+                Explora tus capacidades y descubre
+                todo lo que puedes desarrollar.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 05 -->
+    <div class="why-value value-training">
+        <span>05</span>
+
+        <i class="bi bi-mortarboard"></i>
+
+        <div class="why-value-content">
+            <h3>Formación artística</h3>
+            <p>
+                Aprende mientras desarrollas técnica,
+                sensibilidad y conocimiento artístico.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- 06 -->
+    <div class="why-value value-experience">
+        <span>06</span>
+
+        <i class="bi bi-people"></i>
+
+        <div class="why-value-content">
+            <h3>Experiencias</h3>
+            <p>
+                Vive el arte a través de clases,
+                actividades y espacios para compartir.
+            </p>
+        </div>
+    </div>
+
+</div>
 
 </section>
 
-
-
 <!-- =============================================
-CLASE DE PRUEBA
-============================================= -->
-
-<section class="trial-class" id="clase-prueba">
-
-    <!--
-    Conoce KIRU antes de comenzar.
-
-    Agenda una clase de prueba gratuita
-    y descubre la disciplina artística
-    que más te gusta.
-    -->
-
-</section>
-
-
-
-<!-- =============================================
-PROCESO DE INSCRIPCIÓN
+PROCESO
 ============================================= -->
 
 <section class="kiru-process" id="proceso">
 
-    <!--
-    01. Elige tu disciplina
+    <div class="section-heading">
 
-    02. Agenda tu clase de prueba
+        <span>EMPIEZA TU EXPERIENCIA</span>
 
-    03. Elige tu programa
+        <h2>
+            Tu camino en KIRU
+            comienza en cuatro pasos.
+        </h2>
 
-    04. Realiza tu inscripción
-    -->
+    </div>
+
+
+    <div class="process-list">
+
+        <article>
+
+            <span>01</span>
+
+            <div>
+                <h3>Elige tu disciplina</h3>
+
+                <p>
+                    Selecciona entre música, danza,
+                    teatro o artes visuales.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article>
+
+            <span>02</span>
+
+            <div>
+                <h3>Agenda tu clase de prueba</h3>
+
+                <p>
+                    Tu primera clase de prueba es gratuita.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article>
+
+            <span>03</span>
+
+            <div>
+                <h3>Elige tu programa</h3>
+
+                <p>
+                    Define tu disciplina y modalidad de formación.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article>
+
+            <span>04</span>
+
+            <div>
+                <h3>Realiza tu inscripción</h3>
+
+                <p>
+                    Contáctanos por WhatsApp para completar tu inscripción y reservar tu cupo.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
 
 </section>
 
@@ -157,18 +645,62 @@ HORARIOS
 
 <section class="schedule" id="horarios">
 
-    <!--
-    Miércoles
-    2:00 p. m. - 5:00 p. m.
+    <div class="schedule-intro">
 
-    Viernes
-    2:00 p. m. - 5:00 p. m.
+        <span>HORARIOS</span>
 
-    Sábado
-    8:00 a. m. - 1:00 p. m.
+        <h2>
+            Encuentra el momento
+            perfecto para crear.
+        </h2>
 
-    Modalidad presencial
-    -->
+        <p>
+            Todas nuestras clases se desarrollan
+            de manera presencial.
+        </p>
+
+    </div>
+
+
+    <div class="schedule-days">
+
+        <article>
+            <span>MIÉ</span>
+
+            <div class="schedule-visual">
+                <i class="bi bi-clock"></i>
+                <span></span>
+            </div>
+
+            <h3>Miércoles</h3>
+            <p>2:00 p. m. – 5:00 p. m.</p>
+        </article>
+
+        <article>
+            <span>VIE</span>
+
+            <div class="schedule-visual">
+                <i class="bi bi-clock"></i>
+                <span></span>
+            </div>
+            
+            <h3>Viernes</h3>
+            <p>2:00 p. m. – 5:00 p. m.</p>
+        </article>
+
+        <article>
+            <span>SÁB</span>
+            
+            <div class="schedule-visual">
+                <i class="bi bi-clock"></i>
+                <span></span>
+            </div>
+
+            <h3>Sábado</h3>
+            <p>8:00 a. m. – 1:00 p. m.</p>
+        </article>
+
+    </div>
 
 </section>
 
@@ -180,17 +712,161 @@ PRECIOS
 
 <section class="pricing" id="precios">
 
-    <!--
-    Inscripción
+    <div class="section-heading">
 
-    Artes
+        <span>PROGRAMAS Y VALORES</span>
 
-    Música
+        <h2>
+            Elige cómo quieres
+            vivir el arte.
+        </h2>
 
-    Danza
+        <p>
+            La inscripción anual tiene un valor de $55.000.
+            Las mensualidades se pagan durante los primeros
+            cinco días de cada mes.
+        </p>
 
-    Ballet
-    -->
+    </div>
+
+
+    <div class="pricing-grid">
+
+        <article class="price-card">
+        <a
+    href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20el%20programa%20de%20Artes%20de%20KIRU.%20Quisiera%20informaci%C3%B3n%20sobre%20inscripci%C3%B3n%2C%20horarios%20y%20forma%20de%20pago."
+    target="_blank"
+    rel="noopener"
+    class="price-card-link"
+>
+            <span>ARTES</span>
+
+            <h3>$230.000</h3>
+
+            <p>por mes</p>
+
+            <strong>8 horas mensuales</strong>
+
+            <small>
+                2 horas semanales
+            </small>
+
+        </a>
+        </article>
+
+
+        <article class="price-card">
+        <a
+    href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20el%20programa%20de%20M%C3%BAsica%20de%20KIRU.%20Quisiera%20informaci%C3%B3n%20sobre%20inscripci%C3%B3n%2C%20horarios%20y%20forma%20de%20pago."
+    target="_blank"
+    rel="noopener"
+    class="price-card-link"
+>
+
+            <span>MÚSICA</span>
+
+            <h3>$250.000</h3>
+
+            <p>por mes</p>
+
+            <strong>8 horas mensuales</strong>
+
+            <small>
+                2 horas semanales
+            </small>
+
+        </a>
+        </article>
+
+
+        <article class="price-card">
+        <a
+    href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20M%C3%BAsica%20Flex%20de%20KIRU.%20Quisiera%20informaci%C3%B3n%20sobre%20inscripci%C3%B3n%2C%20horarios%20y%20forma%20de%20pago."
+    target="_blank"
+    rel="noopener"
+    class="price-card-link"
+>
+
+
+            <span>MÚSICA FLEX</span>
+
+            <h3>$115.000</h3>
+
+            <p>por mes</p>
+
+            <strong>4 horas mensuales</strong>
+
+            <small>
+                1 hora semanal
+            </small>
+
+        </a>
+        </article>
+
+
+        <article class="price-card">
+        <a
+    href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20el%20programa%20de%20Danza%20de%20KIRU.%20Quisiera%20informaci%C3%B3n%20sobre%20inscripci%C3%B3n%2C%20horarios%20y%20forma%20de%20pago."
+    target="_blank"
+    rel="noopener"
+    class="price-card-link"
+>
+
+            <span>DANZA</span>
+
+            <h3>$180.000</h3>
+
+            <p>por mes</p>
+
+            <strong>8 horas mensuales</strong>
+
+            <small>
+                2 horas semanales
+            </small>
+
+        </a>
+        </article>
+
+
+        <article class="price-card">
+        <a
+    href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20el%20programa%20de%20Ballet%20de%20KIRU.%20Quisiera%20informaci%C3%B3n%20sobre%20inscripci%C3%B3n%2C%20horarios%20y%20forma%20de%20pago."
+    target="_blank"
+    rel="noopener"
+    class="price-card-link"
+>
+
+            <span>BALLET</span>
+
+            <h3>$200.000</h3>
+
+            <p>por mes</p>
+
+            <strong>Formación especializada</strong>
+
+            <small>
+                Según programación
+            </small>
+
+        </a>
+        </article>
+
+    </div>
+
+
+    <div class="pricing-footer">
+
+        <span>
+            <i class="bi bi-info-circle"></i>
+            Inscripción anual: $55.000
+        </span>
+
+        <span>
+            <i class="bi bi-calendar-check"></i>
+            Pago durante los primeros 5 días del mes
+        </span>
+
+    </div>
 
 </section>
 
@@ -202,17 +878,41 @@ EXPERIENCIA KIRU
 
 <section class="kiru-experience" id="experiencia">
 
-    <!--
-    Música
-    Danza
-    Teatro
-    Artes visuales
-    Clases
-    Estudiantes
-    Docentes
-    Presentaciones
-    Eventos
-    -->
+    <div class="experience-heading">
+
+        <span>ASÍ SE VIVE KIRU</span>
+
+        <h2>
+            El arte sucede
+            cuando lo vivimos.
+        </h2>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+        <div class="experience-item experience-large experience-music">
+            <span>MÚSICA</span>
+        </div>
+
+        <div class="experience-item experience-dance">
+            <span>DANZA</span>
+        </div>
+
+        <div class="experience-item experience-theater">
+            <span>TEATRO</span>
+        </div>
+
+        <div class="experience-item experience-art">
+            <span>ARTES VISUALES</span>
+        </div>
+
+        <div class="experience-item experience-wide experience-events">
+            <span>EVENTOS Y PRESENTACIONES</span>
+        </div>
+
+    </div>
 
 </section>
 
@@ -224,10 +924,55 @@ TESTIMONIOS
 
 <section class="testimonials" id="testimonios">
 
-    <!--
-    Aquí dejaremos preparado el espacio
-    para testimonios REALES.
-    -->
+    <div class="section-heading">
+
+        <span>COMUNIDAD KIRU</span>
+
+        <h2>
+            Lo que nuestra comunidad
+            dice de KIRU.
+        </h2>
+
+    </div>
+
+    <div class="testimonial-card">
+
+    <div class="testimonial-content">
+
+        <div class="testimonial-quote">
+            <i class="bi bi-quote"></i>
+        </div>
+
+        <span class="testimonial-label">TESTIMONIO REAL</span>
+
+        <h3>Estoy feliz en KIRU</h3>
+
+        <p>
+            Me gusta el método de enseñanza de KIRU y a mis hijos
+            les fascina tomar sus clases. Realmente mi hija Sofía
+            no sabía cómo tocar el violín y ahora que veo su progreso,
+            estoy muy orgulloso de ella y de su proceso de formación artística.
+        </p>
+
+        <p>
+            Estoy muy agradecido con KIRU y los recomiendo totalmente.
+            También debo resaltar las presentaciones que realizan,
+            tienen una logística impecable. ¡Los felicito!
+        </p>
+
+        <div class="testimonial-author">
+            <strong>Camilo Vargas</strong>
+            <span>Padre de familia</span>
+        </div>
+
+    </div>
+
+    <div class="testimonial-image">
+        <img src="img/testimonio-violin.png"
+            alt="Estudiante de KIRU tocando violín">
+    </div>
+
+</div>
 
 </section>
 
@@ -239,21 +984,120 @@ PREGUNTAS FRECUENTES
 
 <section class="faq" id="preguntas">
 
-    <!--
-    ¿Desde qué edad pueden ingresar?
+    <div class="faq-heading">
 
-    ¿La clase de prueba tiene costo?
+        <span>PREGUNTAS FRECUENTES</span>
 
-    ¿Qué disciplinas ofrece KIRU?
+        <h2>
+            Antes de comenzar,
+            quizá quieras saber esto.
+        </h2>
 
-    ¿Qué días hay clases?
+    </div>
 
-    ¿Cuánto cuesta la inscripción?
 
-    ¿Cuándo se paga la mensualidad?
+    <div class="faq-list">
 
-    ¿Hay descuentos?
-    -->
+        <details>
+            <summary>
+                ¿Desde qué edad pueden ingresar?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                Los estudiantes pueden ingresar a KIRU
+                desde los 5 años.
+            </p>
+        </details>
+
+
+        <details>
+
+            <summary>
+                ¿La clase de prueba tiene costo?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                No. La primera clase de prueba es gratuita.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                ¿Qué disciplinas ofrece KIRU?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                Música, danza, teatro y artes visuales.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                ¿Qué días hay clases?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                Miércoles, viernes y sábado.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                ¿Cuánto cuesta la inscripción?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                La inscripción tiene un valor de $55.000
+                y se realiza una vez al año.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                ¿Cuándo se paga la mensualidad?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                Durante los primeros cinco días de cada mes.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                ¿KIRU ofrece descuentos?
+                <i class="bi bi-plus-lg"></i>
+            </summary>
+
+            <p>
+                Existe un 5% de descuento para quienes toman
+                dos cursos y un 5% de descuento familiar,
+                según las condiciones establecidas por KIRU.
+            </p>
+
+        </details>
+
+    </div>
 
 </section>
 
@@ -265,27 +1109,92 @@ CONTACTO
 
 <section class="contact" id="contacto">
 
-    <!--
-    Dirección:
-    Calle 81 #106-15, Bogotá
+    <div class="contact-main">
 
-    WhatsApp:
-    312 383 3646
+        <span>HABLEMOS</span>
 
-    Email:
-    kiruartes@gmail.com
+        <h2>
+            ¿Quieres conocer KIRU?
+        </h2>
 
-    Botones:
-    Agendar clase gratuita
-    Escribir por WhatsApp
-    Inscribirme
-    -->
+        <p>
+            Escríbenos, agenda tu clase gratuita
+            o visita nuestra sede.
+        </p>
+
+
+        <div class="contact-actions">
+
+            <a href="https://wa.me/573123833646?text=Hola%2C%20quiero%20agendar%20una%20clase%20gratuita%20en%20KIRU."
+
+                target="_blank"
+                rel="noopener"
+                class="kiru-btn"
+            >
+                Agendar clase gratuita
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+            <a href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20inscribirme%20en%20KIRU.%20Quisiera%20recibir%20informaci%C3%B3n."
+                target="_blank"
+                rel="noopener"
+                class="kiru-btn"
+            >
+                Inscribirme
+                <i class="bi bi-pencil-square"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-information">
+
+        <a
+            href="https://maps.google.com/?q=Calle+81+%23106-15+Bogotá"
+            target="_blank"
+            rel="noopener"
+        >
+            <i class="bi bi-geo-alt-fill"></i>
+
+            <div>
+                <span>Visítanos</span>
+                <strong>Cl. 81 #106-15, Bogotá</strong>
+            </div>
+        </a>
+
+
+        <a
+            href="https://wa.me/573123833646"
+            target="_blank"
+            rel="noopener"
+        >
+            <i class="bi bi-whatsapp"></i>
+
+            <div>
+                <span>WhatsApp</span>
+                <strong>312 383 3646</strong>
+            </div>
+        </a>
+
+
+        <a href="mailto:kiruartes@gmail.com">
+
+            <i class="bi bi-envelope-fill"></i>
+
+            <div>
+                <span>Email</span>
+                <strong>kiruartes@gmail.com</strong>
+            </div>
+
+        </a>
+
+    </div>
 
 </section>
 
-
 </main>
-
 
 
 <!-- =============================================
@@ -294,22 +1203,134 @@ FOOTER
 
 <footer class="kiru-footer">
 
-    <!--
-    KIRU Escuela de Artes
+    <div class="footer-main">
 
-    Crea. Expresa. Transforma.
+        <div class="footer-brand">
 
-    Inicio
-    Nosotros
-    Disciplinas
-    Precios
-    Horarios
-    Clase de prueba
-    Inscripciones
-    Contacto
+            <a href="#inicio">
+                <strong>kiru</strong>
+                <span>Escuela de Artes</span>
+            </a>
 
-    Redes sociales
-    -->
+            <p>
+                Crea. Expresa. Transforma.
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://www.instagram.com/kiru.artes/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram de KIRU"
+                >
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a
+                    href="https://www.facebook.com/kirusartes/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook de KIRU"
+                >
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a
+                    href="https://wa.me/573123833646"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="WhatsApp de KIRU"
+                >
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+                <a 
+                    href="https://www.youtube.com/@KiruEscueladeArtes"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Explora</h3>
+
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#disciplinas">Disciplinas</a>
+            <a href="#experiencia">Experiencia</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Información</h3>
+
+            <a href="#precios">Precios</a>
+            <a href="#horarios">Horarios</a>
+            <a
+            href="https://wa.me/573123833646?text=Hola%2C%20quiero%20agendar%20una%20clase%20gratuita%20en%20KIRU."
+            target="_blank"
+            rel="noopener"
+>
+            Clase gratuita
+            </a>
+            <a
+            href="https://wa.me/573123833646?text=Hola%2C%20estoy%20interesado%2Fa%20en%20inscribirme%20en%20KIRU.%20Quisiera%20recibir%20informaci%C3%B3n."
+            target="_blank"
+            rel="noopener"
+>
+            Inscripciones
+            </a>
+
+        </div>
+
+
+        <div class="footer-column footer-contact">
+
+            <h3>Contacto</h3>
+
+            <a
+            href="https://maps.google.com/?q=Calle+81+%23106-15+Bogotá"
+            target="_blank"
+            rel="noopener"
+            >
+                Calle 81 #106-15, Bogotá
+            </a>
+
+            <a href="tel:+573123833646">
+                +57 312 383 3646
+            </a>
+
+            <a href="mailto:kiruartes@gmail.com">
+                kiruartes@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 KIRU Escuela de Artes.
+        </span>
+
+        <a href="#inicio">
+            Volver arriba
+            <i class="bi bi-arrow-up-right"></i>
+        </a>
+
+    </div>
 
 </footer>
 
