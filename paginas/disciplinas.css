@@ -1,0 +1,2131 @@
+/* ==================================================
+RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'DM Sans',sans-serif;
+
+    color:#242234;
+    background:#ffffff;
+
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+
+
+/* ==================================================
+VARIABLES
+================================================== */
+
+:root{
+
+    --music-deep:#173f82;
+    --music-blue:#2867b2;
+    --music-sky:#58afe3;
+    --music-cyan:#67d5d0;
+    --music-aqua:#80e1d3;
+    --music-indigo:#5752b8;
+    --music-bluepurple:#4f63c9;
+
+    --kiru-magenta:#c51e78;
+    --kiru-purple:#71328e;
+    --kiru-deep:#29204a;
+
+    --kiru-blue:#285ca8;
+    --kiru-sky:#61b6e8;
+
+    --kiru-yellow:#f4c542;
+
+    --surface:#f7f5fa;
+    --surface-blue:#f3f8fd;
+
+    --muted:#726c7e;
+
+    --border:
+        rgba(41,32,74,.10);
+
+    --music-gradient:
+    linear-gradient(
+        135deg,
+        #173f82 0%,
+        #2867b2 32%,
+        #4f8fd0 62%,
+        #61b6e8 100%
+    );
+
+    --kiru-gradient:
+        linear-gradient(
+            135deg,
+            #c51e78,
+            #71328e 55%,
+            #29204a
+        );
+
+}
+
+
+
+/* ==================================================
+HEADER
+================================================== */
+
+.discipline-header{
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:
+        rgba(255,255,255,.92);
+
+    backdrop-filter:
+        blur(18px);
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+
+.discipline-nav{
+    width:100%;
+    max-width:1280px;
+
+    min-height:82px;
+
+    margin:auto;
+    padding:0 28px;
+
+    display:flex;
+    align-items:center;
+
+    gap:28px;
+}
+
+
+
+.discipline-logo{
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-shrink:0;
+}
+
+
+.discipline-logo img{
+    width:56px;
+    height:56px;
+
+    object-fit:contain;
+}
+
+
+.discipline-logo div{
+    display:flex;
+
+    flex-direction:column;
+}
+
+
+.discipline-logo strong{
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    letter-spacing:.08em;
+
+    color:
+        var(--kiru-deep);
+}
+
+
+.discipline-logo span{
+    margin-top:3px;
+
+    font-size:.76rem;
+
+    color:
+        var(--muted);
+}
+
+
+
+.discipline-menu{
+    display:flex;
+    align-items:center;
+
+    gap:28px;
+
+    margin-left:auto;
+}
+
+
+.discipline-menu a{
+    position:relative;
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+
+.discipline-menu a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:
+        var(--kiru-blue);
+
+    transition:.3s ease;
+}
+
+
+.discipline-menu a:hover{
+    color:
+        var(--kiru-blue);
+}
+
+
+.discipline-menu a:hover::after{
+    width:100%;
+}
+
+
+
+.discipline-header-cta{
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:
+        13px 18px;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:.9rem;
+
+    background:
+        var(--music-gradient);
+
+    transition:.35s ease;
+
+    box-shadow:
+        0 10px 25px
+        rgba(40,92,168,.18);
+}
+
+
+.discipline-header-cta:hover{
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(40,92,168,.26);
+}
+
+/* ==================================================
+BUSCADOR DE CURSOS
+================================================== */
+
+.discipline-search{
+    position:relative;
+
+    width:220px;
+
+    margin-left:10px;
+}
+
+
+.discipline-search-box{
+    height:46px;
+
+    display:flex;
+    align-items:center;
+
+    gap:9px;
+
+    padding:0 14px;
+
+    border:
+        1px solid rgba(40,103,178,.16);
+
+    border-radius:12px;
+
+    background:#f7fbff;
+
+    transition:
+        border-color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+
+.discipline-search-box:focus-within{
+    border-color:
+        var(--music-blue);
+
+    background:white;
+
+    box-shadow:
+        0 10px 28px
+        rgba(40,103,178,.13);
+}
+
+
+.discipline-search-box i{
+    color:
+        var(--music-blue);
+
+    font-size:.95rem;
+}
+
+
+.discipline-search-box input{
+    width:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    color:
+        var(--kiru-deep);
+
+    font-size:.88rem;
+}
+
+
+.discipline-search-box input::placeholder{
+    color:#8c91a0;
+}
+
+
+/* RESULTADOS */
+
+.discipline-search-results{
+    position:absolute;
+
+    top:55px;
+    right:0;
+
+    width:260px;
+
+    overflow:hidden;
+
+    border-radius:13px;
+
+    background:white;
+
+    box-shadow:
+        0 18px 45px
+        rgba(23,63,130,.15);
+
+    z-index:100;
+}
+
+
+.discipline-search-results:empty{
+    display:none;
+}
+
+
+.music-search-result{
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    padding:13px 15px;
+
+    border-bottom:
+        1px solid rgba(40,103,178,.08);
+
+    transition:
+        .3s ease;
+}
+
+
+.music-search-result:last-child{
+    border-bottom:none;
+}
+
+
+.music-search-result:hover{
+    color:white;
+
+    padding-left:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--music-deep),
+            var(--music-blue),
+            var(--music-sky)
+        );
+}
+
+
+.music-search-result strong{
+    font-size:.86rem;
+}
+
+
+.music-search-result span{
+    display:block;
+
+    margin-top:2px;
+
+    font-size:.7rem;
+
+    opacity:.68;
+}
+
+/* ==================================================
+HERO
+================================================== */
+
+.discipline-hero{
+    position:relative;
+
+    min-height:680px;
+
+    padding:
+        90px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+        1.05fr .95fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    overflow:hidden;
+}
+
+
+
+.music-theme{
+    background:
+
+        radial-gradient(
+            circle at 77% 16%,
+            rgba(103,213,208,.20),
+            transparent 24%
+        ),
+
+        radial-gradient(
+            circle at 92% 70%,
+            rgba(87,82,184,.12),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 4% 82%,
+            rgba(40,103,178,.13),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            120deg,
+            #f9fcff,
+            #f2f8ff 48%,
+            #eefaff
+        );
+}
+
+
+
+.discipline-back{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:35px;
+
+    color:
+        var(--muted);
+
+    font-size:.86rem;
+
+    font-weight:600;
+
+    transition:.3s ease;
+}
+
+
+.discipline-back:hover{
+    color:
+        var(--kiru-blue);
+
+    transform:
+        translateX(-4px);
+}
+
+
+
+.discipline-eyebrow{
+    display:inline-block;
+
+    margin-bottom:17px;
+
+    color:
+        var(--kiru-blue);
+
+    font-size:.76rem;
+
+    font-weight:800;
+
+    letter-spacing:.18em;
+}
+
+
+
+.discipline-hero h1{
+    max-width:720px;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:
+        clamp(
+            3.7rem,
+            6vw,
+            6.6rem
+        );
+
+    line-height:.94;
+
+    letter-spacing:
+        -.065em;
+
+    color:
+        var(--kiru-deep);
+}
+
+
+.discipline-hero h1 span{
+    color:transparent;
+
+    background:
+        var(--music-gradient);
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+}
+
+
+
+.discipline-hero-content > p{
+    max-width:620px;
+
+    margin-top:28px;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    color:
+        var(--muted);
+}
+
+
+
+.discipline-hero-actions{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:13px;
+
+    margin-top:32px;
+}
+
+
+
+.discipline-btn{
+    min-height:52px;
+
+    padding:
+        0 22px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border-radius:10px;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+
+.discipline-btn:hover{
+    transform:
+        translateY(-4px);
+}
+
+
+
+.discipline-btn.primary{
+    color:white;
+
+    background:
+        var(--music-gradient);
+
+    box-shadow:
+        0 15px 35px
+        rgba(40,92,168,.20);
+}
+
+
+
+.discipline-btn.secondary{
+    color:
+        var(--kiru-deep);
+
+    border:
+        1px solid var(--border);
+
+    background:white;
+}
+
+
+
+.discipline-hero-details{
+    margin-top:38px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:
+        15px 25px;
+}
+
+
+.discipline-hero-details span{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:
+        var(--muted);
+
+    font-size:.88rem;
+}
+
+
+.discipline-hero-details i{
+    color:
+        var(--kiru-blue);
+}
+
+
+
+/* ==================================================
+HERO ARTE
+================================================== */
+
+.discipline-hero-art{
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+
+
+.music-main-visual{
+    position:relative;
+
+    z-index:4;
+
+    width:390px;
+    height:390px;
+
+    border-radius:
+        42% 58% 62% 38% /
+        47% 38% 62% 53%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        145deg,
+        #2459a3 0%,
+        #367fbe 40%,
+        #54b6dc 72%,
+        #65d0cf 100%
+    );
+
+    transform:
+        rotate(-6deg);
+
+    box-shadow:
+        0 35px 70px
+        rgba(40,92,168,.25);
+}
+
+
+.music-main-visual > i{
+    font-size:6rem;
+
+    opacity:.96;
+}
+
+
+.music-main-visual > span{
+    margin-top:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-weight:800;
+
+    font-size:1.2rem;
+
+    letter-spacing:.08em;
+}
+
+
+.music-main-visual strong{
+    margin-top:3px;
+
+    font-size:.7rem;
+
+    letter-spacing:.22em;
+
+    opacity:.7;
+}
+
+
+
+.music-orbit{
+    position:absolute;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(40,92,168,.16);
+}
+
+
+.orbit-one{
+    width:470px;
+    height:470px;
+}
+
+
+.orbit-two{
+    width:550px;
+    height:550px;
+
+    border-color:
+        rgba(97,182,232,.12);
+}
+
+
+
+.music-floating{
+    position:absolute;
+
+    z-index:5;
+
+    min-width:145px;
+
+    padding:
+        14px 17px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    border-radius:13px;
+
+    background:
+        rgba(255,255,255,.94);
+
+    border:
+        1px solid
+        rgba(255,255,255,.7);
+
+    box-shadow:
+        0 15px 35px
+        rgba(41,32,74,.10);
+
+    color:
+        var(--kiru-deep);
+
+    font-size:.84rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+
+.music-floating:hover{
+    transform:
+        translateY(-5px);
+}
+
+
+.music-floating i{
+    width:38px;
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    color:
+        var(--kiru-blue);
+
+    background:
+        rgba(40,92,168,.08);
+
+    font-size:1.1rem;
+}
+
+
+
+.floating-one{
+    left:3%;
+    top:17%;
+}
+
+
+.floating-two{
+    right:-2%;
+    top:42%;
+}
+
+
+.floating-three{
+    left:5%;
+    bottom:14%;
+}
+
+
+
+/* ==================================================
+INTRO
+================================================== */
+
+.discipline-intro{
+    padding:
+        120px 7%;
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    gap:100px;
+
+    background:white;
+}
+
+
+
+.discipline-intro-title > span,
+.courses-heading > span,
+.method-heading > span{
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    font-size:.75rem;
+
+    font-weight:800;
+
+    letter-spacing:.18em;
+
+    color:
+        var(--kiru-blue);
+}
+
+
+.discipline-intro-title h2,
+.courses-heading h2,
+.method-heading h2{
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:
+        clamp(
+            2.5rem,
+            4.5vw,
+            4.7rem
+        );
+
+    line-height:1;
+
+    letter-spacing:
+        -.05em;
+
+    color:
+        var(--kiru-deep);
+}
+
+
+
+.discipline-intro-content > p{
+    max-width:650px;
+
+    margin-bottom:18px;
+
+    color:
+        var(--muted);
+
+    font-size:1rem;
+
+    line-height:1.8;
+}
+
+
+
+.intro-stats{
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:12px;
+}
+
+
+.intro-stats div{
+    padding:
+        22px 18px;
+
+    border-radius:14px;
+
+    background:
+        var(--surface-blue);
+
+    border:
+        1px solid
+        rgba(40,92,168,.08);
+}
+
+
+.intro-stats strong{
+    display:block;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:1.8rem;
+
+    color:
+        var(--kiru-blue);
+}
+
+
+.intro-stats span{
+    display:block;
+
+    margin-top:4px;
+
+    color:
+        var(--muted);
+
+    font-size:.8rem;
+}
+
+
+
+/* ==================================================
+CURSOS
+================================================== */
+
+.courses-section{
+    padding:
+        120px 7%;
+
+    background:
+        var(--surface-blue);
+}
+
+
+
+.courses-heading{
+    max-width:720px;
+
+    margin-bottom:55px;
+}
+
+
+.courses-heading p{
+    max-width:580px;
+
+    margin-top:20px;
+
+    color:
+        var(--muted);
+
+    line-height:1.7;
+}
+
+
+
+.courses-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+
+
+.course-card{
+    position:relative;
+
+    min-height:355px;
+
+    padding:
+        30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    border:
+        1px solid
+        rgba(40,92,168,.09);
+
+    background:white;
+
+    transition:
+        transform .65s
+        cubic-bezier(.22,1,.36,1),
+
+        box-shadow .65s
+        cubic-bezier(.22,1,.36,1),
+
+        background .65s ease;
+}
+
+
+
+.course-card:hover{
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 22px 50px
+        rgba(40,92,168,.13);
+}
+
+
+
+.course-card::after{
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    right:-85px;
+    bottom:-85px;
+
+    border-radius:50%;
+
+    background:
+        var(--kiru-blue);
+
+    opacity:.035;
+}
+
+
+
+.course-card-number{
+    position:absolute;
+
+    top:16px;
+    right:20px;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    color:
+        var(--kiru-blue);
+
+    opacity:.08;
+}
+
+
+
+.course-card-icon{
+    width:52px;
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    border-radius:13px;
+
+    color:
+        var(--kiru-blue);
+
+    background:
+        rgba(40,92,168,.09);
+
+    font-size:1.4rem;
+}
+
+
+
+.course-category{
+    font-size:.7rem;
+
+    font-weight:800;
+
+    letter-spacing:.16em;
+
+    color:
+        var(--kiru-blue);
+}
+
+
+
+.course-card h3{
+    margin-top:9px;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:1.75rem;
+
+    color:
+        var(--kiru-deep);
+}
+
+
+
+.course-card p{
+    margin-top:13px;
+
+    max-width:340px;
+
+    color:
+        var(--muted);
+
+    font-size:.92rem;
+
+    line-height:1.65;
+}
+
+
+
+.course-card-footer{
+    position:relative;
+
+    z-index:2;
+
+    margin-top:auto;
+
+    padding-top:25px;
+}
+
+
+
+.course-more{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:
+        space-between;
+
+    padding-top:17px;
+
+    border-top:
+        1px solid var(--border);
+
+    font-size:.88rem;
+
+    font-weight:700;
+
+    color:
+        var(--kiru-deep);
+
+    transition:.3s ease;
+}
+
+
+
+.course-more i{
+    width:38px;
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        var(--surface-blue);
+
+    color:
+        var(--kiru-blue);
+
+    transition:.35s ease;
+}
+
+
+
+.course-card:hover
+.course-more i{
+    transform:
+        translate(
+            4px,
+            -4px
+        );
+
+    color:white;
+
+    background:
+        var(--kiru-blue);
+}
+
+/* ==================================================
+COLORES HOVER DE LOS CURSOS
+================================================== */
+
+.course-card:nth-child(1):hover{
+    background: linear-gradient(
+        145deg,
+        #173f82,
+        #347cbf
+    );
+}
+
+.course-card:nth-child(2):hover{
+    background: linear-gradient(
+        145deg,
+        #2867b2,
+        #58afe3
+    );
+}
+
+.course-card:nth-child(3):hover{
+    background: linear-gradient(
+        145deg,
+        #3659aa,
+        #687bd6
+    );
+}
+
+.course-card:nth-child(4):hover{
+    background: linear-gradient(
+        145deg,
+        #286b9e,
+        #61c5cc
+    );
+}
+
+.course-card:nth-child(5):hover{
+    background: linear-gradient(
+        145deg,
+        #4c55a8,
+        #477fc7
+    );
+}
+
+.course-card:nth-child(6):hover{
+    background: linear-gradient(
+        145deg,
+        #3082b5,
+        #67d5d0
+    );
+}
+
+
+/* CONTENIDO BLANCO AL HACER HOVER */
+
+.course-card:hover .course-card-number{
+    color:white;
+}
+
+.course-card:hover .course-card-icon{
+    color:white;
+    background:rgba(255,255,255,.16);
+}
+
+.course-card:hover .course-category{
+    color:rgba(255,255,255,.72);
+}
+
+.course-card:hover h3{
+    color:white;
+}
+
+.course-card:hover p{
+    color:rgba(255,255,255,.82);
+}
+
+.course-card:hover .course-more{
+    color:white;
+    border-color:rgba(255,255,255,.20);
+}
+
+.course-card:hover .course-more i{
+    color:var(--music-deep);
+    background:white;
+}
+
+/* ==================================================
+METODOLOGÍA
+================================================== */
+
+.discipline-method{
+    padding:
+        120px 7%;
+
+    background:white;
+}
+
+
+
+.method-heading{
+    max-width:720px;
+
+    margin-bottom:55px;
+}
+
+
+
+.method-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:16px;
+}
+
+
+
+.method-grid article{
+    position:relative;
+
+    min-height:280px;
+
+    padding:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    border-radius:17px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:white;
+
+    transition:
+        transform .5s
+        cubic-bezier(.22,1,.36,1),
+
+        box-shadow .5s
+        cubic-bezier(.22,1,.36,1);
+}
+
+
+.method-grid article:hover{
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(41,32,74,.09);
+}
+
+
+.method-grid article > span{
+    color:
+        var(--kiru-blue);
+
+    font-size:.72rem;
+
+    font-weight:800;
+
+    letter-spacing:.12em;
+}
+
+
+.method-grid article > i{
+    margin-top:40px;
+
+    font-size:2rem;
+
+    color:
+        var(--kiru-blue);
+}
+
+
+.method-grid h3{
+    margin-top:auto;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:1.3rem;
+
+    color:
+        var(--kiru-deep);
+}
+
+
+.method-grid p{
+    margin-top:8px;
+
+    color:
+        var(--muted);
+
+    font-size:.88rem;
+
+    line-height:1.6;
+}
+
+
+
+/* ==================================================
+CTA
+================================================== */
+
+.discipline-cta{
+    position:relative;
+
+    padding:95px 7%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:60px;
+
+    overflow:hidden;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            120deg,
+            #173f82 0%,
+            #2867b2 40%,
+            #4b98cf 70%,
+            #62c8d2 100%
+        );
+}
+
+.discipline-cta::before{
+    content:"";
+
+    position:absolute;
+
+    width:330px;
+    height:330px;
+
+    right:-100px;
+    top:-160px;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+}
+
+
+.discipline-cta::after{
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    right:23%;
+    bottom:-110px;
+
+    border-radius:50%;
+
+    background:
+        rgba(103,213,208,.18);
+}
+
+.discipline-cta > div,
+.discipline-cta-button{
+    position:relative;
+    z-index:2;
+}
+
+
+.discipline-cta span{
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:
+        #d8efff;
+
+    font-size:.73rem;
+
+    font-weight:800;
+
+    letter-spacing:.18em;
+}
+
+
+.discipline-cta h2{
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:
+        clamp(
+            2.5rem,
+            4.5vw,
+            4.5rem
+        );
+
+    line-height:.98;
+
+    letter-spacing:
+        -.05em;
+}
+
+
+.discipline-cta p{
+    max-width:560px;
+
+    margin-top:18px;
+
+    color:
+        rgba(255,255,255,.76);
+
+    line-height:1.7;
+}
+
+
+
+.discipline-cta-button{
+    min-width:210px;
+
+    min-height:58px;
+
+    padding:
+        0 24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:11px;
+
+    flex-shrink:0;
+
+    border-radius:12px;
+
+    color:
+        var(--kiru-deep);
+
+    background:white;
+
+    font-weight:800;
+
+    transition:.4s ease;
+
+    box-shadow:
+        0 18px 40px
+        rgba(0,0,0,.12);
+}
+
+
+.discipline-cta-button:hover{
+    transform:
+        translateY(-5px)
+        scale(1.025);
+
+    box-shadow:
+        0 22px 45px
+        rgba(23,63,130,.22);
+}
+
+
+.discipline-cta-button i{
+    color:
+        var(--music-blue);
+
+    transition:.4s ease;
+}
+
+
+.discipline-cta-button:hover i{
+    transform:
+        rotate(12deg)
+        scale(1.15);
+}
+
+
+/* ==================================================
+FOOTER
+================================================== */
+
+.discipline-footer{
+    padding:
+        75px 7%
+        25px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #101d3f 0%,
+            #172c59 48%,
+            #1c396d 100%
+        );
+}
+
+
+.discipline-footer-main{
+    max-width:1280px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr .8fr .9fr 1.1fr;
+
+    gap:70px;
+}
+
+
+.discipline-footer-brand > a{
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+}
+
+
+.discipline-footer-brand img{
+    width:58px;
+    height:58px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+    background:white;
+}
+
+
+.discipline-footer-brand > a > div{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.discipline-footer-brand strong{
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:1.05rem;
+
+    letter-spacing:.08em;
+}
+
+
+.discipline-footer-brand span{
+    margin-top:3px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size:.76rem;
+}
+
+
+.discipline-footer-brand p{
+    margin-top:18px;
+
+    color:
+        rgba(255,255,255,.65);
+}
+
+
+/* COLUMNAS */
+
+.discipline-footer-column{
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:11px;
+}
+
+
+.discipline-footer-column h3{
+    margin-bottom:10px;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:.95rem;
+
+    color:white;
+}
+
+
+.discipline-footer-column a{
+    color:
+        rgba(255,255,255,.62);
+
+    font-size:.86rem;
+
+    transition:.3s ease;
+}
+
+
+.discipline-footer-column a:hover{
+    color:
+        #77d8da;
+
+    transform:
+        translateX(4px);
+}
+
+
+/* REDES */
+
+.discipline-footer-socials{
+    margin-top:25px;
+
+    display:flex;
+    flex-direction:row;
+
+    align-items:center;
+
+    gap:9px;
+}
+
+.discipline-footer-socials a{
+    flex-shrink:0;
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:11px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    background:
+        rgba(255,255,255,.07);
+
+    transition:.35s ease;
+}
+
+
+.discipline-footer-socials a:hover{
+    transform:
+        translateY(-4px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #2867b2,
+            #67d5d0
+        );
+}
+
+
+/* PARTE INFERIOR */
+
+.discipline-footer-bottom{
+    max-width:1280px;
+
+    margin:
+        55px auto 0;
+
+    padding-top:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:
+        space-between;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.10);
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size:.8rem;
+}
+
+
+.discipline-footer-bottom a{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:white;
+
+    transition:.3s ease;
+}
+
+
+.discipline-footer-bottom a:hover{
+    color:
+        #67d5d0;
+}
+
+
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media(max-width:1100px){
+
+    .discipline-menu{
+        display:none;
+    }
+
+
+    .courses-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .method-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .discipline-footer-main{
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .discipline-footer-socials{
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+
+@media(max-width:900px){
+
+    .discipline-hero{
+        grid-template-columns:
+            1fr;
+
+        gap:30px;
+    }
+
+
+    .discipline-hero-art{
+        min-height:470px;
+    }
+
+
+    .discipline-intro{
+        grid-template-columns:
+            1fr;
+
+        gap:45px;
+    }
+
+
+    .discipline-cta{
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+}
+
+
+
+@media(max-width:650px){
+
+    .discipline-header-cta{
+        display:none;
+    }
+
+
+    .discipline-nav{
+        min-height:74px;
+
+        padding:
+            0 18px;
+    }
+
+
+    .discipline-hero{
+        padding:
+            70px 20px;
+    }
+
+
+    .discipline-hero h1{
+        font-size:
+            clamp(
+                3rem,
+                16vw,
+                4.5rem
+            );
+    }
+
+
+    .discipline-hero-art{
+        min-height:390px;
+    }
+
+
+    .music-main-visual{
+        width:290px;
+        height:290px;
+    }
+
+
+    .orbit-one{
+        width:340px;
+        height:340px;
+    }
+
+
+    .orbit-two{
+        width:380px;
+        height:380px;
+    }
+
+
+    .music-floating{
+        min-width:auto;
+
+        padding:
+            10px 12px;
+
+        font-size:.72rem;
+    }
+
+
+    .floating-one{
+        left:0;
+    }
+
+
+    .floating-two{
+        right:0;
+    }
+
+
+    .discipline-intro,
+    .courses-section,
+    .discipline-method{
+        padding:
+            85px 20px;
+    }
+
+
+    .intro-stats{
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .courses-grid{
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .method-grid{
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .discipline-cta{
+        padding:
+            70px 20px;
+    }
+
+
+    .discipline-cta-button{
+        width:100%;
+    }
+
+
+    .discipline-footer{
+        padding:
+            55px 20px
+            22px;
+    }
+
+
+    .discipline-footer-main{
+        grid-template-columns:
+            1fr;
+
+        gap:35px;
+    }
+
+
+    .discipline-footer-links{
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .discipline-footer-socials{
+        grid-column:auto;
+    }
+
+
+    .discipline-footer-bottom{
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+}
