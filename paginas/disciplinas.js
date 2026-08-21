@@ -94,73 +94,226 @@ function normalizeMusicText(text){
 }
 
 
-musicSearch.addEventListener(
-    'input',
-    () => {
+if(musicSearch && musicSearchResults){
 
-        const query =
-            normalizeMusicText(
-                musicSearch.value
-            );
+    musicSearch.addEventListener(
+        'input',
+        () => {
 
-        musicSearchResults.innerHTML = '';
-
-
-        if(query.length < 2){
-            return;
-        }
-
-
-        const results =
-            musicCourses.filter(course => {
-
-                const terms = [
-                    course.name,
-                    course.category,
-                    ...course.aliases
-                ];
-
-                return terms.some(term =>
-                    normalizeMusicText(term)
-                        .includes(query)
+            const query =
+                normalizeMusicText(
+                    musicSearch.value
                 );
+
+            musicSearchResults.innerHTML = '';
+
+
+            if(query.length < 2){
+                return;
+            }
+
+
+            const results =
+                musicCourses.filter(course => {
+
+                    const terms = [
+                        course.name,
+                        course.category,
+                        ...course.aliases
+                    ];
+
+                    return terms.some(term =>
+                        normalizeMusicText(term)
+                            .includes(query)
+                    );
+
+                });
+
+
+            results.forEach(course => {
+
+                const link =
+                    document.createElement('a');
+
+                link.href =
+                    course.url;
+
+                link.className =
+                    'music-search-result';
+
+                link.innerHTML = `
+
+                    <div>
+
+                        <strong>
+                            ${course.name}
+                        </strong>
+
+                        <span>
+                            ${course.category}
+                        </span>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                `;
+
+                musicSearchResults
+                    .appendChild(link);
 
             });
 
+        }
+    );
+}
 
-        results.forEach(course => {
+/* ==================================================
+BUSCADOR - DANZA
+================================================== */
 
-            const link =
-                document.createElement('a');
+const danceSearch =
+    document.getElementById('danceSearch');
 
-            link.href =
-                course.url;
+const danceSearchResults =
+    document.getElementById('danceSearchResults');
 
-            link.className =
-                'music-search-result';
 
-            link.innerHTML = `
+const danceCourses = [
 
-                <div>
+    {
+        name:'Ballet',
+        category:'Técnica',
+        aliases:[
+            'ballet',
+            'balet',
+            'clasico',
+            'danza clasica'
+        ],
+        url:'cursos/ballet.html'
+    },
 
-                    <strong>
-                        ${course.name}
-                    </strong>
+    {
+        name:'Danza urbana',
+        category:'Energía',
+        aliases:[
+            'danza urbana',
+            'urbana',
+            'urbano',
+            'street',
+            'street dance'
+        ],
+        url:'cursos/danza-urbana.html'
+    },
 
-                    <span>
-                        ${course.category}
-                    </span>
+    {
+        name:'Danza contemporánea',
+        category:'Expresión',
+        aliases:[
+            'danza contemporanea',
+            'contemporanea',
+            'contempo'
+        ],
+        url:'cursos/danza-contemporanea.html'
+    },
 
-                </div>
+    {
+        name:'Danza latina',
+        category:'Ritmo',
+        aliases:[
+            'danza latina',
+            'latina',
+            'latino'
+        ],
+        url:'cursos/danza-latina.html'
+    },
 
-                <i class="bi bi-arrow-up-right"></i>
-
-            `;
-
-            musicSearchResults
-                .appendChild(link);
-
-        });
-
+    {
+        name:'K-Pop',
+        category:'Performance',
+        aliases:[
+            'kpop',
+            'k-pop',
+            'k pop',
+            'coreografia'
+        ],
+        url:'cursos/kpop.html'
     }
-);
+
+];
+
+
+if(danceSearch && danceSearchResults){
+
+    danceSearch.addEventListener(
+        'input',
+        () => {
+
+            const query =
+                normalizeMusicText(
+                    danceSearch.value
+                );
+
+            danceSearchResults.innerHTML = '';
+
+
+            if(query.length < 2){
+                return;
+            }
+
+
+            const results =
+                danceCourses.filter(course => {
+
+                    const terms = [
+                        course.name,
+                        course.category,
+                        ...course.aliases
+                    ];
+
+                    return terms.some(term =>
+                        normalizeMusicText(term)
+                            .includes(query)
+                    );
+
+                });
+
+
+            results.forEach(course => {
+
+                const link =
+                    document.createElement('a');
+
+                link.href =
+                    course.url;
+
+                link.className =
+                    'music-search-result';
+
+                link.innerHTML = `
+
+                    <div>
+
+                        <strong>
+                            ${course.name}
+                        </strong>
+
+                        <span>
+                            ${course.category}
+                        </span>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                `;
+
+                danceSearchResults
+                    .appendChild(link);
+
+            });
+
+        }
+    );
+
+}

@@ -2129,3 +2129,563 @@ RESPONSIVE
     }
 
 }
+
+/* ==================================================
+DANZA / KIRU MOVEMENT
+================================================== */
+
+.dance-page{
+
+    --dance-deep:#63215f;
+    --dance-purple:#7b2f8e;
+    --dance-magenta:#c51e78;
+    --dance-pink:#ef6fa8;
+    --dance-rose:#e85c91;
+    --dance-bluepurple:#6552b8;
+    --dance-sky:#8890e5;
+
+}
+
+
+/* HEADER */
+
+.dance-page .discipline-menu a:hover{
+    color:var(--dance-magenta);
+}
+
+.dance-page .discipline-menu a::after{
+    background:
+        linear-gradient(
+            90deg,
+            var(--dance-magenta),
+            var(--dance-purple)
+        );
+}
+
+.dance-page .discipline-search-box{
+    border-color:
+        rgba(197,30,120,.14);
+
+    background:#fff8fc;
+}
+
+.dance-page .discipline-search-box:focus-within{
+    border-color:
+        var(--dance-magenta);
+
+    box-shadow:
+        0 10px 28px
+        rgba(197,30,120,.12);
+}
+
+.dance-page .discipline-search-box i{
+    color:var(--dance-magenta);
+}
+
+
+
+/* HERO */
+
+.dance-theme{
+    background:
+
+        radial-gradient(
+            circle at 81% 16%,
+            rgba(239,111,168,.22),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 92% 72%,
+            rgba(101,82,184,.16),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 6% 84%,
+            rgba(197,30,120,.10),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fffafd,
+            #fff5fb 46%,
+            #f7f3ff
+        );
+}
+
+
+.dance-page .discipline-eyebrow,
+.dance-page .discipline-back:hover,
+.dance-page .discipline-hero-details i{
+    color:
+        var(--dance-magenta);
+}
+
+
+.dance-page .discipline-hero h1 span{
+    background:
+        linear-gradient(
+            135deg,
+            #c51e78,
+            #8d3d9f 55%,
+            #6552b8
+        );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+}
+
+
+.dance-page .discipline-btn.primary{
+    background:
+        linear-gradient(
+            135deg,
+            #c51e78,
+            #8d3d9f 55%,
+            #6552b8
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(197,30,120,.20);
+}
+
+
+
+/* ARTE HERO */
+
+.dance-hero-art{
+    position:relative;
+}
+
+
+.dance-main-visual{
+    position:relative;
+
+    z-index:4;
+
+    width:390px;
+    height:390px;
+
+    border-radius:
+        58% 42% 38% 62% /
+        42% 53% 47% 58%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #b82379 0%,
+            #d94f92 35%,
+            #9c4bad 65%,
+            #6552b8 100%
+        );
+
+    transform:
+        rotate(7deg);
+
+    box-shadow:
+        0 35px 70px
+        rgba(113,50,142,.25);
+}
+
+
+.dance-main-visual > i{
+    font-size:6rem;
+}
+
+
+.dance-main-visual > span{
+    margin-top:15px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-weight:800;
+
+    font-size:1.2rem;
+
+    letter-spacing:.08em;
+}
+
+
+.dance-main-visual strong{
+    margin-top:3px;
+
+    font-size:.7rem;
+
+    letter-spacing:.22em;
+
+    opacity:.72;
+}
+
+
+
+.dance-orbit{
+    position:absolute;
+
+    border-radius:
+        48% 52% 44% 56%;
+
+    border:
+        1px solid
+        rgba(197,30,120,.16);
+
+    transform:
+        rotate(-10deg);
+}
+
+
+.dance-orbit-one{
+    width:470px;
+    height:420px;
+}
+
+
+.dance-orbit-two{
+    width:545px;
+    height:500px;
+
+    border-color:
+        rgba(101,82,184,.12);
+
+    transform:
+        rotate(13deg);
+}
+
+
+
+.dance-floating{
+    position:absolute;
+
+    z-index:5;
+
+    min-width:140px;
+
+    padding:
+        14px 17px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:11px;
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.94);
+
+    box-shadow:
+        0 15px 35px
+        rgba(99,33,95,.10);
+
+    color:
+        var(--kiru-deep);
+
+    font-size:.84rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+
+.dance-floating:hover{
+    transform:
+        translateY(-5px)
+        rotate(-2deg);
+}
+
+
+.dance-floating i{
+    width:38px;
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    color:
+        var(--dance-magenta);
+
+    background:
+        rgba(197,30,120,.09);
+
+    font-size:1.1rem;
+}
+
+
+.dance-floating-one{
+    left:2%;
+    top:16%;
+}
+
+
+.dance-floating-two{
+    right:-1%;
+    top:44%;
+}
+
+
+.dance-floating-three{
+    left:5%;
+    bottom:13%;
+}
+
+
+
+/* INTRO */
+
+.dance-page
+.discipline-intro-title > span,
+.dance-page
+.courses-heading > span,
+.dance-page
+.method-heading > span{
+    color:
+        var(--dance-magenta);
+}
+
+
+.dance-page .intro-stats div{
+    background:
+        #fff7fb;
+
+    border-color:
+        rgba(197,30,120,.08);
+}
+
+
+.dance-page .intro-stats strong{
+    color:
+        var(--dance-magenta);
+}
+
+
+
+/* CURSOS */
+
+.dance-page .courses-section{
+    background:
+        linear-gradient(
+            135deg,
+            #fff8fc,
+            #f8f5ff
+        );
+}
+
+
+.dance-page .course-card{
+    border-color:
+        rgba(197,30,120,.08);
+}
+
+
+.dance-page .course-card-number,
+.dance-page .course-category{
+    color:
+        var(--dance-magenta);
+}
+
+
+.dance-page .course-card-icon{
+    color:
+        var(--dance-magenta);
+
+    background:
+        rgba(197,30,120,.08);
+}
+
+
+.dance-page .course-more i{
+    color:
+        var(--dance-magenta);
+
+    background:#fff4fa;
+}
+
+
+
+/* HOVERS DE CURSOS */
+
+.dance-page
+.course-card:nth-child(1):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #9d307d,
+            #d85f9e
+        );
+}
+
+
+.dance-page
+.course-card:nth-child(2):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #c51e78,
+            #8c3c9b
+        );
+}
+
+
+.dance-page
+.course-card:nth-child(3):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #8452ae,
+            #b96fae
+        );
+}
+
+
+.dance-page
+.course-card:nth-child(4):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #d34c87,
+            #e77c8f
+        );
+}
+
+
+.dance-page
+.course-card:nth-child(5):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #6f4bb6,
+            #cb4c9b
+        );
+}
+
+
+
+/* METODOLOGÍA */
+
+.dance-page
+.method-grid article > span,
+.dance-page
+.method-grid article > i{
+    color:
+        var(--dance-magenta);
+}
+
+
+
+/* CTA */
+
+.dance-cta{
+    background:
+        linear-gradient(
+            120deg,
+            #7c2878 0%,
+            #b72f82 38%,
+            #d75896 68%,
+            #7860bf 100%
+        );
+}
+
+
+.dance-cta::before{
+    border-color:
+        rgba(255,255,255,.18);
+}
+
+
+.dance-cta::after{
+    background:
+        rgba(239,111,168,.20);
+}
+
+
+.dance-page
+.discipline-cta-button i{
+    color:
+        var(--dance-magenta);
+}
+
+
+
+/* FOOTER */
+
+.dance-footer{
+    background:
+        linear-gradient(
+            145deg,
+            #24122c 0%,
+            #40204e 47%,
+            #632759 100%
+        );
+}
+
+
+.dance-footer
+.discipline-footer-column a:hover{
+    color:
+        #f190bd;
+}
+
+
+.dance-footer
+.discipline-footer-socials a:hover{
+    background:
+        linear-gradient(
+            135deg,
+            #c51e78,
+            #7458ba
+        );
+}
+
+
+.dance-footer
+.discipline-footer-bottom a:hover{
+    color:#f190bd;
+}
+
+
+
+/* RESPONSIVE HERO DANZA */
+
+@media(max-width:650px){
+
+    .dance-main-visual{
+        width:290px;
+        height:290px;
+    }
+
+
+    .dance-orbit-one{
+        width:340px;
+        height:310px;
+    }
+
+
+    .dance-orbit-two{
+        width:385px;
+        height:355px;
+    }
+
+}
