@@ -676,7 +676,7 @@ HERO
 
 
 /* ==================================================
-HERO ARTE
+HERO ARTE - MÚSICA / VINILO
 ================================================== */
 
 .discipline-hero-art{
@@ -685,15 +685,29 @@ HERO ARTE
     min-height:520px;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 }
 
 
+/* CONTENEDOR */
 
-.music-main-visual{
+.music-hero-art{
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    isolation:isolate;
+}
+
+
+/* VINILO */
+
+.music-vinyl{
     position:relative;
 
     z-index:4;
@@ -701,50 +715,110 @@ HERO ARTE
     width:390px;
     height:390px;
 
-    border-radius:
-        42% 58% 62% 38% /
-        47% 38% 62% 53%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #58c7cf 0 10%,
+            #397dbf 11% 18%,
+            #183f7e 19% 25%,
+            #102c5e 26% 100%
+        );
+
+    box-shadow:
+        0 35px 70px rgba(23,63,130,.27);
+
+    transition:
+        transform 1.2s cubic-bezier(.22,1,.36,1);
+}
+
+
+.music-vinyl:hover{
+    transform:
+        rotate(12deg)
+        scale(1.02);
+}
+
+
+/* SURCOS */
+
+.vinyl-groove{
+    position:absolute;
+
+    border-radius:50%;
+
+    border:
+        1px solid rgba(117,224,221,.18);
+
+    pointer-events:none;
+}
+
+
+.groove-one{
+    width:330px;
+    height:330px;
+}
+
+
+.groove-two{
+    width:275px;
+    height:275px;
+}
+
+
+.groove-three{
+    width:215px;
+    height:215px;
+}
+
+
+/* CENTRO */
+
+.vinyl-center{
+    position:relative;
+
+    z-index:3;
+
+    width:125px;
+    height:125px;
 
     display:flex;
-
     flex-direction:column;
 
     align-items:center;
-
     justify-content:center;
+
+    border-radius:50%;
 
     color:white;
 
     background:
-    linear-gradient(
-        145deg,
-        #2459a3 0%,
-        #367fbe 40%,
-        #54b6dc 72%,
-        #65d0cf 100%
-    );
-
-    transform:
-        rotate(-6deg);
+        linear-gradient(
+            145deg,
+            #2867b2,
+            #58afe3,
+            #67d5d0
+        );
 
     box-shadow:
-        0 35px 70px
-        rgba(40,92,168,.25);
+        inset 0 0 30px rgba(255,255,255,.12);
 }
 
 
-.music-main-visual > i{
-    font-size:6rem;
-
-    opacity:.96;
+.vinyl-center > i{
+    font-size:2.4rem;
 }
 
 
-.music-main-visual > span{
-    margin-top:15px;
+.vinyl-center span{
+    margin-top:6px;
 
     display:flex;
-
     flex-direction:column;
 
     align-items:center;
@@ -753,65 +827,137 @@ HERO ARTE
         'Manrope',
         sans-serif;
 
+    font-size:.8rem;
     font-weight:800;
-
-    font-size:1.2rem;
 
     letter-spacing:.08em;
 }
 
 
-.music-main-visual strong{
-    margin-top:3px;
+.vinyl-center strong{
+    margin-top:2px;
 
-    font-size:.7rem;
+    font-size:.52rem;
 
-    letter-spacing:.22em;
+    letter-spacing:.2em;
 
-    opacity:.7;
+    opacity:.72;
 }
 
 
+/* AGUJA */
 
-.music-orbit{
+.vinyl-arm{
     position:absolute;
+
+    z-index:6;
+
+    width:125px;
+    height:22px;
+
+    right:9%;
+    top:25%;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d6e9f6,
+            #8fb7d3
+        );
+
+    transform:rotate(48deg);
+
+    transform-origin:right center;
+
+    box-shadow:
+        0 7px 15px rgba(23,63,130,.12);
+}
+
+
+.vinyl-arm::before{
+    content:"";
+
+    position:absolute;
+
+    right:-10px;
+    top:-11px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#244f85;
+}
+
+
+.vinyl-arm span{
+    position:absolute;
+
+    left:-8px;
+    top:4px;
+
+    width:18px;
+    height:15px;
+
+    border-radius:4px;
+
+    background:#67d5d0;
+}
+
+
+/* ONDAS EXTERIORES */
+
+.music-wave{
+    position:absolute;
+
+    z-index:1;
 
     border-radius:50%;
 
     border:
-        1px solid
-        rgba(40,92,168,.16);
+        1px solid rgba(40,103,178,.14);
 }
 
 
-.orbit-one{
-    width:470px;
-    height:470px;
+.music-wave-one{
+    width:465px;
+    height:465px;
 }
 
 
-.orbit-two{
-    width:550px;
-    height:550px;
+.music-wave-two{
+    width:535px;
+    height:535px;
 
     border-color:
-        rgba(97,182,232,.12);
+        rgba(103,213,208,.15);
 }
 
 
+.music-wave-three{
+    width:605px;
+    height:605px;
+
+    border-color:
+        rgba(87,82,184,.08);
+}
+
+
+/* TARJETAS FLOTANTES */
 
 .music-floating{
     position:absolute;
 
-    z-index:5;
+    z-index:7;
 
     min-width:145px;
 
-    padding:
-        14px 17px;
+    padding:14px 17px;
 
     display:flex;
-
     align-items:center;
 
     gap:11px;
@@ -822,18 +968,15 @@ HERO ARTE
         rgba(255,255,255,.94);
 
     border:
-        1px solid
-        rgba(255,255,255,.7);
+        1px solid rgba(255,255,255,.7);
 
     box-shadow:
-        0 15px 35px
-        rgba(41,32,74,.10);
+        0 15px 35px rgba(41,32,74,.10);
 
     color:
         var(--kiru-deep);
 
     font-size:.84rem;
-
     font-weight:700;
 
     transition:.35s ease;
@@ -841,8 +984,7 @@ HERO ARTE
 
 
 .music-floating:hover{
-    transform:
-        translateY(-5px);
+    transform:translateY(-5px);
 }
 
 
@@ -851,22 +993,19 @@ HERO ARTE
     height:38px;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     border-radius:10px;
 
     color:
-        var(--kiru-blue);
+        var(--music-blue);
 
     background:
-        rgba(40,92,168,.08);
+        rgba(40,103,178,.08);
 
     font-size:1.1rem;
 }
-
 
 
 .floating-one{
@@ -885,8 +1024,6 @@ HERO ARTE
     left:5%;
     bottom:14%;
 }
-
-
 
 /* ==================================================
 INTRO
@@ -2254,134 +2391,494 @@ DANZA / KIRU MOVEMENT
 
 
 
-/* ARTE HERO */
+/* ==================================================
+ARTE HERO DANZA - MOVIMIENTO
+================================================== */
 
 .dance-hero-art{
     position:relative;
-}
 
-
-.dance-main-visual{
-    position:relative;
-
-    z-index:4;
-
-    width:390px;
-    height:390px;
-
-    border-radius:
-        58% 42% 38% 62% /
-        42% 53% 47% 58%;
+    min-height:520px;
 
     display:flex;
-    flex-direction:column;
-
     align-items:center;
     justify-content:center;
 
-    color:white;
+    isolation:isolate;
+}
+
+/* ==================================================
+HERO DANZA - BOLA DISCO
+================================================== */
+
+.dance-disco{
+    position:relative;
+
+    z-index:5;
+
+    width:420px;
+    height:470px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* ==================================================
+BOLA
+================================================== */
+
+.disco-ball{
+    position:relative;
+
+    z-index:5;
+
+    width:310px;
+    height:310px;
+
+    min-width: 310px;
+    min-height: 310px;
+
+    aspect-ratio: 1 / 1;
+
+    flex-shrink: 0;
+
+    overflow:hidden;
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 32% 25%,
+            #ffd8f1 0%,
+            #f19ac9 12%,
+            #dd5caf 28%,
+            #aa4bbb 50%,
+            #7148b8 72%,
+            #3f2b78 100%
+        );
+
+    box-shadow:
+        inset 30px 25px 45px rgba(255,255,255,.16),
+        inset -38px -30px 60px rgba(43,21,91,.34),
+        0 30px 65px rgba(103,50,145,.28);
+
+    transition:
+        transform .9s cubic-bezier(.22,1,.36,1);
+}
+
+
+/* MOVIMIENTO */
+
+.dance-disco:hover .disco-ball{
+    transform:rotate(7deg);
+}
+
+
+/* ==================================================
+CUADRÍCULA DE ESPEJOS
+================================================== */
+
+/* ==================================================
+MOSAICOS DE LA BOLA DISCO
+================================================== */
+
+.disco-tiles{
+    position:absolute;
+
+    inset:0px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(12,1fr);
+
+    grid-template-rows:
+        repeat(12,1fr);
+
+    overflow:hidden;
+
+    border-radius:50%;
+
+    transform:
+        rotate(-7deg)
+        scale(1.04);
+
+    transition:
+        transform 1s
+        cubic-bezier(.22,1,.36,1);
+
+    mask-image:
+        radial-gradient(
+            circle,
+            black 0 67%,
+            rgba(0,0,0,.88) 78%,
+            transparent 100%
+        );
+
+    -webkit-mask-image:
+        radial-gradient(
+            circle,
+            black 0 67%,
+            rgba(0,0,0,.88) 78%,
+            transparent 100%
+        );
+}
+
+
+/* CUADRO BASE */
+
+.disco-tiles span{
+    position:relative;
+
+    min-width:0;
+    min-height:0;
+
+    border:
+        1px solid
+        rgba(255,255,255,.34);
 
     background:
         linear-gradient(
             145deg,
-            #b82379 0%,
-            #d94f92 35%,
-            #9c4bad 65%,
-            #6552b8 100%
+            #9e4fbe,
+            #7849b6
         );
 
-    transform:
-        rotate(7deg);
+    box-shadow:
+        inset 2px 2px 3px
+        rgba(255,255,255,.13);
+
+    transition:
+        filter .35s ease;
+}
+
+
+/* ==================================================
+VARIACIONES DE COLOR
+================================================== */
+
+.disco-tiles span:nth-child(2n){
+    background:
+        linear-gradient(
+            145deg,
+            #c447a7,
+            #8e45b7
+        );
+}
+
+
+.disco-tiles span:nth-child(3n){
+    background:
+        linear-gradient(
+            145deg,
+            #ec65b2,
+            #b5409e
+        );
+}
+
+
+.disco-tiles span:nth-child(5n){
+    background:
+        linear-gradient(
+            145deg,
+            #6256ca,
+            #7341ae
+        );
+}
+
+
+.disco-tiles span:nth-child(7n){
+    background:
+        linear-gradient(
+            145deg,
+            #68c8df,
+            #5488d3
+        );
+}
+
+
+.disco-tiles span:nth-child(11n){
+    background:
+        linear-gradient(
+            145deg,
+            #ef9acb,
+            #d05ab5
+        );
+}
+
+
+.disco-tiles span:nth-child(13n){
+    background:
+        linear-gradient(
+            145deg,
+            #f6d7ee,
+            #df93cd
+        );
+}
+
+
+.disco-tiles span:nth-child(17n){
+    background:
+        linear-gradient(
+            145deg,
+            #493384,
+            #7049bd
+        );
+}
+
+
+/* ESPEJOS MUY BRILLANTES */
+
+.disco-tiles span:nth-child(19n),
+.disco-tiles span:nth-child(29n),
+.disco-tiles span:nth-child(37n){
+    z-index:2;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f9dff3
+        );
 
     box-shadow:
-        0 35px 70px
-        rgba(113,50,142,.25);
+        0 0 14px
+        rgba(255,255,255,.95);
+
+    filter:
+        brightness(1.2);
 }
 
 
-.dance-main-visual > i{
-    font-size:6rem;
+/* CIAN DESTACADO */
+
+.disco-tiles span:nth-child(23n),
+.disco-tiles span:nth-child(31n){
+    background:
+        linear-gradient(
+            145deg,
+            #7ce7df,
+            #59a9db
+        );
 }
 
 
-.dance-main-visual > span{
-    margin-top:15px;
+/* ==================================================
+VOLUMEN ESFÉRICO
+================================================== */
 
-    display:flex;
-    flex-direction:column;
-
-    align-items:center;
-
-    font-family:
-        'Manrope',
-        sans-serif;
-
-    font-weight:800;
-
-    font-size:1.2rem;
-
-    letter-spacing:.08em;
-}
-
-
-.dance-main-visual strong{
-    margin-top:3px;
-
-    font-size:.7rem;
-
-    letter-spacing:.22em;
-
-    opacity:.72;
-}
-
-
-
-.dance-orbit{
+.disco-glow{
     position:absolute;
 
+    z-index:4;
+
+    inset:0;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+            circle at 31% 28%,
+            rgba(255,255,255,.52),
+            transparent 22%
+        ),
+
+        radial-gradient(
+            circle at 70% 68%,
+            rgba(38,22,89,.30),
+            transparent 42%
+        ),
+
+        radial-gradient(
+            circle,
+            transparent 46%,
+            rgba(42,23,90,.28) 100%
+        );
+
+    mix-blend-mode:screen;
+}
+
+
+/* ==================================================
+DESTELLOS GRANDES
+================================================== */
+
+.disco-flare{
+    position:absolute;
+
+    z-index:6;
+
+    pointer-events:none;
+}
+
+
+.disco-flare::before,
+.disco-flare::after{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    background:white;
+
+    border-radius:100px;
+
+    box-shadow:
+        0 0 16px
+        rgba(255,255,255,.95);
+}
+
+
+.disco-flare::before{
+    width:4px;
+    height:38px;
+}
+
+
+.disco-flare::after{
+    width:38px;
+    height:4px;
+}
+
+
+.disco-flare-one{
+    top:78px;
+    left:96px;
+}
+
+
+.disco-flare-two{
+    top:145px;
+    right:63px;
+
+    transform:scale(.65);
+}
+
+
+.disco-flare-three{
+    bottom:78px;
+    left:135px;
+
+    transform:scale(.45);
+}
+
+
+/* ==================================================
+GIRO
+================================================== */
+
+.dance-disco:hover
+.disco-tiles{
+    transform: rotate(-7deg)
+}
+
+
+/* PEQUEÑO MOVIMIENTO DEL CONJUNTO */
+
+.dance-disco:hover
+.disco-flare-one{
+    transform:
+        rotate(10deg)
+        scale(1.08);
+}
+
+/* ==================================================
+CABLE
+================================================== */
+
+.disco-cable{
+    position:absolute;
+
+    z-index:3;
+
+    top:-55px;
+
+    width:4px;
+    height:128px;
+
+    border-radius:3px;
+
+    background:
+        linear-gradient(
+            #42245f,
+            #8a4da0
+        );
+}
+
+
+.disco-cable::after{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    bottom:-8px;
+
+    width:40px;
+    height:16px;
+
+    transform:
+        translateX(-50%);
+
     border-radius:
-        48% 52% 44% 56%;
+        9px 9px 4px 4px;
 
-    border:
-        1px solid
-        rgba(197,30,120,.16);
+    background:
+        linear-gradient(
+            90deg,
+            #62317f,
+            #b25bb3,
+            #62317f
+        );
 
-    transform:
-        rotate(-10deg);
+    box-shadow:
+        0 5px 10px rgba(71,31,95,.18);
 }
 
 
-.dance-orbit-one{
-    width:470px;
-    height:420px;
+/* ==================================================
+SOMBRA
+================================================== */
+
+.disco-shadow{
+    position:absolute;
+
+    z-index:1;
+
+    bottom:30px;
+
+    width:245px;
+    height:38px;
+
+    border-radius:50%;
+
+    background:
+        rgba(119,56,150,.14);
+
+    filter:blur(14px);
 }
 
-
-.dance-orbit-two{
-    width:545px;
-    height:500px;
-
-    border-color:
-        rgba(101,82,184,.12);
-
-    transform:
-        rotate(13deg);
-}
-
-
+/* TARJETAS FLOTANTES */
 
 .dance-floating{
     position:absolute;
 
-    z-index:5;
+    z-index:7;
 
     min-width:140px;
 
-    padding:
-        14px 17px;
+    padding:14px 17px;
 
     display:flex;
-
     align-items:center;
 
     gap:11px;
@@ -2389,11 +2886,10 @@ DANZA / KIRU MOVEMENT
     border-radius:14px;
 
     background:
-        rgba(255,255,255,.94);
+        rgba(255,255,255,.95);
 
     box-shadow:
-        0 15px 35px
-        rgba(99,33,95,.10);
+        0 15px 35px rgba(99,33,95,.10);
 
     color:
         var(--kiru-deep);
@@ -2402,7 +2898,8 @@ DANZA / KIRU MOVEMENT
 
     font-weight:700;
 
-    transition:.35s ease;
+    transition:
+        transform .35s ease;
 }
 
 
@@ -2418,7 +2915,6 @@ DANZA / KIRU MOVEMENT
     height:38px;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 
@@ -2450,8 +2946,6 @@ DANZA / KIRU MOVEMENT
     left:5%;
     bottom:13%;
 }
-
-
 
 /* INTRO */
 
@@ -2686,6 +3180,1898 @@ DANZA / KIRU MOVEMENT
     .dance-orbit-two{
         width:385px;
         height:355px;
+    }
+
+}
+
+/* ==================================================
+TEATRO / KIRU STAGE
+================================================== */
+
+.theater-page{
+
+    --theater-deep:#641f27;
+    --theater-wine:#812735;
+    --theater-red:#b83b3f;
+    --theater-coral:#df6550;
+    --theater-orange:#e78a4f;
+    --theater-gold:#e3ad63;
+}
+
+
+/* HEADER */
+
+.theater-page .discipline-menu a:hover{
+    color:var(--theater-red);
+}
+
+.theater-page .discipline-menu a::after{
+    background:
+        linear-gradient(
+            90deg,
+            var(--theater-red),
+            var(--theater-orange)
+        );
+}
+
+.theater-page .discipline-search-box{
+    background:#fff9f7;
+
+    border-color:
+        rgba(184,59,63,.13);
+}
+
+.theater-page
+.discipline-search-box:focus-within{
+    border-color:
+        var(--theater-red);
+
+    box-shadow:
+        0 10px 28px
+        rgba(184,59,63,.12);
+}
+
+.theater-page .discipline-search-box i{
+    color:var(--theater-red);
+}
+
+
+/* HERO */
+
+.theater-theme{
+    background:
+
+        radial-gradient(
+            circle at 82% 15%,
+            rgba(227,173,99,.20),
+            transparent 24%
+        ),
+
+        radial-gradient(
+            circle at 92% 72%,
+            rgba(184,59,63,.15),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 5% 84%,
+            rgba(223,101,80,.10),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fffaf7,
+            #fff5f1 48%,
+            #fff9f3
+        );
+}
+
+
+.theater-page .discipline-eyebrow,
+.theater-page .discipline-back:hover,
+.theater-page .discipline-hero-details i{
+    color:
+        var(--theater-red);
+}
+
+
+.theater-page .discipline-hero h1 span{
+    background:
+        linear-gradient(
+            135deg,
+            #a62f38,
+            #d85d4c 55%,
+            #e39a55
+        );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+}
+
+
+.theater-page .discipline-btn.primary{
+    background:
+        linear-gradient(
+            135deg,
+            #922c35,
+            #c54742 55%,
+            #e18450
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(146,44,53,.20);
+}
+
+
+/* ESCENARIO DEL HERO */
+
+.theater-hero-art{
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+
+.theater-stage{
+    position:relative;
+
+    z-index:3;
+
+    width:430px;
+    height:400px;
+
+    overflow:hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:
+        48% 48% 22% 22% /
+        30% 30% 12% 12%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #341c24,
+            #56202b 72%,
+            #24131a
+        );
+
+    box-shadow:
+        0 38px 70px
+        rgba(87,30,37,.24);
+}
+
+
+/* TELONES */
+
+.theater-curtain{
+    position:absolute;
+
+    top:0;
+
+    width:47%;
+    height:100%;
+
+    z-index:2;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #741f2b 0px,
+            #9d2e38 28px,
+            #6c1b27 54px
+        );
+
+    transition:
+        transform .6s ease;
+}
+
+
+.curtain-left{
+    left:0;
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            78% 100%,
+            0 100%
+        );
+}
+
+
+.curtain-right{
+    right:0;
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            100% 100%,
+            22% 100%
+        );
+}
+
+
+.theater-stage:hover
+.curtain-left{
+    transform:
+        translateX(-18px);
+}
+
+
+.theater-stage:hover
+.curtain-right{
+    transform:
+        translateX(18px);
+}
+
+
+/* CENTRO */
+
+.theater-stage-center{
+    position:relative;
+
+    z-index:4;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    color:white;
+}
+
+
+.theater-stage-center > i{
+    font-size:6rem;
+
+    color:
+        #f2c37f;
+
+    filter:
+        drop-shadow(
+            0 10px 18px
+            rgba(0,0,0,.22)
+        );
+}
+
+
+.theater-stage-center > span{
+    margin-top:18px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-weight:800;
+
+    font-size:1.2rem;
+
+    letter-spacing:.09em;
+}
+
+
+.theater-stage-center strong{
+    margin-top:3px;
+
+    color:#f2c37f;
+
+    font-size:.7rem;
+
+    letter-spacing:.25em;
+}
+
+
+/* FOCOS */
+
+.theater-light{
+    position:absolute;
+
+    top:-120px;
+
+    width:190px;
+    height:570px;
+
+    opacity:.28;
+
+    filter:blur(2px);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,215,154,.80),
+            rgba(255,215,154,.02)
+        );
+
+    clip-path:
+        polygon(
+            44% 0,
+            56% 0,
+            100% 100%,
+            0 100%
+        );
+}
+
+
+.theater-light-left{
+    left:12%;
+
+    transform:
+        rotate(19deg);
+}
+
+
+.theater-light-right{
+    right:12%;
+
+    transform:
+        rotate(-19deg);
+}
+
+
+/* TARJETAS FLOTANTES */
+
+.theater-floating{
+    position:absolute;
+
+    z-index:6;
+
+    min-width:145px;
+
+    padding:14px 17px;
+
+    display:flex;
+    align-items:center;
+
+    gap:11px;
+
+    border-radius:14px;
+
+    color:#392329;
+
+    background:
+        rgba(255,255,255,.95);
+
+    box-shadow:
+        0 16px 36px
+        rgba(100,31,39,.11);
+
+    font-size:.84rem;
+
+    font-weight:700;
+
+    transition:.35s ease;
+}
+
+
+.theater-floating:hover{
+    transform:
+        translateY(-5px);
+}
+
+
+.theater-floating i{
+    width:38px;
+    height:38px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    color:
+        var(--theater-red);
+
+    background:
+        rgba(184,59,63,.09);
+
+    font-size:1.1rem;
+}
+
+
+.theater-floating-one{
+    left:0;
+    top:17%;
+}
+
+
+.theater-floating-two{
+    right:-1%;
+    top:45%;
+}
+
+
+.theater-floating-three{
+    left:4%;
+    bottom:11%;
+}
+
+
+/* INTRO */
+
+.theater-page
+.discipline-intro-title > span,
+
+.theater-page
+.courses-heading > span,
+
+.theater-page
+.method-heading > span{
+    color:
+        var(--theater-red);
+}
+
+
+.theater-page .intro-stats div{
+    background:#fff8f5;
+
+    border-color:
+        rgba(184,59,63,.08);
+}
+
+
+.theater-page .intro-stats strong{
+    color:
+        var(--theater-red);
+}
+
+
+/* ==================================================
+CURSO PRINCIPAL
+================================================== */
+
+.theater-course-section{
+    padding:105px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8f5,
+            #fffdf9
+        );
+}
+
+.theater-courses-grid{
+    max-width:1120px;
+    margin:55px auto 0;
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.theater-courses-grid .theater-course-feature{
+    margin:0;
+}
+
+.theater-course-feature{
+    position:relative;
+
+    max-width:1120px;
+
+    margin:
+        55px auto 0;
+
+    padding:
+        42px 45px;
+
+    display:grid;
+
+    grid-template-columns:
+        auto auto 1fr auto;
+
+    align-items:center;
+
+    gap:30px;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(184,59,63,.10);
+
+    border-radius:24px;
+
+    background:white;
+
+    box-shadow:
+        0 25px 60px
+        rgba(100,31,39,.07);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+
+.theater-course-feature::before{
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    right:-130px;
+    top:-130px;
+
+    border-radius:50%;
+
+    background:
+        rgba(227,173,99,.11);
+}
+
+
+.theater-course-feature:hover{
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 32px 70px
+        rgba(100,31,39,.12);
+}
+
+
+.theater-course-number{
+    align-self:flex-start;
+
+    color:
+        rgba(184,59,63,.35);
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-weight:800;
+}
+
+
+.theater-course-icon{
+    width:85px;
+    height:85px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:22px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #9c3039,
+            #d55749,
+            #e28b50
+        );
+
+    font-size:2.4rem;
+}
+
+
+.theater-course-content{
+    max-width:580px;
+}
+
+
+.theater-course-content > span{
+    color:
+        var(--theater-red);
+
+    font-size:.7rem;
+
+    font-weight:800;
+
+    letter-spacing:.14em;
+}
+
+
+.theater-course-content h3{
+    margin-top:7px;
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:2rem;
+
+    color:
+        var(--kiru-deep);
+}
+
+
+.theater-course-content p{
+    margin-top:10px;
+
+    color:#69656c;
+
+    line-height:1.7;
+}
+
+
+.theater-course-tags{
+    margin-top:20px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+}
+
+
+.theater-course-tags span{
+    padding:7px 11px;
+
+    border-radius:50px;
+
+    color:
+        var(--theater-wine);
+
+    background:
+        #fff2ed;
+
+    font-size:.72rem;
+
+    font-weight:700;
+}
+
+
+.theater-course-link{
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:
+        13px 17px;
+
+    border-radius:12px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #a73239,
+            #dd724e
+        );
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    transition:.35s ease;
+}
+
+
+.theater-course-link:hover{
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 13px 28px
+        rgba(166,50,57,.20);
+}
+
+
+/* ==================================================
+ÁREAS TEATRALES
+================================================== */
+
+.theater-areas{
+    padding:105px 7%;
+
+    background:white;
+}
+
+
+.theater-areas-heading{
+    max-width:650px;
+
+    margin-bottom:55px;
+}
+
+
+.theater-areas-heading > span{
+    color:
+        var(--theater-red);
+
+    font-size:.72rem;
+
+    font-weight:800;
+
+    letter-spacing:.15em;
+}
+
+
+.theater-areas-heading h2{
+    margin-top:10px;
+
+    color:
+        var(--kiru-deep);
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:
+        clamp(2rem,4vw,3.5rem);
+
+    line-height:1.08;
+}
+
+
+.theater-areas-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+
+.theater-areas-grid article{
+    position:relative;
+
+    min-height:280px;
+
+    padding:30px;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(184,59,63,.08);
+
+    border-radius:18px;
+
+    background:#fffaf8;
+
+    transition:
+        transform .4s ease,
+        background .4s ease,
+        color .4s ease;
+}
+
+
+.theater-areas-grid article:hover{
+    transform:
+        translateY(-7px);
+
+    color:white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #8e2934,
+            #bd433f,
+            #df8051
+        );
+}
+
+
+.theater-areas-grid article > span{
+    color:
+        rgba(184,59,63,.40);
+
+    font-weight:800;
+}
+
+
+.theater-areas-grid article > i{
+    margin-top:38px;
+
+    display:block;
+
+    color:
+        var(--theater-red);
+
+    font-size:2rem;
+}
+
+
+.theater-areas-grid h3{
+    margin-top:20px;
+
+    color:
+        var(--kiru-deep);
+
+    font-family:
+        'Manrope',
+        sans-serif;
+
+    font-size:1.15rem;
+}
+
+
+.theater-areas-grid p{
+    margin-top:10px;
+
+    color:#747078;
+
+    line-height:1.65;
+
+    font-size:.86rem;
+}
+
+
+.theater-areas-grid article:hover > span,
+.theater-areas-grid article:hover > i,
+.theater-areas-grid article:hover h3,
+.theater-areas-grid article:hover p{
+    color:white;
+}
+
+
+/* METODOLOGÍA */
+
+.theater-page
+.method-grid article > span,
+
+.theater-page
+.method-grid article > i{
+    color:
+        var(--theater-red);
+}
+
+
+/* CTA */
+
+.theater-cta{
+    background:
+        linear-gradient(
+            120deg,
+            #681f29 0%,
+            #982f39 38%,
+            #ca5045 68%,
+            #df8a50 100%
+        );
+}
+
+
+.theater-cta::after{
+    background:
+        rgba(239,184,100,.17);
+}
+
+
+.theater-page
+.discipline-cta-button i{
+    color:
+        var(--theater-red);
+}
+
+
+/* FOOTER */
+
+.theater-footer{
+    background:
+        linear-gradient(
+            145deg,
+            #241217 0%,
+            #3d1920 48%,
+            #64232b 100%
+        );
+}
+
+
+.theater-footer
+.discipline-footer-column a:hover{
+    color:#efad75;
+}
+
+
+.theater-footer
+.discipline-footer-socials a:hover{
+    background:
+        linear-gradient(
+            135deg,
+            #a5323b,
+            #df8751
+        );
+}
+
+
+.theater-footer
+.discipline-footer-bottom a:hover{
+    color:#efad75;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+
+    .theater-course-feature{
+        grid-template-columns:
+            auto 1fr;
+
+        gap:25px;
+    }
+
+
+    .theater-course-content{
+        grid-column:
+            2;
+    }
+
+
+    .theater-course-link{
+        grid-column:
+            2;
+
+        justify-self:start;
+    }
+
+
+    .theater-areas-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:650px){
+
+    .theater-stage{
+        width:310px;
+        height:330px;
+    }
+
+
+    .theater-stage-center > i{
+        font-size:4.5rem;
+    }
+
+
+    .theater-course-feature{
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:30px;
+    }
+
+
+    .theater-areas-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==================================================
+ARTES VISUALES / KIRU CANVAS
+================================================== */
+
+.canvas-page{
+
+    --canvas-deep:#7a3b22;
+    --canvas-brown:#9a5b2e;
+    --canvas-orange:#f29b38;
+    --canvas-gold:#f4c542;
+    --canvas-coral:#ef765f;
+    --canvas-cream:#fff8e8;
+    --canvas-purple:#7350a8;
+
+}
+
+
+/* ==================================================
+HEADER
+================================================== */
+
+.canvas-page .discipline-menu a:hover{
+    color:var(--canvas-orange);
+}
+
+
+.canvas-page .discipline-menu a::after{
+    background:
+        linear-gradient(
+            90deg,
+            var(--canvas-orange),
+            var(--canvas-gold)
+        );
+}
+
+
+.canvas-page .discipline-search-box{
+    background:#fffaf0;
+
+    border-color:
+        rgba(242,155,56,.16);
+}
+
+
+.canvas-page
+.discipline-search-box:focus-within{
+    border-color:
+        var(--canvas-orange);
+
+    box-shadow:
+        0 10px 28px
+        rgba(242,155,56,.15);
+}
+
+
+.canvas-page .discipline-search-box i{
+    color:var(--canvas-orange);
+}
+
+
+/* ==================================================
+HERO
+================================================== */
+
+.canvas-theme{
+
+    background:
+
+        radial-gradient(
+            circle at 82% 17%,
+            rgba(244,197,66,.25),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 92% 72%,
+            rgba(239,118,95,.16),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 8% 83%,
+            rgba(242,155,56,.11),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fffdf7,
+            #fff8ec 48%,
+            #fff5ee
+        );
+}
+
+
+.canvas-page .discipline-eyebrow,
+.canvas-page .discipline-back:hover,
+.canvas-page .discipline-hero-details i{
+    color:
+        var(--canvas-orange);
+}
+
+
+.canvas-page .discipline-hero h1 span{
+    color:transparent;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ef8e32,
+            #f4c542 45%,
+            #ef765f 75%,
+            #7350a8
+        );
+
+    background-clip:text;
+    -webkit-background-clip:text;
+}
+
+
+.canvas-page .discipline-btn.primary{
+    background:
+        linear-gradient(
+            135deg,
+            #e9842f,
+            #f4bd3f 55%,
+            #ef765f
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(239,145,50,.22);
+}
+
+
+/* ==================================================
+ARTE HERO - CABALLETE
+================================================== */
+
+.canvas-hero-art{
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    isolation:isolate;
+}
+
+
+/* ==================================================
+ÓRBITAS
+================================================== */
+
+.canvas-orbit{
+    position:absolute;
+
+    z-index:1;
+
+    border-radius:50%;
+
+    border:
+        1px solid rgba(242,155,56,.13);
+
+    pointer-events:none;
+}
+
+
+.canvas-orbit-one{
+    width:470px;
+    height:470px;
+
+    transform:rotate(-8deg);
+}
+
+
+.canvas-orbit-two{
+    width:545px;
+    height:505px;
+
+    border-color:
+        rgba(115,80,168,.10);
+
+    transform:rotate(12deg);
+}
+
+
+/* ==================================================
+BOLITAS DECORATIVAS
+================================================== */
+
+.canvas-dot{
+    position:absolute;
+
+    z-index:4;
+
+    display:block;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 8px 18px rgba(122,59,34,.13);
+}
+
+
+.canvas-dot-one{
+    width:17px;
+    height:17px;
+
+    top:12%;
+    right:18%;
+
+    background:#f4c542;
+}
+
+
+.canvas-dot-two{
+    width:11px;
+    height:11px;
+
+    top:31%;
+    right:5%;
+
+    background:#ef765f;
+}
+
+
+.canvas-dot-three{
+    width:14px;
+    height:14px;
+
+    left:10%;
+    bottom:18%;
+
+    background:#7350a8;
+}
+
+
+/* ==================================================
+CABALLETE
+================================================== */
+
+.canvas-easel{
+    position:relative;
+
+    z-index:5;
+
+    width:360px;
+    height:430px;
+
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+
+    transition:
+        transform .7s cubic-bezier(.22,1,.36,1);
+
+    filter:
+        drop-shadow(
+            0 28px 30px
+            rgba(115,67,31,.18)
+        );
+}
+
+
+.canvas-easel:hover{
+    transform:
+        translateY(-5px)
+        rotate(1deg);
+}
+
+
+/* ==================================================
+LIENZO
+================================================== */
+
+.canvas-board{
+    position:relative;
+
+    z-index:5;
+
+    width:275px;
+    height:300px;
+
+    margin-top:30px;
+
+    overflow:hidden;
+
+    border-radius:10px;
+
+    border:
+        12px solid #c88744;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffef9,
+            #fff9ec
+        );
+
+    box-shadow:
+        inset 0 0 0 2px rgba(120,69,33,.08),
+        0 20px 35px rgba(104,59,26,.15);
+
+    transition:
+        transform .6s cubic-bezier(.22,1,.36,1);
+}
+
+
+.canvas-easel:hover
+.canvas-board{
+    transform:
+        rotate(-2deg)
+        translateY(-3px);
+}
+
+
+/* TEXTURA SUAVE DEL LIENZO */
+
+.canvas-board::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.18;
+
+    background-image:
+        linear-gradient(
+            rgba(145,109,70,.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(145,109,70,.08) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        9px 9px;
+}
+
+
+/* ==================================================
+MANCHAS DE PINTURA
+================================================== */
+
+.canvas-paint{
+    position:absolute;
+
+    border-radius:
+        56% 44% 63% 37% /
+        45% 55% 45% 55%;
+
+    filter:
+        saturate(1.05);
+}
+
+
+.paint-one{
+    width:135px;
+    height:95px;
+
+    left:25px;
+    top:42px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4c542,
+            #f29b38
+        );
+
+    transform:
+        rotate(-14deg);
+}
+
+
+.paint-two{
+    width:115px;
+    height:85px;
+
+    right:17px;
+    top:91px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ef765f,
+            #e85a73
+        );
+
+    transform:
+        rotate(17deg);
+}
+
+
+.paint-three{
+    width:140px;
+    height:78px;
+
+    left:60px;
+    bottom:40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7350a8,
+            #9b6cc5
+        );
+
+    transform:
+        rotate(-6deg);
+}
+
+
+/* ==================================================
+BROCHAZO PRINCIPAL
+================================================== */
+
+.canvas-brushstroke{
+    position:absolute;
+
+    z-index:4;
+
+    width:225px;
+    height:34px;
+
+    left:21px;
+    top:137px;
+
+    border-radius:
+        50% 44% 55% 45% /
+        45% 55% 45% 55%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f18732 0%,
+            #f4c542 35%,
+            #ef765f 68%,
+            #7350a8 100%
+        );
+
+    transform:
+        rotate(-11deg);
+
+    box-shadow:
+        0 6px 13px
+        rgba(141,79,37,.14);
+}
+
+
+.canvas-brushstroke::before,
+.canvas-brushstroke::after{
+    content:"";
+
+    position:absolute;
+
+    right:-17px;
+
+    width:34px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#7350a8;
+}
+
+
+.canvas-brushstroke::before{
+    top:5px;
+}
+
+
+.canvas-brushstroke::after{
+    bottom:4px;
+
+    width:25px;
+}
+
+
+/* ==================================================
+PATAS DEL CABALLETE
+================================================== */
+
+.easel-leg{
+    position:absolute;
+
+    z-index:2;
+
+    width:20px;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8f552e,
+            #c27b3c,
+            #8f552e
+        );
+
+    box-shadow:
+        inset 3px 0 4px rgba(255,255,255,.12);
+}
+
+
+.easel-leg-left{
+    height:235px;
+
+    left:98px;
+    bottom:5px;
+
+    transform:
+        rotate(11deg);
+}
+
+
+.easel-leg-right{
+    height:235px;
+
+    right:98px;
+    bottom:5px;
+
+    transform:
+        rotate(-11deg);
+}
+
+
+.easel-leg-center{
+    width:18px;
+    height:275px;
+
+    left:50%;
+    bottom:-10px;
+
+    transform:
+        translateX(-50%);
+}
+
+
+/* SOPORTE DEL LIENZO */
+
+.canvas-easel::after{
+    content:"";
+
+    position:absolute;
+
+    z-index:7;
+
+    left:50%;
+    top:318px;
+
+    width:310px;
+    height:22px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius:7px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8f552e,
+            #c47d3f,
+            #8f552e
+        );
+
+    box-shadow:
+        0 7px 13px
+        rgba(102,56,27,.15);
+}
+
+
+/* ==================================================
+TARJETAS FLOTANTES
+================================================== */
+
+.canvas-floating{
+    position:absolute;
+
+    z-index:8;
+
+    min-width:145px;
+
+    padding:14px 17px;
+
+    display:flex;
+    align-items:center;
+
+    gap:11px;
+
+    border-radius:14px;
+
+    color:
+        var(--kiru-deep);
+
+    background:
+        rgba(255,255,255,.95);
+
+    box-shadow:
+        0 15px 35px
+        rgba(129,80,31,.10);
+
+    font-size:.84rem;
+    font-weight:700;
+
+    transition:
+        transform .35s ease;
+}
+
+
+.canvas-floating:hover{
+    transform:
+        translateY(-5px)
+        rotate(-1deg);
+}
+
+
+.canvas-floating i{
+    width:38px;
+    height:38px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    color:
+        var(--canvas-orange);
+
+    background:
+        rgba(242,155,56,.10);
+
+    font-size:1.1rem;
+}
+
+
+.canvas-floating-one{
+    left:0;
+    top:16%;
+}
+
+
+.canvas-floating-two{
+    right:-1%;
+    top:43%;
+}
+
+
+.canvas-floating-three{
+    left:4%;
+    bottom:11%;
+}
+
+
+/* ==================================================
+INTRO
+================================================== */
+
+.canvas-page
+.discipline-intro-title > span,
+
+.canvas-page
+.courses-heading > span,
+
+.canvas-page
+.method-heading > span{
+    color:
+        var(--canvas-orange);
+}
+
+
+.canvas-page .intro-stats div{
+    background:#fffaf0;
+
+    border-color:
+        rgba(242,155,56,.09);
+}
+
+
+.canvas-page .intro-stats strong{
+    color:
+        var(--canvas-orange);
+}
+
+
+/* ==================================================
+CURSOS
+================================================== */
+
+.canvas-page .courses-section{
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf0,
+            #fff7ee
+        );
+}
+
+
+.canvas-page .course-card{
+    border-color:
+        rgba(242,155,56,.10);
+}
+
+
+.canvas-page .course-card-number,
+.canvas-page .course-category{
+    color:
+        var(--canvas-orange);
+}
+
+
+.canvas-page .course-card-icon{
+    color:
+        var(--canvas-orange);
+
+    background:
+        rgba(242,155,56,.10);
+}
+
+
+.canvas-page .course-more i{
+    color:
+        var(--canvas-orange);
+
+    background:#fff7e7;
+}
+
+
+/* HOVERS */
+
+.canvas-page
+.course-card:nth-child(1):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #e78a2f,
+            #f5bd42
+        );
+}
+
+
+.canvas-page
+.course-card:nth-child(2):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #e96252,
+            #f0a34a
+        );
+}
+
+
+.canvas-page
+.course-card:nth-child(3):hover{
+    background:
+        linear-gradient(
+            145deg,
+            #7950aa,
+            #d17a57
+        );
+}
+
+
+/* ==================================================
+METODOLOGÍA
+================================================== */
+
+.canvas-page
+.method-grid article > span,
+
+.canvas-page
+.method-grid article > i{
+    color:
+        var(--canvas-orange);
+}
+
+
+/* ==================================================
+CTA
+================================================== */
+
+.canvas-cta{
+
+    background:
+        linear-gradient(
+            120deg,
+            #c86f27 0%,
+            #e99832 35%,
+            #f1bd43 65%,
+            #e66d5d 100%
+        );
+}
+
+
+.canvas-cta::after{
+    background:
+        rgba(255,225,134,.22);
+}
+
+
+.canvas-page
+.discipline-cta-button i{
+    color:
+        var(--canvas-orange);
+}
+
+
+/* ==================================================
+FOOTER
+================================================== */
+
+.canvas-footer{
+
+    background:
+        linear-gradient(
+            145deg,
+            #402211 0%,
+            #713c20 46%,
+            #9e582c 100%
+        );
+}
+
+
+.canvas-footer
+.discipline-footer-column a:hover{
+    color:
+        #ffd37c;
+}
+
+
+.canvas-footer
+.discipline-footer-socials a:hover{
+    background:
+        linear-gradient(
+            135deg,
+            #e88b32,
+            #f4c542,
+            #ef765f
+        );
+}
+
+
+.canvas-footer
+.discipline-footer-bottom a:hover{
+    color:#ffd37c;
+}
+
+
+/* ==================================================
+RESPONSIVE ARTES
+================================================== */
+
+@media(max-width:650px){
+
+    .canvas-easel{
+        width:310px;
+        height:390px;
+    }
+
+
+    .canvas-board{
+        width:235px;
+        height:265px;
+    }
+
+
+    .canvas-easel::after{
+        width:265px;
+        top:282px;
+    }
+
+
+    .canvas-orbit-one{
+        width:350px;
+        height:350px;
+    }
+
+
+    .canvas-orbit-two{
+        width:390px;
+        height:370px;
+    }
+
+
+    .canvas-floating{
+        min-width:auto;
+
+        padding:
+            10px 12px;
+
+        font-size:.72rem;
     }
 
 }

@@ -1268,9 +1268,10 @@ DISCIPLINAS
 .discipline-stage{
     background:
         linear-gradient(
-            160deg,
-            #71328e,
-            #29204a
+            145deg,
+            #812735 0%,
+            #b83b3f 52%,
+            #e78a4f 100%
         );
 }
 

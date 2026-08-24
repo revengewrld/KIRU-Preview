@@ -317,3 +317,112 @@ if(danceSearch && danceSearchResults){
     );
 
 }
+
+/* ==================================================
+BUSCADOR - TEATRO
+================================================== */
+
+const theaterSearch =
+    document.getElementById('theaterSearch');
+
+const theaterSearchResults =
+    document.getElementById('theaterSearchResults');
+
+
+const theaterCourses = [
+
+    {
+        name:'Teatro',
+
+        category:'Artes escénicas',
+
+        aliases:[
+            'teatro',
+            'teatr',
+            'actuacion',
+            'actuar',
+            'interpretacion',
+            'escena',
+            'artes escenicas'
+        ],
+
+        url:'cursos/teatro.html'
+    }
+
+];
+
+
+if(theaterSearch && theaterSearchResults){
+
+    theaterSearch.addEventListener(
+        'input',
+        () => {
+
+            const query =
+                normalizeMusicText(
+                    theaterSearch.value
+                );
+
+            theaterSearchResults.innerHTML = '';
+
+
+            if(query.length < 2){
+                return;
+            }
+
+
+            const results =
+                theaterCourses.filter(course => {
+
+                    const terms = [
+                        course.name,
+                        course.category,
+                        ...course.aliases
+                    ];
+
+                    return terms.some(term =>
+                        normalizeMusicText(term)
+                            .includes(query)
+                    );
+
+                });
+
+
+            results.forEach(course => {
+
+                const link =
+                    document.createElement('a');
+
+                link.href =
+                    course.url;
+
+                link.className =
+                    'music-search-result';
+
+                link.innerHTML = `
+
+                    <div>
+
+                        <strong>
+                            ${course.name}
+                        </strong>
+
+                        <span>
+                            ${course.category}
+                        </span>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                `;
+
+                theaterSearchResults
+                    .appendChild(link);
+
+            });
+
+        }
+    );
+
+}
