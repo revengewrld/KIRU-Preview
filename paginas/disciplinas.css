@@ -11344,3 +11344,845 @@ RESPONSIVE ARTES
     }
 
 }
+
+/* ==================================================
+   IDENTIDAD INDIVIDUAL · BALLET
+   Magenta + rosa empolvado + lila + vino + marfil
+   ================================================== */
+
+.ballet-course-page {
+    --ballet-wine: #68214f;
+    --ballet-deep: #8f2f70;
+    --ballet-magenta: #b53b8c;
+    --ballet-rose: #d966aa;
+
+    --ballet-pink: #ed9ac6;
+    --ballet-blush: #f5c5dc;
+
+    --ballet-lilac: #a47bc2;
+    --ballet-purple: #76549c;
+
+    --ballet-ivory: #fff8f3;
+    --ballet-light: #fff4fa;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.ballet-course-page .discipline-menu a:hover,
+.ballet-course-page .discipline-back:hover {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--ballet-deep),
+            var(--ballet-magenta),
+            var(--ballet-rose)
+        );
+}
+
+.ballet-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-deep) 45%,
+            var(--ballet-magenta) 75%,
+            var(--ballet-rose)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(104, 33, 79, .20);
+}
+
+.ballet-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(104, 33, 79, .30);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.ballet-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 85% 17%,
+            rgba(217, 102, 170, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 81%,
+            rgba(164, 123, 194, .13),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(245, 197, 220, .28),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff7fb 50%,
+            #fbf3ff 100%
+        );
+}
+
+.ballet-course-page .course-hero::before {
+    background:
+        rgba(245, 197, 220, .20);
+}
+
+.ballet-course-page .course-eyebrow {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page .course-hero h1 {
+    color: #35213f;
+}
+
+.ballet-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--ballet-wine) 0%,
+            var(--ballet-deep) 35%,
+            var(--ballet-magenta) 68%,
+            var(--ballet-lilac) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES HERO
+   ================================================== */
+
+.ballet-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-deep) 40%,
+            var(--ballet-magenta) 72%,
+            var(--ballet-rose)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(143, 47, 112, .23);
+}
+
+.ballet-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(143, 47, 112, .32);
+}
+
+.ballet-course-page .discipline-btn.secondary {
+    color: #35213f;
+
+    border:
+        1px solid
+        rgba(181, 59, 140, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.ballet-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(217, 102, 170, .42);
+
+    box-shadow:
+        0 12px 26px
+        rgba(143, 47, 112, .08);
+}
+
+
+/* ==================================================
+   DETALLES DEL HERO
+   ================================================== */
+
+.ballet-course-page .course-hero-details i {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--ballet-lilac);
+}
+
+.ballet-course-page
+.course-hero-details span:nth-child(3) i {
+    color: var(--ballet-rose);
+}
+
+
+/* ==================================================
+   IMAGEN HERO
+   ================================================== */
+
+.ballet-course-page .course-image-frame {
+    box-shadow:
+        0 35px 80px
+        rgba(104, 33, 79, .19);
+}
+
+.ballet-course-page .course-image-badge i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-magenta),
+            var(--ballet-pink)
+        );
+}
+
+.ballet-course-page .course-media-shape-one {
+    background:
+        rgba(217, 102, 170, .25);
+}
+
+.ballet-course-page .course-media-shape-two {
+    background:
+        rgba(164, 123, 194, .18);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.ballet-course-page .course-section-label,
+.ballet-course-page .course-overview-main > span {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page .course-overview h2,
+.ballet-course-page .course-section-heading h2,
+.ballet-course-page .course-audience h2 {
+    color: #35213f;
+}
+
+
+/* TARJETA DE INFORMACIÓN */
+
+.ballet-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffafd,
+            #fff3f8
+        );
+
+    border:
+        1px solid
+        rgba(181, 59, 140, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(104, 33, 79, .07);
+}
+
+.ballet-course-page .course-info-item i {
+    color: var(--ballet-magenta);
+
+    background:
+        rgba(181, 59, 140, .09);
+}
+
+.ballet-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--ballet-lilac);
+
+    background:
+        rgba(164, 123, 194, .12);
+}
+
+.ballet-course-page
+.course-info-item:nth-child(4) i {
+    color: var(--ballet-rose);
+
+    background:
+        rgba(217, 102, 170, .12);
+}
+
+.ballet-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--ballet-wine);
+
+    background:
+        rgba(104, 33, 79, .09);
+}
+
+
+/* WHATSAPP */
+
+.ballet-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-deep),
+            var(--ballet-magenta)
+        );
+}
+
+.ballet-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-deep),
+            var(--ballet-magenta),
+            var(--ballet-rose)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.ballet-course-page .course-learning {
+    background:
+        linear-gradient(
+            180deg,
+            #fffafd,
+            #faf4ff
+        );
+}
+
+.ballet-course-page .course-section-heading > span {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(181, 59, 140, .08);
+}
+
+.ballet-course-page .course-learning-grid article:hover {
+    box-shadow:
+        0 25px 55px
+        rgba(104, 33, 79, .11);
+}
+
+
+/* COLORES INDIVIDUALES DE LOS BLOQUES */
+
+.ballet-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--ballet-deep);
+
+    background:
+        rgba(143, 47, 112, .10);
+}
+
+.ballet-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--ballet-magenta);
+
+    background:
+        rgba(181, 59, 140, .10);
+}
+
+.ballet-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: var(--ballet-lilac);
+
+    background:
+        rgba(164, 123, 194, .12);
+}
+
+.ballet-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--ballet-rose);
+
+    background:
+        rgba(217, 102, 170, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.ballet-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 92% 20%,
+            rgba(217, 102, 170, .14),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(164, 123, 194, .10),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #31152d 0%,
+            #542044 28%,
+            #77275c 56%,
+            #a63d7f 82%,
+            #bf5c9a 100%
+        );
+}
+
+.ballet-course-page
+.course-features-intro > span {
+    color: #f6acd1;
+}
+
+
+/* ICONOS DERECHA */
+
+.ballet-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #f5b2d2;
+
+    background:
+        rgba(217, 102, 170, .12);
+}
+
+.ballet-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #c5a3de;
+
+    background:
+        rgba(164, 123, 194, .13);
+}
+
+.ballet-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #f28cbc;
+
+    background:
+        rgba(217, 102, 170, .12);
+}
+
+.ballet-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #ffd1e3;
+
+    background:
+        rgba(245, 197, 220, .12);
+}
+
+
+/* ==================================================
+   ARTE IZQUIERDO · BALLET
+   ================================================== */
+
+.ballet-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.ballet-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+
+/* ==================================================
+   LÍNEAS DE MOVIMIENTO
+   ================================================== */
+
+.ballet-flow {
+    position: absolute;
+
+    border:
+        2px solid
+        rgba(245, 197, 220, .18);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.ballet-flow.flow-one {
+    width: 330px;
+    height: 120px;
+
+    left: -20px;
+    bottom: 30px;
+
+    transform:
+        rotate(-12deg);
+}
+
+.ballet-flow.flow-two {
+    width: 280px;
+    height: 95px;
+
+    left: 80px;
+    bottom: 70px;
+
+    border-color:
+        rgba(164, 123, 194, .18);
+
+    transform:
+        rotate(11deg);
+}
+
+
+/* ==================================================
+   ICONOS DECORATIVOS
+   ================================================== */
+
+.ballet-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 8px 18px
+            rgba(49, 21, 45, .24)
+        );
+}
+
+.ballet-feature-art .ballet-icon-one {
+    left: 11%;
+    bottom: 105px;
+
+    color: #f29ac5;
+
+    font-size: 3.6rem;
+
+    transform:
+        rotate(-9deg);
+}
+
+.ballet-feature-art .ballet-icon-two {
+    left: 50%;
+    bottom: 48px;
+
+    color: #c6a0db;
+
+    font-size: 2.6rem;
+
+    transform:
+        rotate(8deg);
+}
+
+.ballet-feature-art .ballet-icon-three {
+    right: 10%;
+    bottom: 128px;
+
+    color: #ffd0e3;
+
+    font-size: 2.8rem;
+
+    opacity: .90;
+
+    transform:
+        rotate(10deg);
+}
+
+
+/* ==================================================
+   CÍRCULOS
+   ================================================== */
+
+.ballet-feature-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.ballet-feature-circle.circle-one {
+    width: 160px;
+    height: 160px;
+
+    left: -65px;
+    bottom: -65px;
+
+    border:
+        1px solid
+        rgba(217, 102, 170, .17);
+}
+
+.ballet-feature-circle.circle-two {
+    width: 95px;
+    height: 95px;
+
+    right: 20px;
+    top: 14px;
+
+    border:
+        1px solid
+        rgba(164, 123, 194, .20);
+}
+
+
+/* GLOW */
+
+.ballet-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    left: 34%;
+    bottom: -10px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(217, 102, 170, .12),
+            rgba(164, 123, 194, .05),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.ballet-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(217, 102, 170, .22),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 72% 92%,
+            rgba(164, 123, 194, .12),
+            transparent 26%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff8fc,
+            #faf3ff
+        );
+}
+
+.ballet-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page .course-audience-icon {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-deep) 38%,
+            var(--ballet-magenta) 68%,
+            var(--ballet-lilac)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(104, 33, 79, .22);
+}
+
+.ballet-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(255, 222, 236, .38);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.ballet-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fffafd,
+            #faf5ff
+        );
+}
+
+.ballet-course-page
+.other-course-card > span {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(181, 59, 140, .08);
+}
+
+.ballet-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(104, 33, 79, .13);
+}
+
+.ballet-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-magenta),
+            var(--ballet-lilac)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.ballet-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 84% 32%,
+            rgba(217, 102, 170, .22),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(164, 123, 194, .11),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #31152d 0%,
+            #542044 28%,
+            #77275c 55%,
+            #a83f80 78%,
+            #d564a4 100%
+        );
+}
+
+.ballet-course-page
+.course-cta > div > span {
+    color: #ffc3de;
+}
+
+.ballet-course-page
+.course-cta .discipline-cta-button {
+    color: var(--ballet-wine);
+}
+
+.ballet-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--ballet-magenta);
+}
+
+.ballet-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(49, 21, 45, .30);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.ballet-course-page
+.discipline-footer-column a:hover,
+
+.ballet-course-page
+.discipline-footer-bottom a:hover {
+    color: var(--ballet-pink);
+}
+
+.ballet-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--ballet-wine),
+            var(--ballet-magenta),
+            var(--ballet-lilac)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · BALLET
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .ballet-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .ballet-flow.flow-one {
+        width: 280px;
+    }
+
+    .ballet-flow.flow-two {
+        width: 230px;
+    }
+
+}
