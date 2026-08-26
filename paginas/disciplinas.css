@@ -12186,3 +12186,3409 @@ RESPONSIVE ARTES
     }
 
 }
+
+/* ==================================================
+   DANZA URBANA · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.danza-urbana-course-page {
+    --urban-night: #28132f;
+    --urban-ink: #42183f;
+
+    /* Color principal tomado de la tarjeta de Danza Urbana */
+    --urban-deep: #8d3998;
+    --urban-violet: #c1217b;
+    --urban-electric: #d84ca2;
+
+    --urban-blue: #7e4eb5;
+    --urban-cyan: #35c5d8;
+
+    --urban-lime: #b9e645;
+    --urban-yellow: #f4d35e;
+    --urban-orange: #ff8547;
+
+    --urban-light: #fff1f8;
+    --urban-soft: #fff8fc;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.danza-urbana-course-page .discipline-menu a:hover,
+.danza-urbana-course-page .discipline-back:hover {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--urban-violet),
+            var(--urban-blue),
+            var(--urban-lime)
+        );
+}
+
+.danza-urbana-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-night),
+            var(--urban-deep) 42%,
+            var(--urban-violet) 72%,
+            var(--urban-blue)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(141, 57, 152, .24);
+}
+
+.danza-urbana-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(141, 57, 152, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.danza-urbana-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(216, 76, 162, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(53, 197, 216, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(185, 230, 69, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff4fa 50%,
+            #faf3ff 100%
+        );
+}
+
+.danza-urbana-course-page .course-hero::before {
+    background:
+        rgba(216, 76, 162, .10);
+}
+
+.danza-urbana-course-page .course-eyebrow {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page .course-hero h1 {
+    color: var(--urban-night);
+}
+
+.danza-urbana-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--urban-deep) 0%,
+            var(--urban-violet) 38%,
+            var(--urban-blue) 70%,
+            var(--urban-cyan) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.danza-urbana-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-night),
+            var(--urban-deep) 38%,
+            var(--urban-violet) 70%,
+            var(--urban-blue)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(141, 57, 152, .25);
+}
+
+.danza-urbana-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(141, 57, 152, .34);
+}
+
+.danza-urbana-course-page .discipline-btn.secondary {
+    color: var(--urban-night);
+
+    border:
+        1px solid
+        rgba(193, 33, 123, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.danza-urbana-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(126, 78, 181, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(141, 57, 152, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.danza-urbana-course-page .course-hero-details i {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--urban-blue);
+}
+
+.danza-urbana-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #8eb626;
+}
+
+.danza-urbana-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(193, 33, 123, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(66, 24, 63, .22);
+}
+
+.danza-urbana-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-deep),
+            var(--urban-violet),
+            var(--urban-blue)
+        );
+}
+
+.danza-urbana-course-page .course-media-shape-one {
+    background:
+        rgba(216, 76, 162, .24);
+}
+
+.danza-urbana-course-page .course-media-shape-two {
+    background:
+        rgba(185, 230, 69, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.danza-urbana-course-page .course-section-label,
+.danza-urbana-course-page .course-overview-main > span {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page .course-overview h2,
+.danza-urbana-course-page .course-section-heading h2,
+.danza-urbana-course-page .course-audience h2 {
+    color: var(--urban-night);
+}
+
+.danza-urbana-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffafd,
+            #fcf3fb
+        );
+
+    border:
+        1px solid
+        rgba(193, 33, 123, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(66, 24, 63, .08);
+}
+
+.danza-urbana-course-page .course-info-item i {
+    color: var(--urban-violet);
+
+    background:
+        rgba(193, 33, 123, .10);
+}
+
+.danza-urbana-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--urban-blue);
+
+    background:
+        rgba(126, 78, 181, .11);
+}
+
+.danza-urbana-course-page
+.course-info-item:nth-child(4) i {
+    color: #7eaa13;
+
+    background:
+        rgba(185, 230, 69, .20);
+}
+
+.danza-urbana-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--urban-orange);
+
+    background:
+        rgba(255, 133, 71, .11);
+}
+
+.danza-urbana-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-night),
+            var(--urban-deep),
+            var(--urban-violet),
+            var(--urban-blue)
+        );
+}
+
+.danza-urbana-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-deep),
+            var(--urban-violet),
+            var(--urban-blue),
+            var(--urban-cyan)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.danza-urbana-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(185, 230, 69, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fffafd,
+            #faf2fb
+        );
+}
+
+.danza-urbana-course-page .course-section-heading > span {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(193, 33, 123, .08);
+}
+
+.danza-urbana-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(66, 24, 63, .12);
+}
+
+.danza-urbana-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--urban-violet);
+
+    background:
+        rgba(193, 33, 123, .11);
+}
+
+.danza-urbana-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--urban-blue);
+
+    background:
+        rgba(126, 78, 181, .11);
+}
+
+.danza-urbana-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: #789f19;
+
+    background:
+        rgba(185, 230, 69, .21);
+}
+
+.danza-urbana-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--urban-orange);
+
+    background:
+        rgba(255, 133, 71, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.danza-urbana-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(216, 76, 162, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(185, 230, 69, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #211027 0%,
+            #42183f 28%,
+            #8d3998 56%,
+            #ad2c89 78%,
+            #7e4eb5 100%
+        );
+}
+
+.danza-urbana-course-page
+.course-features-intro > span {
+    color: #d4f36c;
+}
+
+.danza-urbana-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #f1a3ce;
+
+    background:
+        rgba(216, 76, 162, .15);
+}
+
+.danza-urbana-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #8de2ee;
+
+    background:
+        rgba(53, 197, 216, .13);
+}
+
+.danza-urbana-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #d5ef75;
+
+    background:
+        rgba(185, 230, 69, .12);
+}
+
+.danza-urbana-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #ffc09f;
+
+    background:
+        rgba(255, 133, 71, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · DANZA URBANA
+   ================================================== */
+
+.danza-urbana-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.urban-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.urban-beat {
+    position: absolute;
+
+    height: 4px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(185, 230, 69, .72),
+            rgba(53, 197, 216, .52),
+            transparent
+        );
+
+    box-shadow:
+        0 0 18px
+        rgba(185, 230, 69, .18);
+
+    pointer-events: none;
+}
+
+.urban-beat.beat-one {
+    width: 330px;
+
+    left: -28px;
+    bottom: 55px;
+
+    transform: rotate(-13deg);
+}
+
+.urban-beat.beat-two {
+    width: 280px;
+
+    left: 66px;
+    bottom: 104px;
+
+    transform: rotate(9deg);
+}
+
+.urban-beat.beat-three {
+    width: 190px;
+
+    right: -15px;
+    top: 60px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 133, 71, .55),
+            rgba(216, 76, 162, .55),
+            transparent
+        );
+
+    transform: rotate(-24deg);
+}
+
+.urban-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(40, 19, 47, .30)
+        );
+}
+
+.urban-feature-art .urban-icon-one {
+    left: 10%;
+    bottom: 96px;
+
+    color: #d5f06f;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.urban-feature-art .urban-icon-two {
+    left: 49%;
+    bottom: 42px;
+
+    color: #87dfec;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.urban-feature-art .urban-icon-three {
+    right: 9%;
+    bottom: 126px;
+
+    color: #ffc09f;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.urban-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.urban-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(185, 230, 69, .20);
+
+    border-radius: 28px;
+
+    transform: rotate(28deg);
+}
+
+.urban-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(53, 197, 216, .23);
+
+    border-radius: 50%;
+}
+
+.urban-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(216, 76, 162, .16),
+            rgba(53, 197, 216, .06),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.danza-urbana-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(216, 76, 162, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(185, 230, 69, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff8fc,
+            #fcf3fb
+        );
+}
+
+.danza-urbana-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page .course-audience-icon {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-night),
+            var(--urban-deep) 38%,
+            var(--urban-violet) 68%,
+            var(--urban-blue)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(66, 24, 63, .25);
+}
+
+.danza-urbana-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(220, 246, 121, .38);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.danza-urbana-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fffafd,
+            #faf2fb
+        );
+}
+
+.danza-urbana-course-page
+.other-course-card > span {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(193, 33, 123, .08);
+}
+
+.danza-urbana-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(66, 24, 63, .14);
+}
+
+.danza-urbana-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-deep),
+            var(--urban-violet),
+            var(--urban-blue)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.danza-urbana-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(185, 230, 69, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(53, 197, 216, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #211027 0%,
+            #42183f 27%,
+            #8d3998 52%,
+            #c1217b 76%,
+            #7e4eb5 100%
+        );
+}
+
+.danza-urbana-course-page
+.course-cta > div > span {
+    color: #d5f06f;
+}
+
+.danza-urbana-course-page
+.course-cta .discipline-cta-button {
+    color: var(--urban-night);
+}
+
+.danza-urbana-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--urban-violet);
+}
+
+.danza-urbana-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(40, 19, 47, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.danza-urbana-course-page
+.discipline-footer-column a:hover,
+
+.danza-urbana-course-page
+.discipline-footer-bottom a:hover {
+    color: #e978b9;
+}
+
+.danza-urbana-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--urban-deep),
+            var(--urban-violet),
+            var(--urban-blue)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · DANZA URBANA
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .urban-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .urban-beat.beat-one {
+        width: 275px;
+    }
+
+    .urban-beat.beat-two {
+        width: 225px;
+    }
+
+    .urban-feature-art .urban-icon-one {
+        font-size: 3rem;
+    }
+
+}
+
+/* ==================================================
+   DANZA CONTEMPORÁNEA · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.danza-contemporanea-course-page {
+    --contemporary-night: #261a35;
+    --contemporary-ink: #3f2a4b;
+
+    /* Color principal tomado de la tarjeta de Danza Contemporánea */
+    --contemporary-deep: #634185;
+    --contemporary-purple: #8452ae;
+    --contemporary-lilac: #a46dc3;
+
+    --contemporary-mauve: #b96fae;
+    --contemporary-sage: #78b8a6;
+
+    --contemporary-mint: #b7ddcf;
+    --contemporary-gold: #e3bd63;
+    --contemporary-coral: #df8a8a;
+
+    --contemporary-light: #faf5fc;
+    --contemporary-soft: #f6fbf8;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.danza-contemporanea-course-page .discipline-menu a:hover,
+.danza-contemporanea-course-page .discipline-back:hover {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--contemporary-purple),
+            var(--contemporary-mauve),
+            var(--contemporary-mint)
+        );
+}
+
+.danza-contemporanea-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-night),
+            var(--contemporary-deep) 42%,
+            var(--contemporary-purple) 72%,
+            var(--contemporary-mauve)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(99, 65, 133, .24);
+}
+
+.danza-contemporanea-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(99, 65, 133, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.danza-contemporanea-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(164, 109, 195, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(120, 184, 166, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(183, 221, 207, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #faf5fc 50%,
+            #f6f1fa 100%
+        );
+}
+
+.danza-contemporanea-course-page .course-hero::before {
+    background:
+        rgba(164, 109, 195, .10);
+}
+
+.danza-contemporanea-course-page .course-eyebrow {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page .course-hero h1 {
+    color: var(--contemporary-night);
+}
+
+.danza-contemporanea-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--contemporary-deep) 0%,
+            var(--contemporary-purple) 38%,
+            var(--contemporary-mauve) 70%,
+            var(--contemporary-sage) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.danza-contemporanea-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-night),
+            var(--contemporary-deep) 38%,
+            var(--contemporary-purple) 70%,
+            var(--contemporary-mauve)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(99, 65, 133, .25);
+}
+
+.danza-contemporanea-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(99, 65, 133, .34);
+}
+
+.danza-contemporanea-course-page .discipline-btn.secondary {
+    color: var(--contemporary-night);
+
+    border:
+        1px solid
+        rgba(132, 82, 174, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.danza-contemporanea-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(185, 111, 174, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(99, 65, 133, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.danza-contemporanea-course-page .course-hero-details i {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--contemporary-mauve);
+}
+
+.danza-contemporanea-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #4f8d7b;
+}
+
+.danza-contemporanea-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(132, 82, 174, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(63, 42, 75, .22);
+}
+
+.danza-contemporanea-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-deep),
+            var(--contemporary-purple),
+            var(--contemporary-mauve)
+        );
+}
+
+.danza-contemporanea-course-page .course-media-shape-one {
+    background:
+        rgba(164, 109, 195, .24);
+}
+
+.danza-contemporanea-course-page .course-media-shape-two {
+    background:
+        rgba(183, 221, 207, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.danza-contemporanea-course-page .course-section-label,
+.danza-contemporanea-course-page .course-overview-main > span {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page .course-overview h2,
+.danza-contemporanea-course-page .course-section-heading h2,
+.danza-contemporanea-course-page .course-audience h2 {
+    color: var(--contemporary-night);
+}
+
+.danza-contemporanea-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fbf8fc,
+            #f7f2fa
+        );
+
+    border:
+        1px solid
+        rgba(132, 82, 174, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(63, 42, 75, .08);
+}
+
+.danza-contemporanea-course-page .course-info-item i {
+    color: var(--contemporary-purple);
+
+    background:
+        rgba(132, 82, 174, .10);
+}
+
+.danza-contemporanea-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--contemporary-mauve);
+
+    background:
+        rgba(185, 111, 174, .11);
+}
+
+.danza-contemporanea-course-page
+.course-info-item:nth-child(4) i {
+    color: #4f8d7b;
+
+    background:
+        rgba(183, 221, 207, .20);
+}
+
+.danza-contemporanea-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--contemporary-coral);
+
+    background:
+        rgba(223, 138, 138, .11);
+}
+
+.danza-contemporanea-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-night),
+            var(--contemporary-deep),
+            var(--contemporary-purple),
+            var(--contemporary-mauve)
+        );
+}
+
+.danza-contemporanea-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-deep),
+            var(--contemporary-purple),
+            var(--contemporary-mauve),
+            var(--contemporary-sage)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.danza-contemporanea-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(183, 221, 207, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fbf8fc,
+            #f6f1f8
+        );
+}
+
+.danza-contemporanea-course-page .course-section-heading > span {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(132, 82, 174, .08);
+}
+
+.danza-contemporanea-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(63, 42, 75, .12);
+}
+
+.danza-contemporanea-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--contemporary-purple);
+
+    background:
+        rgba(132, 82, 174, .11);
+}
+
+.danza-contemporanea-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--contemporary-mauve);
+
+    background:
+        rgba(185, 111, 174, .11);
+}
+
+.danza-contemporanea-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: #4f8d7b;
+
+    background:
+        rgba(183, 221, 207, .21);
+}
+
+.danza-contemporanea-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--contemporary-coral);
+
+    background:
+        rgba(223, 138, 138, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.danza-contemporanea-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(164, 109, 195, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(183, 221, 207, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #23172f 0%,
+            #3f2a4b 28%,
+            #634185 56%,
+            #9d5fae 78%,
+            #b96fae 100%
+        );
+}
+
+.danza-contemporanea-course-page
+.course-features-intro > span {
+    color: #f1d58a;
+}
+
+.danza-contemporanea-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #d6aed8;
+
+    background:
+        rgba(164, 109, 195, .15);
+}
+
+.danza-contemporanea-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #b7ddcf;
+
+    background:
+        rgba(120, 184, 166, .13);
+}
+
+.danza-contemporanea-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #d7eadf;
+
+    background:
+        rgba(183, 221, 207, .12);
+}
+
+.danza-contemporanea-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #f2b5b5;
+
+    background:
+        rgba(223, 138, 138, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · DANZA CONTEMPORÁNEA
+   ================================================== */
+
+.danza-contemporanea-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.contemporary-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.contemporary-flow {
+    position: absolute;
+
+    border:
+        2px solid
+        rgba(183, 221, 207, .22);
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    pointer-events: none;
+}
+
+.contemporary-flow.flow-one {
+    width: 330px;
+    height: 120px;
+
+    left: -25px;
+    bottom: 30px;
+
+    transform: rotate(-11deg);
+}
+
+.contemporary-flow.flow-two {
+    width: 270px;
+    height: 92px;
+
+    left: 82px;
+    bottom: 74px;
+
+    border-color:
+        rgba(185, 111, 174, .22);
+
+    transform: rotate(12deg);
+}
+
+.contemporary-flow.flow-three {
+    width: 190px;
+    height: 68px;
+
+    right: -25px;
+    top: 62px;
+
+    border-color:
+        rgba(227, 189, 99, .20);
+
+    transform: rotate(-18deg);
+}
+
+.contemporary-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(38, 26, 53, .30)
+        );
+}
+
+.contemporary-feature-art .contemporary-icon-one {
+    left: 10%;
+    bottom: 96px;
+
+    color: #b7ddcf;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.contemporary-feature-art .contemporary-icon-two {
+    left: 49%;
+    bottom: 42px;
+
+    color: #d6aed8;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.contemporary-feature-art .contemporary-icon-three {
+    right: 9%;
+    bottom: 126px;
+
+    color: #f1d58a;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.contemporary-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.contemporary-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(183, 221, 207, .20);
+
+    border-radius: 50%;
+
+    transform: rotate(28deg);
+}
+
+.contemporary-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(120, 184, 166, .23);
+
+    border-radius: 50%;
+}
+
+.contemporary-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(164, 109, 195, .16),
+            rgba(120, 184, 166, .06),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.danza-contemporanea-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(164, 109, 195, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(183, 221, 207, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #f6fbf8,
+            #f7f2fa
+        );
+}
+
+.danza-contemporanea-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page .course-audience-icon {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-night),
+            var(--contemporary-deep) 38%,
+            var(--contemporary-purple) 68%,
+            var(--contemporary-mauve)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(63, 42, 75, .25);
+}
+
+.danza-contemporanea-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(230, 211, 149, .38);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.danza-contemporanea-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fbf8fc,
+            #f6f1f8
+        );
+}
+
+.danza-contemporanea-course-page
+.other-course-card > span {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(132, 82, 174, .08);
+}
+
+.danza-contemporanea-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(63, 42, 75, .14);
+}
+
+.danza-contemporanea-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-deep),
+            var(--contemporary-purple),
+            var(--contemporary-mauve)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.danza-contemporanea-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(183, 221, 207, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(120, 184, 166, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #23172f 0%,
+            #3f2a4b 27%,
+            #634185 52%,
+            #8452ae 76%,
+            #b96fae 100%
+        );
+}
+
+.danza-contemporanea-course-page
+.course-cta > div > span {
+    color: #f1d58a;
+}
+
+.danza-contemporanea-course-page
+.course-cta .discipline-cta-button {
+    color: var(--contemporary-night);
+}
+
+.danza-contemporanea-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--contemporary-purple);
+}
+
+.danza-contemporanea-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(38, 26, 53, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.danza-contemporanea-course-page
+.discipline-footer-column a:hover,
+
+.danza-contemporanea-course-page
+.discipline-footer-bottom a:hover {
+    color: #c98bc0;
+}
+
+.danza-contemporanea-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--contemporary-deep),
+            var(--contemporary-purple),
+            var(--contemporary-mauve)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · DANZA CONTEMPORÁNEA
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .contemporary-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .contemporary-flow.flow-one {
+        width: 275px;
+        height: 100px;
+    }
+
+    .contemporary-flow.flow-two {
+        width: 225px;
+        height: 75px;
+    }
+
+    .contemporary-feature-art .contemporary-icon-one {
+        font-size: 3rem;
+    }
+
+}
+
+/* ==================================================
+   DANZA LATINA · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.danza-latina-course-page {
+    --latin-night: #351825;
+    --latin-ink: #5a203c;
+
+    /* Color principal tomado de la tarjeta de Danza Latina */
+    --latin-deep: #96305f;
+    --latin-rose: #d34c87;
+    --latin-coral: #e77c8f;
+
+    --latin-peach: #f0a07e;
+    --latin-teal: #3eaa9b;
+
+    --latin-aqua: #91d7c9;
+    --latin-gold: #f2bf58;
+    --latin-warm-coral: #e96f6f;
+
+    --latin-light: #fff4f7;
+    --latin-soft: #fff8ed;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.danza-latina-course-page .discipline-menu a:hover,
+.danza-latina-course-page .discipline-back:hover {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--latin-rose),
+            var(--latin-peach),
+            var(--latin-aqua)
+        );
+}
+
+.danza-latina-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-night),
+            var(--latin-deep) 42%,
+            var(--latin-rose) 72%,
+            var(--latin-peach)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(150, 48, 95, .24);
+}
+
+.danza-latina-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(150, 48, 95, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.danza-latina-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(231, 124, 143, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(62, 170, 155, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(145, 215, 201, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff4f7 50%,
+            #fff3f5 100%
+        );
+}
+
+.danza-latina-course-page .course-hero::before {
+    background:
+        rgba(231, 124, 143, .10);
+}
+
+.danza-latina-course-page .course-eyebrow {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page .course-hero h1 {
+    color: var(--latin-night);
+}
+
+.danza-latina-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--latin-deep) 0%,
+            var(--latin-rose) 38%,
+            var(--latin-peach) 70%,
+            var(--latin-teal) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.danza-latina-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-night),
+            var(--latin-deep) 38%,
+            var(--latin-rose) 70%,
+            var(--latin-peach)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(150, 48, 95, .25);
+}
+
+.danza-latina-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(150, 48, 95, .34);
+}
+
+.danza-latina-course-page .discipline-btn.secondary {
+    color: var(--latin-night);
+
+    border:
+        1px solid
+        rgba(211, 76, 135, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.danza-latina-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(240, 160, 126, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(150, 48, 95, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.danza-latina-course-page .course-hero-details i {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--latin-peach);
+}
+
+.danza-latina-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #2f887d;
+}
+
+.danza-latina-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(211, 76, 135, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(90, 32, 60, .22);
+}
+
+.danza-latina-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-deep),
+            var(--latin-rose),
+            var(--latin-peach)
+        );
+}
+
+.danza-latina-course-page .course-media-shape-one {
+    background:
+        rgba(231, 124, 143, .24);
+}
+
+.danza-latina-course-page .course-media-shape-two {
+    background:
+        rgba(145, 215, 201, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.danza-latina-course-page .course-section-label,
+.danza-latina-course-page .course-overview-main > span {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page .course-overview h2,
+.danza-latina-course-page .course-section-heading h2,
+.danza-latina-course-page .course-audience h2 {
+    color: var(--latin-night);
+}
+
+.danza-latina-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fff9fa,
+            #fff3f5
+        );
+
+    border:
+        1px solid
+        rgba(211, 76, 135, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(90, 32, 60, .08);
+}
+
+.danza-latina-course-page .course-info-item i {
+    color: var(--latin-rose);
+
+    background:
+        rgba(211, 76, 135, .10);
+}
+
+.danza-latina-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--latin-peach);
+
+    background:
+        rgba(240, 160, 126, .11);
+}
+
+.danza-latina-course-page
+.course-info-item:nth-child(4) i {
+    color: #2f887d;
+
+    background:
+        rgba(145, 215, 201, .20);
+}
+
+.danza-latina-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--latin-warm-coral);
+
+    background:
+        rgba(233, 111, 111, .11);
+}
+
+.danza-latina-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-night),
+            var(--latin-deep),
+            var(--latin-rose),
+            var(--latin-peach)
+        );
+}
+
+.danza-latina-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-deep),
+            var(--latin-rose),
+            var(--latin-peach),
+            var(--latin-teal)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.danza-latina-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(145, 215, 201, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fff9fa,
+            #fff5f3
+        );
+}
+
+.danza-latina-course-page .course-section-heading > span {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(211, 76, 135, .08);
+}
+
+.danza-latina-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(90, 32, 60, .12);
+}
+
+.danza-latina-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--latin-rose);
+
+    background:
+        rgba(211, 76, 135, .11);
+}
+
+.danza-latina-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--latin-peach);
+
+    background:
+        rgba(240, 160, 126, .11);
+}
+
+.danza-latina-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: #2f887d;
+
+    background:
+        rgba(145, 215, 201, .21);
+}
+
+.danza-latina-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--latin-warm-coral);
+
+    background:
+        rgba(233, 111, 111, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.danza-latina-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(231, 124, 143, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(145, 215, 201, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #2a1320 0%,
+            #5a203c 28%,
+            #96305f 56%,
+            #e06a88 78%,
+            #f0a07e 100%
+        );
+}
+
+.danza-latina-course-page
+.course-features-intro > span {
+    color: #ffe09a;
+}
+
+.danza-latina-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #f5b3c1;
+
+    background:
+        rgba(231, 124, 143, .15);
+}
+
+.danza-latina-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #91d7c9;
+
+    background:
+        rgba(62, 170, 155, .13);
+}
+
+.danza-latina-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #bfe8de;
+
+    background:
+        rgba(145, 215, 201, .12);
+}
+
+.danza-latina-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #f5a6a6;
+
+    background:
+        rgba(233, 111, 111, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · DANZA LATINA
+   ================================================== */
+
+.danza-latina-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.latin-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.latin-rhythm {
+    position: absolute;
+
+    border:
+        2px solid
+        rgba(145, 215, 201, .22);
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    pointer-events: none;
+}
+
+.latin-rhythm.rhythm-one {
+    width: 330px;
+    height: 120px;
+
+    left: -25px;
+    bottom: 30px;
+
+    transform: rotate(-11deg);
+}
+
+.latin-rhythm.rhythm-two {
+    width: 270px;
+    height: 92px;
+
+    left: 82px;
+    bottom: 74px;
+
+    border-color:
+        rgba(240, 160, 126, .22);
+
+    transform: rotate(12deg);
+}
+
+.latin-rhythm.rhythm-three {
+    width: 190px;
+    height: 68px;
+
+    right: -25px;
+    top: 62px;
+
+    border-color:
+        rgba(242, 191, 88, .20);
+
+    transform: rotate(-18deg);
+}
+
+.latin-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(53, 24, 37, .30)
+        );
+}
+
+.latin-feature-art .latin-icon-one {
+    left: 10%;
+    bottom: 96px;
+
+    color: #91d7c9;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.latin-feature-art .latin-icon-two {
+    left: 49%;
+    bottom: 42px;
+
+    color: #f5b3c1;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.latin-feature-art .latin-icon-three {
+    right: 9%;
+    bottom: 126px;
+
+    color: #ffe09a;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.latin-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.latin-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(145, 215, 201, .20);
+
+    border-radius: 50%;
+
+    transform: rotate(28deg);
+}
+
+.latin-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(62, 170, 155, .23);
+
+    border-radius: 50%;
+}
+
+.latin-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(231, 124, 143, .16),
+            rgba(62, 170, 155, .06),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.danza-latina-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(231, 124, 143, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(145, 215, 201, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff8ed,
+            #fff3f5
+        );
+}
+
+.danza-latina-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page .course-audience-icon {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-night),
+            var(--latin-deep) 38%,
+            var(--latin-rose) 68%,
+            var(--latin-peach)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(90, 32, 60, .25);
+}
+
+.danza-latina-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(255, 224, 154, .38);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.danza-latina-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fff9fa,
+            #fff5f3
+        );
+}
+
+.danza-latina-course-page
+.other-course-card > span {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(211, 76, 135, .08);
+}
+
+.danza-latina-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(90, 32, 60, .14);
+}
+
+.danza-latina-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-deep),
+            var(--latin-rose),
+            var(--latin-peach)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.danza-latina-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(145, 215, 201, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(62, 170, 155, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #2a1320 0%,
+            #5a203c 27%,
+            #96305f 52%,
+            #d34c87 76%,
+            #f0a07e 100%
+        );
+}
+
+.danza-latina-course-page
+.course-cta > div > span {
+    color: #ffe09a;
+}
+
+.danza-latina-course-page
+.course-cta .discipline-cta-button {
+    color: var(--latin-night);
+}
+
+.danza-latina-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--latin-rose);
+}
+
+.danza-latina-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(53, 24, 37, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.danza-latina-course-page
+.discipline-footer-column a:hover,
+
+.danza-latina-course-page
+.discipline-footer-bottom a:hover {
+    color: #f39aaa;
+}
+
+.danza-latina-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--latin-deep),
+            var(--latin-rose),
+            var(--latin-peach)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · DANZA LATINA
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .latin-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .latin-rhythm.rhythm-one {
+        width: 275px;
+        height: 100px;
+    }
+
+    .latin-rhythm.rhythm-two {
+        width: 225px;
+        height: 75px;
+    }
+
+    .latin-feature-art .latin-icon-one {
+        font-size: 3rem;
+    }
+
+}
+
+/* ==================================================
+   K-POP · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.kpop-course-page {
+    --kpop-night: #1e1738;
+    --kpop-ink: #33245c;
+
+    /* Color principal tomado de la tarjeta de K-Pop */
+    --kpop-deep: #50358f;
+    --kpop-violet: #6f4bb6;
+    --kpop-fuchsia: #cb4c9b;
+
+    --kpop-pink: #e96db2;
+    --kpop-cyan: #48c8d8;
+
+    --kpop-blue: #4f7de8;
+    --kpop-neon: #d8eb62;
+    --kpop-coral: #f17b91;
+
+    --kpop-light: #f8f5ff;
+    --kpop-soft: #fff5fb;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.kpop-course-page .discipline-menu a:hover,
+.kpop-course-page .discipline-back:hover {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--kpop-violet),
+            var(--kpop-pink),
+            var(--kpop-blue)
+        );
+}
+
+.kpop-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-night),
+            var(--kpop-deep) 42%,
+            var(--kpop-violet) 72%,
+            var(--kpop-pink)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(80, 53, 143, .24);
+}
+
+.kpop-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(80, 53, 143, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.kpop-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(203, 76, 155, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(72, 200, 216, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(79, 125, 232, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f8f5ff 50%,
+            #f5f2ff 100%
+        );
+}
+
+.kpop-course-page .course-hero::before {
+    background:
+        rgba(203, 76, 155, .10);
+}
+
+.kpop-course-page .course-eyebrow {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page .course-hero h1 {
+    color: var(--kpop-night);
+}
+
+.kpop-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--kpop-deep) 0%,
+            var(--kpop-violet) 38%,
+            var(--kpop-pink) 70%,
+            var(--kpop-cyan) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.kpop-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-night),
+            var(--kpop-deep) 38%,
+            var(--kpop-violet) 70%,
+            var(--kpop-pink)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(80, 53, 143, .25);
+}
+
+.kpop-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(80, 53, 143, .34);
+}
+
+.kpop-course-page .discipline-btn.secondary {
+    color: var(--kpop-night);
+
+    border:
+        1px solid
+        rgba(111, 75, 182, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.kpop-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(233, 109, 178, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(80, 53, 143, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.kpop-course-page .course-hero-details i {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--kpop-pink);
+}
+
+.kpop-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #2ca8b7;
+}
+
+.kpop-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(111, 75, 182, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(51, 36, 92, .22);
+}
+
+.kpop-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-deep),
+            var(--kpop-violet),
+            var(--kpop-pink)
+        );
+}
+
+.kpop-course-page .course-media-shape-one {
+    background:
+        rgba(203, 76, 155, .24);
+}
+
+.kpop-course-page .course-media-shape-two {
+    background:
+        rgba(79, 125, 232, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.kpop-course-page .course-section-label,
+.kpop-course-page .course-overview-main > span {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page .course-overview h2,
+.kpop-course-page .course-section-heading h2,
+.kpop-course-page .course-audience h2 {
+    color: var(--kpop-night);
+}
+
+.kpop-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fbf9ff,
+            #f5f2ff
+        );
+
+    border:
+        1px solid
+        rgba(111, 75, 182, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(51, 36, 92, .08);
+}
+
+.kpop-course-page .course-info-item i {
+    color: var(--kpop-violet);
+
+    background:
+        rgba(111, 75, 182, .10);
+}
+
+.kpop-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--kpop-pink);
+
+    background:
+        rgba(233, 109, 178, .11);
+}
+
+.kpop-course-page
+.course-info-item:nth-child(4) i {
+    color: #2ca8b7;
+
+    background:
+        rgba(79, 125, 232, .20);
+}
+
+.kpop-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--kpop-coral);
+
+    background:
+        rgba(241, 123, 145, .11);
+}
+
+.kpop-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-night),
+            var(--kpop-deep),
+            var(--kpop-violet),
+            var(--kpop-pink)
+        );
+}
+
+.kpop-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-deep),
+            var(--kpop-violet),
+            var(--kpop-pink),
+            var(--kpop-cyan)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.kpop-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(79, 125, 232, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fbf9ff,
+            #fff5fb
+        );
+}
+
+.kpop-course-page .course-section-heading > span {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(111, 75, 182, .08);
+}
+
+.kpop-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(51, 36, 92, .12);
+}
+
+.kpop-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--kpop-violet);
+
+    background:
+        rgba(111, 75, 182, .11);
+}
+
+.kpop-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--kpop-pink);
+
+    background:
+        rgba(233, 109, 178, .11);
+}
+
+.kpop-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: #2ca8b7;
+
+    background:
+        rgba(79, 125, 232, .21);
+}
+
+.kpop-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--kpop-coral);
+
+    background:
+        rgba(241, 123, 145, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.kpop-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(203, 76, 155, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(79, 125, 232, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #171127 0%,
+            #33245c 28%,
+            #50358f 56%,
+            #a449a4 78%,
+            #e96db2 100%
+        );
+}
+
+.kpop-course-page
+.course-features-intro > span {
+    color: #e8f49a;
+}
+
+.kpop-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #ef9ed0;
+
+    background:
+        rgba(203, 76, 155, .15);
+}
+
+.kpop-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #4f7de8;
+
+    background:
+        rgba(72, 200, 216, .13);
+}
+
+.kpop-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #a9ebf2;
+
+    background:
+        rgba(79, 125, 232, .12);
+}
+
+.kpop-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #f8a2b6;
+
+    background:
+        rgba(241, 123, 145, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · K-POP
+   ================================================== */
+
+.kpop-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.kpop-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.kpop-beam {
+    position: absolute;
+
+    height: 5px;
+
+    border: 0;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(72, 200, 216, .70),
+            rgba(79, 125, 232, .58),
+            transparent
+        );
+
+    box-shadow:
+        0 0 20px
+        rgba(72, 200, 216, .18);
+
+    pointer-events: none;
+}
+
+.kpop-beam.beam-one {
+    width: 330px;
+
+    left: -20px;
+    bottom: 52px;
+
+    transform: rotate(-14deg);
+}
+
+.kpop-beam.beam-two {
+    width: 270px;
+
+    left: 78px;
+    bottom: 105px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(233, 109, 178, .68),
+            rgba(203, 76, 155, .58),
+            transparent
+        );
+
+    transform: rotate(10deg);
+}
+
+.kpop-beam.beam-three {
+    width: 190px;
+
+    right: -18px;
+    top: 58px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(216, 235, 98, .62),
+            rgba(233, 109, 178, .45),
+            transparent
+        );
+
+    transform: rotate(-24deg);
+}
+
+.kpop-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(30, 23, 56, .30)
+        );
+}
+
+.kpop-feature-art .kpop-icon-one {
+    left: 10%;
+    bottom: 96px;
+
+    color: #e8f49a;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.kpop-feature-art .kpop-icon-two {
+    left: 49%;
+    bottom: 42px;
+
+    color: #8be4ed;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.kpop-feature-art .kpop-icon-three {
+    right: 9%;
+    bottom: 126px;
+
+    color: #ef9ed0;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.kpop-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.kpop-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(79, 125, 232, .20);
+
+    border-radius: 28px;
+
+    transform: rotate(28deg);
+}
+
+.kpop-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(72, 200, 216, .23);
+
+    border-radius: 50%;
+}
+
+.kpop-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(203, 76, 155, .16),
+            rgba(72, 200, 216, .06),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.kpop-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(203, 76, 155, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(79, 125, 232, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff5fb,
+            #f5f2ff
+        );
+}
+
+.kpop-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page .course-audience-icon {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-night),
+            var(--kpop-deep) 38%,
+            var(--kpop-violet) 68%,
+            var(--kpop-pink)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(51, 36, 92, .25);
+}
+
+.kpop-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(232, 244, 154, .38);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.kpop-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fbf9ff,
+            #fff5fb
+        );
+}
+
+.kpop-course-page
+.other-course-card > span {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(111, 75, 182, .08);
+}
+
+.kpop-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(51, 36, 92, .14);
+}
+
+.kpop-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-deep),
+            var(--kpop-violet),
+            var(--kpop-pink)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.kpop-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(79, 125, 232, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(72, 200, 216, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #171127 0%,
+            #33245c 27%,
+            #50358f 52%,
+            #6f4bb6 76%,
+            #e96db2 100%
+        );
+}
+
+.kpop-course-page
+.course-cta > div > span {
+    color: #e8f49a;
+}
+
+.kpop-course-page
+.course-cta .discipline-cta-button {
+    color: var(--kpop-night);
+}
+
+.kpop-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--kpop-violet);
+}
+
+.kpop-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(30, 23, 56, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.kpop-course-page
+.discipline-footer-column a:hover,
+
+.kpop-course-page
+.discipline-footer-bottom a:hover {
+    color: #e88ac4;
+}
+
+.kpop-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--kpop-deep),
+            var(--kpop-violet),
+            var(--kpop-pink)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · K-POP
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .kpop-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .kpop-beam.beam-one {
+        width: 275px;
+        height: 5px;
+    }
+
+    .kpop-beam.beam-two {
+        width: 225px;
+        height: 5px;
+    }
+
+    .kpop-feature-art .kpop-icon-one {
+        font-size: 3rem;
+    }
+
+}
