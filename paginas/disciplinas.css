@@ -17334,3 +17334,2741 @@ RESPONSIVE ARTES
     }
 
 }
+
+/* ==================================================
+   DIBUJO · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.drawing-course-page {
+    --drawing-deep: #3e2a1d;
+
+    /* Colores exactos tomados de la tarjeta de Dibujo */
+    --drawing-brown: #7a3b22;
+    --drawing-orange-deep: #c86f27;
+    --drawing-orange: #e78a2f;
+
+    --drawing-gold: #f5bd42;
+    --drawing-teal: #3f8c98;
+
+    --drawing-yellow: #f4c542;
+    --drawing-blue: #437aa2;
+    --drawing-purple: #7350a8;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.drawing-course-page .discipline-menu a:hover,
+.drawing-course-page .discipline-back:hover {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--drawing-orange),
+            var(--drawing-gold),
+            var(--drawing-yellow)
+        );
+}
+
+.drawing-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-brown),
+            var(--drawing-orange-deep) 38%,
+            var(--drawing-orange) 70%,
+            var(--drawing-gold)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(200, 111, 39, .24);
+}
+
+.drawing-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(200, 111, 39, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.drawing-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(231, 138, 47, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(63, 140, 152, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(245, 189, 66, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff8e8 50%,
+            #fff8e8 100%
+        );
+}
+
+.drawing-course-page .course-hero::before {
+    background:
+        rgba(231, 138, 47, .10);
+}
+
+.drawing-course-page .course-eyebrow {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page .course-hero h1 {
+    color: var(--drawing-deep);
+}
+
+.drawing-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--drawing-brown) 0%,
+            var(--drawing-orange) 40%,
+            var(--drawing-gold) 72%,
+            var(--drawing-teal) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.drawing-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-brown),
+            var(--drawing-orange-deep) 36%,
+            var(--drawing-orange) 68%,
+            var(--drawing-gold)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(200, 111, 39, .25);
+}
+
+.drawing-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(200, 111, 39, .34);
+}
+
+.drawing-course-page .discipline-btn.secondary {
+    color: var(--drawing-deep);
+
+    border:
+        1px solid
+        rgba(200, 111, 39, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.drawing-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(245, 189, 66, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(200, 111, 39, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.drawing-course-page .course-hero-details i {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--drawing-gold);
+}
+
+.drawing-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #3f8c98;
+}
+
+.drawing-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(200, 111, 39, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(122, 59, 34, .22);
+}
+
+.drawing-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-brown),
+            var(--drawing-orange),
+            var(--drawing-gold)
+        );
+}
+
+.drawing-course-page .course-media-shape-one {
+    background:
+        rgba(231, 138, 47, .24);
+}
+
+.drawing-course-page .course-media-shape-two {
+    background:
+        rgba(245, 189, 66, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.drawing-course-page .course-section-label,
+.drawing-course-page .course-overview-main > span {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page .course-overview h2,
+.drawing-course-page .course-section-heading h2,
+.drawing-course-page .course-audience h2 {
+    color: var(--drawing-deep);
+}
+
+.drawing-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf7,
+            #fff8e8
+        );
+
+    border:
+        1px solid
+        rgba(200, 111, 39, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(122, 59, 34, .08);
+}
+
+.drawing-course-page .course-info-item i {
+    color: var(--drawing-orange);
+
+    background:
+        rgba(200, 111, 39, .10);
+}
+
+.drawing-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--drawing-gold);
+
+    background:
+        rgba(245, 189, 66, .11);
+}
+
+.drawing-course-page
+.course-info-item:nth-child(4) i {
+    color: #3f8c98;
+
+    background:
+        rgba(245, 189, 66, .20);
+}
+
+.drawing-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--drawing-purple);
+
+    background:
+        rgba(115, 80, 168, .11);
+}
+
+.drawing-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-brown),
+            var(--drawing-orange-deep),
+            var(--drawing-orange),
+            var(--drawing-gold)
+        );
+}
+
+.drawing-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-orange-deep),
+            var(--drawing-orange),
+            var(--drawing-gold),
+            var(--drawing-teal)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.drawing-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(245, 189, 66, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fffdf7,
+            #fffaf0
+        );
+}
+
+.drawing-course-page .course-section-heading > span {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(200, 111, 39, .08);
+}
+
+.drawing-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(122, 59, 34, .12);
+}
+
+.drawing-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--drawing-orange);
+
+    background:
+        rgba(200, 111, 39, .11);
+}
+
+.drawing-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--drawing-gold);
+
+    background:
+        rgba(245, 189, 66, .11);
+}
+
+.drawing-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: var(--drawing-blue);
+
+    background:
+        rgba(67, 122, 162, .11);
+}
+
+.drawing-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--drawing-purple);
+
+    background:
+        rgba(115, 80, 168, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.drawing-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(231, 138, 47, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(245, 189, 66, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #2f2118 0%,
+            #6e3b22 24%,
+            #7a3b22 45%,
+            #e78a2f 72%,
+            #f5bd42 100%
+        );
+}
+
+.drawing-course-page
+.course-features-intro > span {
+    color: #ffe09a;
+}
+
+.drawing-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #ffd487;
+
+    background:
+        rgba(231, 138, 47, .15);
+}
+
+.drawing-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #bfe4e8;
+
+    background:
+        rgba(63, 140, 152, .13);
+}
+
+.drawing-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #bcd6ec;
+
+    background:
+        rgba(67, 122, 162, .14);
+}
+
+.drawing-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #d4b5ed;
+
+    background:
+        rgba(115, 80, 168, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · DIBUJO
+   ================================================== */
+
+.drawing-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.drawing-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.drawing-stroke {
+    position: absolute;
+
+    height: 4px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(245, 189, 66, .72),
+            rgba(231, 138, 47, .58),
+            transparent
+        );
+
+    box-shadow:
+        0 0 18px
+        rgba(245, 189, 66, .14);
+
+    pointer-events: none;
+}
+
+.drawing-stroke.stroke-one {
+    width: 360px;
+
+    left: -35px;
+    bottom: 48px;
+
+    transform: rotate(-14deg);
+}
+
+.drawing-stroke.stroke-two {
+    width: 285px;
+
+    left: 58px;
+    bottom: 102px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(67, 122, 162, .66),
+            rgba(63, 140, 152, .56),
+            transparent
+        );
+
+    transform: rotate(11deg);
+}
+
+.drawing-stroke.stroke-three {
+    width: 210px;
+
+    right: -24px;
+    top: 55px;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            rgba(212, 181, 237, .60) 0 18px,
+            transparent 18px 29px
+        );
+
+    transform: rotate(-21deg);
+}
+
+.drawing-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(62, 42, 29, .30)
+        );
+}
+
+.drawing-feature-art .drawing-icon-one {
+    left: 12%;
+    bottom: 90px;
+
+    color: #ffe09a;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.drawing-feature-art .drawing-icon-two {
+    left: 48%;
+    bottom: 38px;
+
+    color: #bcd6ec;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.drawing-feature-art .drawing-icon-three {
+    right: 10%;
+    bottom: 128px;
+
+    color: #ffd487;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.drawing-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.drawing-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(245, 189, 66, .20);
+
+    border-radius: 26px;
+
+    transform: rotate(28deg);
+}
+
+.drawing-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(67, 122, 162, .27);
+
+    border-radius: 50%;
+
+    transform: rotate(18deg);
+}
+
+.drawing-feature-art::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 115px;
+
+    right: 38px;
+    bottom: 24px;
+
+    border-radius: 22px;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, .13) 0 1px,
+            transparent 1px 13px
+        ),
+
+        repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, .10) 0 1px,
+            transparent 1px 13px
+        );
+
+    transform: rotate(8deg);
+
+    pointer-events: none;
+}
+
+.drawing-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(231, 138, 47, .16),
+            rgba(67, 122, 162, .08),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.drawing-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(231, 138, 47, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(245, 189, 66, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fffaf0,
+            #fff8e8
+        );
+}
+
+.drawing-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page .course-audience-icon {
+    position: relative;
+
+    border-radius: 32px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-deep),
+            var(--drawing-brown) 38%,
+            var(--drawing-orange) 68%,
+            var(--drawing-gold)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(122, 59, 34, .25);
+}
+
+.drawing-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(184, 221, 214, .38);
+
+    border-radius: 24px;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.drawing-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf7,
+            #fffaf0
+        );
+}
+
+.drawing-course-page .other-courses-grid {
+    grid-template-columns:
+        repeat(2, minmax(0, 360px));
+
+    justify-content: center;
+}
+
+.drawing-course-page
+.other-course-card > span {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(200, 111, 39, .08);
+}
+
+.drawing-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(122, 59, 34, .14);
+}
+
+.drawing-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-brown),
+            var(--drawing-orange),
+            var(--drawing-gold)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.drawing-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(245, 189, 66, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(63, 140, 152, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #2f2118 0%,
+            #6e3b22 24%,
+            #7a3b22 46%,
+            #e78a2f 73%,
+            #f5bd42 100%
+        );
+}
+
+.drawing-course-page
+.course-cta > div > span {
+    color: #ffe09a;
+}
+
+.drawing-course-page
+.course-cta .discipline-cta-button {
+    color: var(--drawing-deep);
+}
+
+.drawing-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--drawing-orange);
+}
+
+.drawing-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(62, 42, 29, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.drawing-course-page
+.discipline-footer-column a:hover,
+
+.drawing-course-page
+.discipline-footer-bottom a:hover {
+    color: #f0ad3e;
+}
+
+.drawing-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--drawing-brown),
+            var(--drawing-orange),
+            var(--drawing-gold)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · DIBUJO
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .drawing-course-page .other-courses-grid {
+        grid-template-columns: 1fr;
+
+        width: min(100%, 380px);
+        margin-inline: auto;
+    }
+
+    .drawing-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .drawing-stroke.stroke-one {
+        width: 275px;
+        height: 4px;
+    }
+
+    .drawing-stroke.stroke-two {
+        width: 225px;
+        height: 4px;
+    }
+
+    .drawing-feature-art .drawing-icon-one {
+        font-size: 3rem;
+    }
+
+}
+
+/* ==================================================
+   PINTURA · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.painting-course-page {
+    --painting-deep: #48201d;
+
+    /* Colores exactos tomados de la tarjeta de Pintura */
+    --painting-brown: #8f3c38;
+    --painting-orange-deep: #c94d45;
+    --painting-orange: #e96252;
+
+    --painting-gold: #f0a34a;
+    --painting-teal: #3f8c98;
+
+    --painting-yellow: #f5bd42;
+    --painting-blue: #437aa2;
+    --painting-purple: #7350a8;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.painting-course-page .discipline-menu a:hover,
+.painting-course-page .discipline-back:hover {
+    color: var(--painting-orange);
+}
+
+.painting-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--painting-orange),
+            var(--painting-gold),
+            var(--painting-yellow)
+        );
+}
+
+.painting-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-brown),
+            var(--painting-orange-deep) 38%,
+            var(--painting-orange) 70%,
+            var(--painting-gold)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(201, 77, 69, .24);
+}
+
+.painting-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(201, 77, 69, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.painting-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(233, 98, 82, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(63, 140, 152, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(240, 163, 74, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff5f1 50%,
+            #fff5f1 100%
+        );
+}
+
+.painting-course-page .course-hero::before {
+    background:
+        rgba(233, 98, 82, .10);
+}
+
+.painting-course-page .course-eyebrow {
+    color: var(--painting-orange);
+}
+
+.painting-course-page .course-hero h1 {
+    color: var(--painting-deep);
+}
+
+.painting-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--painting-brown) 0%,
+            var(--painting-orange) 40%,
+            var(--painting-gold) 72%,
+            var(--painting-teal) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.painting-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-brown),
+            var(--painting-orange-deep) 36%,
+            var(--painting-orange) 68%,
+            var(--painting-gold)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(201, 77, 69, .25);
+}
+
+.painting-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(201, 77, 69, .34);
+}
+
+.painting-course-page .discipline-btn.secondary {
+    color: var(--painting-deep);
+
+    border:
+        1px solid
+        rgba(201, 77, 69, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.painting-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(240, 163, 74, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(201, 77, 69, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.painting-course-page .course-hero-details i {
+    color: var(--painting-orange);
+}
+
+.painting-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--painting-gold);
+}
+
+.painting-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #3f8c98;
+}
+
+.painting-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(201, 77, 69, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(143, 60, 56, .22);
+}
+
+.painting-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-brown),
+            var(--painting-orange),
+            var(--painting-gold)
+        );
+}
+
+.painting-course-page .course-media-shape-one {
+    background:
+        rgba(233, 98, 82, .24);
+}
+
+.painting-course-page .course-media-shape-two {
+    background:
+        rgba(240, 163, 74, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.painting-course-page .course-section-label,
+.painting-course-page .course-overview-main > span {
+    color: var(--painting-orange);
+}
+
+.painting-course-page .course-overview h2,
+.painting-course-page .course-section-heading h2,
+.painting-course-page .course-audience h2 {
+    color: var(--painting-deep);
+}
+
+.painting-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffdfb,
+            #fff5f1
+        );
+
+    border:
+        1px solid
+        rgba(201, 77, 69, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(143, 60, 56, .08);
+}
+
+.painting-course-page .course-info-item i {
+    color: var(--painting-orange);
+
+    background:
+        rgba(201, 77, 69, .10);
+}
+
+.painting-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--painting-gold);
+
+    background:
+        rgba(240, 163, 74, .11);
+}
+
+.painting-course-page
+.course-info-item:nth-child(4) i {
+    color: #3f8c98;
+
+    background:
+        rgba(240, 163, 74, .20);
+}
+
+.painting-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--painting-purple);
+
+    background:
+        rgba(115, 80, 168, .11);
+}
+
+.painting-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-brown),
+            var(--painting-orange-deep),
+            var(--painting-orange),
+            var(--painting-gold)
+        );
+}
+
+.painting-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-orange-deep),
+            var(--painting-orange),
+            var(--painting-gold),
+            var(--painting-teal)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.painting-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(240, 163, 74, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fffdfb,
+            #fff8f5
+        );
+}
+
+.painting-course-page .course-section-heading > span {
+    color: var(--painting-orange);
+}
+
+.painting-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(201, 77, 69, .08);
+}
+
+.painting-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(143, 60, 56, .12);
+}
+
+.painting-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--painting-orange);
+
+    background:
+        rgba(201, 77, 69, .11);
+}
+
+.painting-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--painting-gold);
+
+    background:
+        rgba(240, 163, 74, .11);
+}
+
+.painting-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: var(--painting-blue);
+
+    background:
+        rgba(67, 122, 162, .11);
+}
+
+.painting-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--painting-purple);
+
+    background:
+        rgba(115, 80, 168, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.painting-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(233, 98, 82, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(240, 163, 74, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #311719 0%,
+            #692a2a 24%,
+            #8f3c38 45%,
+            #e96252 72%,
+            #f0a34a 100%
+        );
+}
+
+.painting-course-page
+.course-features-intro > span {
+    color: #ffd49b;
+}
+
+.painting-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #ffc9a8;
+
+    background:
+        rgba(233, 98, 82, .15);
+}
+
+.painting-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #bfe4e8;
+
+    background:
+        rgba(63, 140, 152, .13);
+}
+
+.painting-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #bcd6ec;
+
+    background:
+        rgba(67, 122, 162, .14);
+}
+
+.painting-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #d4b5ed;
+
+    background:
+        rgba(115, 80, 168, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · PINTURA
+   ================================================== */
+
+.painting-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.painting-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.painting-swash {
+    position: absolute;
+
+    height: 24px;
+
+    border-radius:
+        64% 36% 58% 42% /
+        45% 62% 38% 55%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(233, 98, 82, .12),
+            rgba(233, 98, 82, .82),
+            rgba(240, 163, 74, .76),
+            rgba(240, 163, 74, .08)
+        );
+
+    filter:
+        drop-shadow(
+            0 8px 14px
+            rgba(72, 32, 29, .14)
+        );
+
+    pointer-events: none;
+}
+
+.painting-swash.swash-one {
+    width: 335px;
+    height: 28px;
+
+    left: -28px;
+    bottom: 45px;
+
+    transform: rotate(-14deg);
+}
+
+.painting-swash.swash-two {
+    width: 265px;
+    height: 20px;
+
+    left: 76px;
+    bottom: 104px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(67, 122, 162, .08),
+            rgba(67, 122, 162, .68),
+            rgba(63, 140, 152, .62),
+            rgba(63, 140, 152, .06)
+        );
+
+    transform: rotate(11deg);
+}
+
+.painting-swash.swash-three {
+    width: 190px;
+    height: 16px;
+
+    right: -24px;
+    top: 55px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(212, 181, 237, .08),
+            rgba(212, 181, 237, .72),
+            rgba(233, 98, 82, .62),
+            rgba(233, 98, 82, .06)
+        );
+
+    transform: rotate(-21deg);
+}
+
+.painting-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(72, 32, 29, .30)
+        );
+}
+
+.painting-feature-art .painting-icon-one {
+    left: 12%;
+    bottom: 90px;
+
+    color: #ffd49b;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.painting-feature-art .painting-icon-two {
+    left: 48%;
+    bottom: 38px;
+
+    color: #bcd6ec;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.painting-feature-art .painting-icon-three {
+    right: 10%;
+    bottom: 128px;
+
+    color: #ffc9a8;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.painting-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.painting-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(240, 163, 74, .20);
+
+    border-radius:
+        58% 42% 66% 34% /
+        45% 60% 40% 55%;
+
+    transform: rotate(28deg);
+}
+
+.painting-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(67, 122, 162, .27);
+
+    border-radius:
+        42% 58% 38% 62% /
+        55% 40% 60% 45%;
+
+    transform: rotate(18deg);
+}
+
+.painting-feature-art::before {
+    content: "";
+
+    position: absolute;
+
+    width: 165px;
+    height: 125px;
+
+    right: 38px;
+    bottom: 24px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 22% 30%,
+            rgba(255, 212, 155, .62) 0 9px,
+            transparent 10px
+        ),
+
+        radial-gradient(
+            circle at 55% 68%,
+            rgba(191, 228, 232, .46) 0 13px,
+            transparent 14px
+        ),
+
+        radial-gradient(
+            circle at 79% 24%,
+            rgba(212, 181, 237, .48) 0 7px,
+            transparent 8px
+        );
+
+    transform: rotate(8deg);
+
+    pointer-events: none;
+}
+
+.painting-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(233, 98, 82, .16),
+            rgba(67, 122, 162, .08),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.painting-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(233, 98, 82, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(240, 163, 74, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff8f5,
+            #fff5f1
+        );
+}
+
+.painting-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--painting-orange);
+}
+
+.painting-course-page .course-audience-icon {
+    position: relative;
+
+    border-radius:
+        58% 42% 63% 37% /
+        44% 61% 39% 56%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-deep),
+            var(--painting-brown) 38%,
+            var(--painting-orange) 68%,
+            var(--painting-gold)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(143, 60, 56, .25);
+}
+
+.painting-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(184, 221, 214, .38);
+
+    border-radius:
+        54% 46% 60% 40% /
+        48% 57% 43% 52%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.painting-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fffdfb,
+            #fff8f5
+        );
+}
+
+.painting-course-page .other-courses-grid {
+    grid-template-columns:
+        repeat(2, minmax(0, 360px));
+
+    justify-content: center;
+}
+
+.painting-course-page
+.other-course-card > span {
+    color: var(--painting-orange);
+}
+
+.painting-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(201, 77, 69, .08);
+}
+
+.painting-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(143, 60, 56, .14);
+}
+
+.painting-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-brown),
+            var(--painting-orange),
+            var(--painting-gold)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.painting-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(240, 163, 74, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(63, 140, 152, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #311719 0%,
+            #692a2a 24%,
+            #8f3c38 46%,
+            #e96252 73%,
+            #f0a34a 100%
+        );
+}
+
+.painting-course-page
+.course-cta > div > span {
+    color: #ffd49b;
+}
+
+.painting-course-page
+.course-cta .discipline-cta-button {
+    color: var(--painting-deep);
+}
+
+.painting-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--painting-orange);
+}
+
+.painting-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(72, 32, 29, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.painting-course-page
+.discipline-footer-column a:hover,
+
+.painting-course-page
+.discipline-footer-bottom a:hover {
+    color: #ea7f58;
+}
+
+.painting-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--painting-brown),
+            var(--painting-orange),
+            var(--painting-gold)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · PINTURA
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .painting-course-page .other-courses-grid {
+        grid-template-columns: 1fr;
+
+        width: min(100%, 380px);
+        margin-inline: auto;
+    }
+
+    .painting-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .painting-swash.swash-one {
+        width: 275px;
+        height: 22px;
+    }
+
+    .painting-swash.swash-two {
+        width: 225px;
+        height: 17px;
+    }
+
+    .painting-feature-art .painting-icon-one {
+        font-size: 3rem;
+    }
+
+}
+
+/* ==================================================
+   ARTES VISUALES · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.visual-arts-course-page {
+    --visual-deep: #34204f;
+
+    --visual-purple: #7651a8;
+    --visual-violet: #9a65c4;
+    --visual-magenta: #c94f91;
+
+    --visual-pink: #e56fa3;
+    --visual-orange: #ed9561;
+    --visual-gold: #e9b956;
+
+    --visual-blue: #5687b4;
+    --visual-teal: #58a09d;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.visual-arts-course-page .discipline-menu a:hover,
+.visual-arts-course-page .discipline-back:hover {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--visual-purple),
+            var(--visual-magenta),
+            var(--visual-orange)
+        );
+}
+
+.visual-arts-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-purple),
+            var(--visual-violet) 35%,
+            var(--visual-magenta) 68%,
+            var(--visual-orange)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(154, 101, 196, .25);
+}
+
+.visual-arts-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(154, 101, 196, .35);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.visual-arts-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(201, 79, 145, .18),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(86, 135, 180, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(233, 185, 86, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fbf7ff 50%,
+            #fff7f4 100%
+        );
+}
+
+.visual-arts-course-page .course-hero::before {
+    background:
+        rgba(154, 101, 196, .10);
+}
+
+.visual-arts-course-page .course-eyebrow {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page .course-hero h1 {
+    color: var(--visual-deep);
+}
+
+.visual-arts-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--visual-purple) 0%,
+            var(--visual-magenta) 38%,
+            var(--visual-orange) 70%,
+            var(--visual-gold) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.visual-arts-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-purple),
+            var(--visual-violet) 35%,
+            var(--visual-magenta) 68%,
+            var(--visual-orange)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(154, 101, 196, .25);
+}
+
+.visual-arts-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(154, 101, 196, .35);
+}
+
+.visual-arts-course-page .discipline-btn.secondary {
+    color: var(--visual-deep);
+
+    border:
+        1px solid
+        rgba(154, 101, 196, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.visual-arts-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(201, 79, 145, .38);
+
+    box-shadow:
+        0 12px 26px
+        rgba(118, 81, 168, .10);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.visual-arts-course-page .course-hero-details i {
+    color: var(--visual-purple);
+}
+
+.visual-arts-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page
+.course-hero-details span:nth-child(3) i {
+    color: var(--visual-orange);
+}
+
+.visual-arts-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(154, 101, 196, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(52, 32, 79, .20);
+}
+
+.visual-arts-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-purple),
+            var(--visual-magenta),
+            var(--visual-orange)
+        );
+}
+
+.visual-arts-course-page .course-media-shape-one {
+    background:
+        rgba(201, 79, 145, .22);
+}
+
+.visual-arts-course-page .course-media-shape-two {
+    background:
+        rgba(233, 185, 86, .24);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.visual-arts-course-page .course-section-label,
+.visual-arts-course-page .course-overview-main > span {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page .course-overview h2,
+.visual-arts-course-page .course-section-heading h2,
+.visual-arts-course-page .course-audience h2 {
+    color: var(--visual-deep);
+}
+
+.visual-arts-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbf6ff
+        );
+
+    border:
+        1px solid
+        rgba(154, 101, 196, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(52, 32, 79, .08);
+}
+
+.visual-arts-course-page .course-info-item i {
+    color: var(--visual-purple);
+
+    background:
+        rgba(118, 81, 168, .10);
+}
+
+.visual-arts-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--visual-magenta);
+
+    background:
+        rgba(201, 79, 145, .10);
+}
+
+.visual-arts-course-page
+.course-info-item:nth-child(4) i {
+    color: var(--visual-orange);
+
+    background:
+        rgba(237, 149, 97, .12);
+}
+
+.visual-arts-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--visual-teal);
+
+    background:
+        rgba(88, 160, 157, .11);
+}
+
+.visual-arts-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-purple),
+            var(--visual-violet),
+            var(--visual-magenta),
+            var(--visual-orange)
+        );
+}
+
+.visual-arts-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-violet),
+            var(--visual-magenta),
+            var(--visual-orange),
+            var(--visual-gold)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.visual-arts-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(233, 185, 86, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fbf7ff
+        );
+}
+
+.visual-arts-course-page .course-section-heading > span {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(154, 101, 196, .08);
+}
+
+.visual-arts-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(52, 32, 79, .12);
+}
+
+.visual-arts-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--visual-purple);
+
+    background:
+        rgba(118, 81, 168, .11);
+}
+
+.visual-arts-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--visual-magenta);
+
+    background:
+        rgba(201, 79, 145, .11);
+}
+
+.visual-arts-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: var(--visual-blue);
+
+    background:
+        rgba(86, 135, 180, .11);
+}
+
+.visual-arts-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--visual-orange);
+
+    background:
+        rgba(237, 149, 97, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.visual-arts-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(229, 111, 163, .20),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(233, 185, 86, .10),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #28193d 0%,
+            #4d2d72 24%,
+            #7651a8 45%,
+            #c94f91 72%,
+            #ed9561 100%
+        );
+}
+
+.visual-arts-course-page
+.course-features-intro > span {
+    color: #ffd9a8;
+}
+
+.visual-arts-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #e2c8ff;
+
+    background:
+        rgba(154, 101, 196, .16);
+}
+
+.visual-arts-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #ffc4df;
+
+    background:
+        rgba(201, 79, 145, .14);
+}
+
+.visual-arts-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #c7e4f4;
+
+    background:
+        rgba(86, 135, 180, .14);
+}
+
+.visual-arts-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #ffe0ad;
+
+    background:
+        rgba(233, 185, 86, .14);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · ARTES VISUALES
+   ================================================== */
+
+.visual-arts-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.visual-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.visual-art-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.visual-art-shape.visual-shape-one {
+    width: 145px;
+    height: 145px;
+
+    left: -28px;
+    bottom: 8px;
+
+    border-radius:
+        64% 36% 58% 42% /
+        45% 62% 38% 55%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(154, 101, 196, .18),
+            rgba(201, 79, 145, .72)
+        );
+
+    transform: rotate(-18deg);
+}
+
+.visual-art-shape.visual-shape-two {
+    width: 110px;
+    height: 110px;
+
+    left: 42%;
+    bottom: 42px;
+
+    border-radius:
+        40% 60% 66% 34% /
+        60% 38% 62% 40%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(86, 135, 180, .68),
+            rgba(88, 160, 157, .34)
+        );
+
+    transform: rotate(24deg);
+}
+
+.visual-art-shape.visual-shape-three {
+    width: 92px;
+    height: 92px;
+
+    right: 12px;
+    top: 38px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(233, 185, 86, .70),
+            rgba(237, 149, 97, .42)
+        );
+}
+
+.visual-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(40, 25, 61, .28)
+        );
+}
+
+.visual-feature-art .visual-icon-one {
+    left: 12%;
+    bottom: 95px;
+
+    color: #ffd9a8;
+
+    font-size: 3.5rem;
+
+    transform: rotate(-10deg);
+}
+
+.visual-feature-art .visual-icon-two {
+    left: 50%;
+    bottom: 32px;
+
+    color: #ffc4df;
+
+    font-size: 2.8rem;
+
+    transform: rotate(12deg);
+}
+
+.visual-feature-art .visual-icon-three {
+    right: 10%;
+    bottom: 112px;
+
+    color: #c7e4f4;
+
+    font-size: 2.8rem;
+
+    transform: rotate(-8deg);
+}
+
+.visual-art-line {
+    position: absolute;
+
+    height: 3px;
+
+    border-radius: 999px;
+
+    pointer-events: none;
+}
+
+.visual-art-line.line-one {
+    width: 260px;
+
+    left: 25px;
+    bottom: 45px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 196, 223, .80),
+            rgba(255, 217, 168, .70),
+            transparent
+        );
+
+    transform: rotate(-13deg);
+}
+
+.visual-art-line.line-two {
+    width: 210px;
+
+    right: 8px;
+    top: 82px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(199, 228, 244, .75),
+            rgba(226, 200, 255, .70),
+            transparent
+        );
+
+    transform: rotate(16deg);
+}
+
+.visual-feature-art::before {
+    content: "";
+
+    position: absolute;
+
+    width: 165px;
+    height: 125px;
+
+    right: 38px;
+    bottom: 24px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 22% 30%,
+            rgba(255, 217, 168, .60) 0 9px,
+            transparent 10px
+        ),
+
+        radial-gradient(
+            circle at 55% 68%,
+            rgba(199, 228, 244, .48) 0 13px,
+            transparent 14px
+        ),
+
+        radial-gradient(
+            circle at 79% 24%,
+            rgba(255, 196, 223, .50) 0 7px,
+            transparent 8px
+        );
+
+    transform: rotate(8deg);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.visual-arts-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(201, 79, 145, .18),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(233, 185, 86, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fcf8ff,
+            #fff8f6
+        );
+}
+
+.visual-arts-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page .course-audience-icon {
+    position: relative;
+
+    border-radius:
+        58% 42% 63% 37% /
+        44% 61% 39% 56%;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-deep),
+            var(--visual-purple) 38%,
+            var(--visual-magenta) 68%,
+            var(--visual-orange)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(52, 32, 79, .25);
+}
+
+.visual-arts-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(255, 217, 168, .38);
+
+    border-radius:
+        54% 46% 60% 40% /
+        48% 57% 43% 52%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.visual-arts-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fbf7ff
+        );
+}
+
+.visual-arts-course-page .other-courses-grid {
+    grid-template-columns:
+        repeat(2, minmax(0, 360px));
+
+    justify-content: center;
+}
+
+.visual-arts-course-page
+.other-course-card > span {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(154, 101, 196, .08);
+}
+
+.visual-arts-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(52, 32, 79, .14);
+}
+
+.visual-arts-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-purple),
+            var(--visual-magenta),
+            var(--visual-orange)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.visual-arts-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(233, 185, 86, .16),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(86, 135, 180, .13),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #28193d 0%,
+            #4d2d72 24%,
+            #7651a8 46%,
+            #c94f91 73%,
+            #ed9561 100%
+        );
+}
+
+.visual-arts-course-page
+.course-cta > div > span {
+    color: #ffd9a8;
+}
+
+.visual-arts-course-page
+.course-cta .discipline-cta-button {
+    color: var(--visual-deep);
+}
+
+.visual-arts-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--visual-magenta);
+}
+
+.visual-arts-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(40, 25, 61, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.visual-arts-course-page
+.discipline-footer-column a:hover,
+
+.visual-arts-course-page
+.discipline-footer-bottom a:hover {
+    color: #dc72ad;
+}
+
+.visual-arts-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--visual-purple),
+            var(--visual-magenta),
+            var(--visual-orange)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · ARTES VISUALES
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .visual-arts-course-page .other-courses-grid {
+        grid-template-columns: 1fr;
+
+        width: min(100%, 380px);
+        margin-inline: auto;
+    }
+
+    .visual-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .visual-art-shape.visual-shape-one {
+        width: 115px;
+        height: 115px;
+    }
+
+    .visual-art-shape.visual-shape-two {
+        width: 90px;
+        height: 90px;
+    }
+
+    .visual-feature-art .visual-icon-one {
+        font-size: 3rem;
+    }
+
+    .visual-art-line.line-one {
+        width: 220px;
+    }
+
+    .visual-art-line.line-two {
+        width: 175px;
+    }
+}
