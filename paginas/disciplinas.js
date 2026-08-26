@@ -347,8 +347,22 @@ const theaterCourses = [
         ],
 
         url:'cursos/teatro.html'
-    }
+    },
 
+    {
+    name:'Artes escénicas',
+
+    category:'Creación escénica',
+
+    aliases:[
+        'artes escenicas',
+        'escenicas',
+        'creacion escenica',
+        'expresion escenica'
+    ],
+
+    url:'cursos/artes-escenicas.html'
+}
 ];
 
 

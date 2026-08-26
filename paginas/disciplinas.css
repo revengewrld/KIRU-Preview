@@ -15592,3 +15592,1745 @@ RESPONSIVE ARTES
     }
 
 }
+
+/* ==================================================
+   TEATRO · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.teatro-course-page {
+    --theater-night: #2b1519;
+    --theater-ink: #4a1d24;
+
+    /* Color principal tomado de la tarjeta de Teatro */
+    --theater-wine: #9c3039;
+    --theater-red: #b83b3f;
+    --theater-coral: #d55749;
+
+    --theater-orange: #e28b50;
+    --theater-teal: #3f9b95;
+
+    --theater-gold: #e3ad63;
+    --theater-aqua: #9ed4ca;
+    --theater-plum: #7b446b;
+
+    --theater-light: #fff5f1;
+    --theater-soft: #fff8f5;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.teatro-course-page .discipline-menu a:hover,
+.teatro-course-page .discipline-back:hover {
+    color: var(--theater-red);
+}
+
+.teatro-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--theater-red),
+            var(--theater-orange),
+            var(--theater-gold)
+        );
+}
+
+.teatro-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-night),
+            var(--theater-wine) 42%,
+            var(--theater-red) 72%,
+            var(--theater-orange)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(129, 39, 53, .24);
+}
+
+.teatro-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(129, 39, 53, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.teatro-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(213, 87, 73, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(63, 155, 149, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(227, 173, 99, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff5f1 50%,
+            #fff5f1 100%
+        );
+}
+
+.teatro-course-page .course-hero::before {
+    background:
+        rgba(213, 87, 73, .10);
+}
+
+.teatro-course-page .course-eyebrow {
+    color: var(--theater-red);
+}
+
+.teatro-course-page .course-hero h1 {
+    color: var(--theater-night);
+}
+
+.teatro-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--theater-wine) 0%,
+            var(--theater-red) 38%,
+            var(--theater-orange) 70%,
+            var(--theater-teal) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.teatro-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-night),
+            var(--theater-wine) 38%,
+            var(--theater-red) 70%,
+            var(--theater-orange)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(129, 39, 53, .25);
+}
+
+.teatro-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(129, 39, 53, .34);
+}
+
+.teatro-course-page .discipline-btn.secondary {
+    color: var(--theater-night);
+
+    border:
+        1px solid
+        rgba(184, 59, 63, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.teatro-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(226, 139, 80, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(129, 39, 53, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.teatro-course-page .course-hero-details i {
+    color: var(--theater-red);
+}
+
+.teatro-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--theater-orange);
+}
+
+.teatro-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #2f817b;
+}
+
+.teatro-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(184, 59, 63, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(74, 29, 36, .22);
+}
+
+.teatro-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-wine),
+            var(--theater-red),
+            var(--theater-orange)
+        );
+}
+
+.teatro-course-page .course-media-shape-one {
+    background:
+        rgba(213, 87, 73, .24);
+}
+
+.teatro-course-page .course-media-shape-two {
+    background:
+        rgba(227, 173, 99, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.teatro-course-page .course-section-label,
+.teatro-course-page .course-overview-main > span {
+    color: var(--theater-red);
+}
+
+.teatro-course-page .course-overview h2,
+.teatro-course-page .course-section-heading h2,
+.teatro-course-page .course-audience h2 {
+    color: var(--theater-night);
+}
+
+.teatro-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffaf7,
+            #fff5f1
+        );
+
+    border:
+        1px solid
+        rgba(184, 59, 63, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(74, 29, 36, .08);
+}
+
+.teatro-course-page .course-info-item i {
+    color: var(--theater-red);
+
+    background:
+        rgba(184, 59, 63, .10);
+}
+
+.teatro-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--theater-orange);
+
+    background:
+        rgba(226, 139, 80, .11);
+}
+
+.teatro-course-page
+.course-info-item:nth-child(4) i {
+    color: #2f817b;
+
+    background:
+        rgba(227, 173, 99, .20);
+}
+
+.teatro-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--theater-plum);
+
+    background:
+        rgba(123, 68, 107, .11);
+}
+
+.teatro-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-night),
+            var(--theater-wine),
+            var(--theater-red),
+            var(--theater-orange)
+        );
+}
+
+.teatro-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-wine),
+            var(--theater-red),
+            var(--theater-orange),
+            var(--theater-teal)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.teatro-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(227, 173, 99, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fffaf7,
+            #fff8f5
+        );
+}
+
+.teatro-course-page .course-section-heading > span {
+    color: var(--theater-red);
+}
+
+.teatro-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(184, 59, 63, .08);
+}
+
+.teatro-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(74, 29, 36, .12);
+}
+
+.teatro-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--theater-red);
+
+    background:
+        rgba(184, 59, 63, .11);
+}
+
+.teatro-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--theater-orange);
+
+    background:
+        rgba(226, 139, 80, .11);
+}
+
+.teatro-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: #2f817b;
+
+    background:
+        rgba(227, 173, 99, .21);
+}
+
+.teatro-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--theater-plum);
+
+    background:
+        rgba(123, 68, 107, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.teatro-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(213, 87, 73, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(227, 173, 99, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #211012 0%,
+            #4a1d24 28%,
+            #9c3039 56%,
+            #c64945 78%,
+            #e28b50 100%
+        );
+}
+
+.teatro-course-page
+.course-features-intro > span {
+    color: #f1cd8a;
+}
+
+.teatro-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #f2a087;
+
+    background:
+        rgba(213, 87, 73, .15);
+}
+
+.teatro-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #e3ad63;
+
+    background:
+        rgba(63, 155, 149, .13);
+}
+
+.teatro-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #b8ddd6;
+
+    background:
+        rgba(227, 173, 99, .12);
+}
+
+.teatro-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #d9a2ba;
+
+    background:
+        rgba(123, 68, 107, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · TEATRO
+   ================================================== */
+
+.teatro-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.stage-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.stage-beam {
+    position: absolute;
+
+    height: 5px;
+
+    border: 0;
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(63, 155, 149, .70),
+            rgba(227, 173, 99, .58),
+            transparent
+        );
+
+    box-shadow:
+        0 0 20px
+        rgba(63, 155, 149, .18);
+
+    pointer-events: none;
+}
+
+.stage-beam.beam-one {
+    width: 330px;
+
+    left: -20px;
+    bottom: 52px;
+
+    transform: rotate(-14deg);
+}
+
+.stage-beam.beam-two {
+    width: 270px;
+
+    left: 78px;
+    bottom: 105px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(226, 139, 80, .68),
+            rgba(213, 87, 73, .58),
+            transparent
+        );
+
+    transform: rotate(10deg);
+}
+
+.stage-beam.beam-three {
+    width: 190px;
+
+    right: -18px;
+    top: 58px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(158, 212, 202, .62),
+            rgba(226, 139, 80, .45),
+            transparent
+        );
+
+    transform: rotate(-24deg);
+}
+
+.stage-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(43, 21, 25, .30)
+        );
+}
+
+.stage-feature-art .stage-icon-one {
+    left: 10%;
+    bottom: 96px;
+
+    color: #f1cd8a;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.stage-feature-art .stage-icon-two {
+    left: 49%;
+    bottom: 42px;
+
+    color: #afe0d7;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.stage-feature-art .stage-icon-three {
+    right: 9%;
+    bottom: 126px;
+
+    color: #f2a087;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.stage-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.stage-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(227, 173, 99, .20);
+
+    border-radius: 28px;
+
+    transform: rotate(28deg);
+}
+
+.stage-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(63, 155, 149, .23);
+
+    border-radius: 50%;
+}
+
+.stage-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(213, 87, 73, .16),
+            rgba(63, 155, 149, .06),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.teatro-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(213, 87, 73, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(227, 173, 99, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff8f5,
+            #fff5f1
+        );
+}
+
+.teatro-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--theater-red);
+}
+
+.teatro-course-page .course-audience-icon {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-night),
+            var(--theater-wine) 38%,
+            var(--theater-red) 68%,
+            var(--theater-orange)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(74, 29, 36, .25);
+}
+
+.teatro-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(184, 221, 214, .38);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.teatro-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf7,
+            #fff8f5
+        );
+}
+
+.teatro-course-page .other-courses-grid {
+    grid-template-columns:
+        minmax(0, 360px);
+
+    justify-content: center;
+}
+
+.teatro-course-page
+.other-course-card > span {
+    color: var(--theater-red);
+}
+
+.teatro-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(184, 59, 63, .08);
+}
+
+.teatro-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(74, 29, 36, .14);
+}
+
+.teatro-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-wine),
+            var(--theater-red),
+            var(--theater-orange)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.teatro-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(227, 173, 99, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(63, 155, 149, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #211012 0%,
+            #4a1d24 27%,
+            #9c3039 52%,
+            #b83b3f 76%,
+            #e28b50 100%
+        );
+}
+
+.teatro-course-page
+.course-cta > div > span {
+    color: #f1cd8a;
+}
+
+.teatro-course-page
+.course-cta .discipline-cta-button {
+    color: var(--theater-night);
+}
+
+.teatro-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--theater-red);
+}
+
+.teatro-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(43, 21, 25, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.teatro-course-page
+.discipline-footer-column a:hover,
+
+.teatro-course-page
+.discipline-footer-bottom a:hover {
+    color: #e58a65;
+}
+
+.teatro-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--theater-wine),
+            var(--theater-red),
+            var(--theater-orange)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · TEATRO
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .teatro-course-page .other-courses-grid {
+        grid-template-columns: 1fr;
+
+        width: min(100%, 380px);
+        margin-inline: auto;
+    }
+
+    .stage-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .stage-beam.beam-one {
+        width: 275px;
+        height: 5px;
+    }
+
+    .stage-beam.beam-two {
+        width: 225px;
+        height: 5px;
+    }
+
+    .stage-feature-art .stage-icon-one {
+        font-size: 3rem;
+    }
+
+}
+
+/* ==================================================
+   ARTES ESCÉNICAS · IDENTIDAD DEL CURSO
+   ================================================== */
+
+.scenic-course-page {
+    --scenic-night: #30171b;
+
+    /* Colores exactos tomados de la tarjeta de Artes escénicas */
+    --scenic-wine: #9c3039;
+    --scenic-red: #b83b3f;
+    --scenic-coral: #d55749;
+
+    --scenic-orange: #e28b50;
+    --scenic-teal: #3f8f93;
+
+    --scenic-gold: #e3ad63;
+    --scenic-blue: #4c719b;
+    --scenic-plum: #85619b;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.scenic-course-page .discipline-menu a:hover,
+.scenic-course-page .discipline-back:hover {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page .discipline-menu a::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--scenic-coral),
+            var(--scenic-orange),
+            var(--scenic-gold)
+        );
+}
+
+.scenic-course-page .course-header-cta {
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-wine),
+            var(--scenic-red) 38%,
+            var(--scenic-coral) 70%,
+            var(--scenic-orange)
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(129, 39, 53, .24);
+}
+
+.scenic-course-page .course-header-cta:hover {
+    box-shadow:
+        0 17px 38px
+        rgba(129, 39, 53, .34);
+}
+
+
+/* ==================================================
+   HERO
+   ================================================== */
+
+.scenic-course-page .course-hero {
+    background:
+
+        radial-gradient(
+            circle at 86% 16%,
+            rgba(213, 87, 73, .20),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 73% 83%,
+            rgba(63, 155, 149, .14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 8% 88%,
+            rgba(227, 173, 99, .15),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fff5f1 50%,
+            #fff5f1 100%
+        );
+}
+
+.scenic-course-page .course-hero::before {
+    background:
+        rgba(213, 87, 73, .10);
+}
+
+.scenic-course-page .course-eyebrow {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page .course-hero h1 {
+    color: var(--scenic-night);
+}
+
+.scenic-course-page .course-hero h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            var(--scenic-wine) 0%,
+            var(--scenic-coral) 40%,
+            var(--scenic-orange) 72%,
+            var(--scenic-teal) 100%
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* ==================================================
+   BOTONES DEL HERO
+   ================================================== */
+
+.scenic-course-page .discipline-btn.primary {
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-wine),
+            var(--scenic-red) 36%,
+            var(--scenic-coral) 68%,
+            var(--scenic-orange)
+        );
+
+    box-shadow:
+        0 15px 35px
+        rgba(129, 39, 53, .25);
+}
+
+.scenic-course-page .discipline-btn.primary:hover {
+    box-shadow:
+        0 20px 45px
+        rgba(129, 39, 53, .34);
+}
+
+.scenic-course-page .discipline-btn.secondary {
+    color: var(--scenic-night);
+
+    border:
+        1px solid
+        rgba(184, 59, 63, .16);
+
+    background:
+        rgba(255, 255, 255, .90);
+}
+
+.scenic-course-page .discipline-btn.secondary:hover {
+    border-color:
+        rgba(226, 139, 80, .40);
+
+    box-shadow:
+        0 12px 26px
+        rgba(129, 39, 53, .09);
+}
+
+
+/* ==================================================
+   DETALLES E IMAGEN DEL HERO
+   ================================================== */
+
+.scenic-course-page .course-hero-details i {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page
+.course-hero-details span:nth-child(2) i {
+    color: var(--scenic-orange);
+}
+
+.scenic-course-page
+.course-hero-details span:nth-child(3) i {
+    color: #2f817b;
+}
+
+.scenic-course-page .course-image-frame {
+    border:
+        1px solid
+        rgba(184, 59, 63, .12);
+
+    box-shadow:
+        0 35px 80px
+        rgba(74, 29, 36, .22);
+}
+
+.scenic-course-page .course-image-badge i {
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-wine),
+            var(--scenic-coral),
+            var(--scenic-orange)
+        );
+}
+
+.scenic-course-page .course-media-shape-one {
+    background:
+        rgba(213, 87, 73, .24);
+}
+
+.scenic-course-page .course-media-shape-two {
+    background:
+        rgba(227, 173, 99, .25);
+}
+
+
+/* ==================================================
+   CONOCE EL CURSO
+   ================================================== */
+
+.scenic-course-page .course-section-label,
+.scenic-course-page .course-overview-main > span {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page .course-overview h2,
+.scenic-course-page .course-section-heading h2,
+.scenic-course-page .course-audience h2 {
+    color: var(--scenic-night);
+}
+
+.scenic-course-page .course-info-card {
+    background:
+        linear-gradient(
+            145deg,
+            #fffaf7,
+            #fff5f1
+        );
+
+    border:
+        1px solid
+        rgba(184, 59, 63, .09);
+
+    box-shadow:
+        0 18px 50px
+        rgba(74, 29, 36, .08);
+}
+
+.scenic-course-page .course-info-item i {
+    color: var(--scenic-coral);
+
+    background:
+        rgba(184, 59, 63, .10);
+}
+
+.scenic-course-page
+.course-info-item:nth-child(3) i {
+    color: var(--scenic-orange);
+
+    background:
+        rgba(226, 139, 80, .11);
+}
+
+.scenic-course-page
+.course-info-item:nth-child(4) i {
+    color: #2f817b;
+
+    background:
+        rgba(227, 173, 99, .20);
+}
+
+.scenic-course-page
+.course-info-item:nth-child(5) i {
+    color: var(--scenic-plum);
+
+    background:
+        rgba(123, 68, 107, .11);
+}
+
+.scenic-course-page .course-info-card > a {
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-wine),
+            var(--scenic-red),
+            var(--scenic-coral),
+            var(--scenic-orange)
+        );
+}
+
+.scenic-course-page .course-info-card > a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-red),
+            var(--scenic-coral),
+            var(--scenic-orange),
+            var(--scenic-teal)
+        );
+}
+
+
+/* ==================================================
+   QUÉ APRENDERÁS
+   ================================================== */
+
+.scenic-course-page .course-learning {
+    background:
+
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(227, 173, 99, .09),
+            transparent 23%
+        ),
+
+        linear-gradient(
+            180deg,
+            #fffaf7,
+            #fff8f5
+        );
+}
+
+.scenic-course-page .course-section-heading > span {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page .course-learning-grid article {
+    border:
+        1px solid
+        rgba(184, 59, 63, .08);
+}
+
+.scenic-course-page .course-learning-grid article:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(74, 29, 36, .12);
+}
+
+.scenic-course-page
+.course-learning-grid article:nth-child(1) > i {
+    color: var(--scenic-coral);
+
+    background:
+        rgba(184, 59, 63, .11);
+}
+
+.scenic-course-page
+.course-learning-grid article:nth-child(2) > i {
+    color: var(--scenic-orange);
+
+    background:
+        rgba(226, 139, 80, .11);
+}
+
+.scenic-course-page
+.course-learning-grid article:nth-child(3) > i {
+    color: var(--scenic-blue);
+
+    background:
+        rgba(76, 113, 155, .11);
+}
+
+.scenic-course-page
+.course-learning-grid article:nth-child(4) > i {
+    color: var(--scenic-plum);
+
+    background:
+        rgba(123, 68, 107, .12);
+}
+
+
+/* ==================================================
+   EXPERIENCIA KIRU
+   ================================================== */
+
+.scenic-course-page .course-features {
+    background:
+
+        radial-gradient(
+            circle at 91% 18%,
+            rgba(213, 87, 73, .22),
+            transparent 29%
+        ),
+
+        radial-gradient(
+            circle at 11% 89%,
+            rgba(227, 173, 99, .09),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            125deg,
+            #281317 0%,
+            #5b252d 24%,
+            #9c3039 45%,
+            #d55749 72%,
+            #e28b50 100%
+        );
+}
+
+.scenic-course-page
+.course-features-intro > span {
+    color: #f1cd8a;
+}
+
+.scenic-course-page
+.course-features-list article:nth-child(1) > i {
+    color: #f2a087;
+
+    background:
+        rgba(213, 87, 73, .15);
+}
+
+.scenic-course-page
+.course-features-list article:nth-child(2) > i {
+    color: #b9e2dd;
+
+    background:
+        rgba(63, 155, 149, .13);
+}
+
+.scenic-course-page
+.course-features-list article:nth-child(3) > i {
+    color: #c4d6ee;
+
+    background:
+        rgba(76, 113, 155, .14);
+}
+
+.scenic-course-page
+.course-features-list article:nth-child(4) > i {
+    color: #d9a2ba;
+
+    background:
+        rgba(123, 68, 107, .13);
+}
+
+
+/* ==================================================
+   ARTE DECORATIVO · ARTES ESCÉNICAS
+   ================================================== */
+
+.scenic-course-page .course-features-intro {
+    position: relative;
+
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.scenic-feature-art {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    margin-top: auto;
+}
+
+.scenic-ribbon {
+    position: absolute;
+
+    border: 2px solid
+        rgba(227, 173, 99, .38);
+
+    border-left-color: transparent;
+    border-right-color: transparent;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.scenic-ribbon.ribbon-one {
+    width: 340px;
+    height: 130px;
+
+    left: -45px;
+    bottom: 25px;
+
+    transform: rotate(-12deg);
+}
+
+.scenic-ribbon.ribbon-two {
+    width: 270px;
+    height: 105px;
+
+    left: 82px;
+    bottom: 65px;
+
+    border-color:
+        rgba(213, 87, 73, .44);
+
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+
+    transform: rotate(17deg);
+}
+
+.scenic-ribbon.ribbon-three {
+    width: 190px;
+    height: 82px;
+
+    right: -28px;
+    top: 42px;
+
+    border-color:
+        rgba(167, 216, 209, .48);
+
+    border-left-color: transparent;
+
+    transform: rotate(-22deg);
+}
+
+.scenic-feature-art > i {
+    position: absolute;
+
+    z-index: 3;
+
+    filter:
+        drop-shadow(
+            0 9px 20px
+            rgba(43, 21, 25, .30)
+        );
+}
+
+.scenic-feature-art .scenic-icon-one {
+    left: 12%;
+    bottom: 90px;
+
+    color: #f1cd8a;
+
+    font-size: 3.6rem;
+
+    transform: rotate(-10deg);
+}
+
+.scenic-feature-art .scenic-icon-two {
+    left: 48%;
+    bottom: 38px;
+
+    color: #bdd4ee;
+
+    font-size: 2.8rem;
+
+    transform: rotate(9deg);
+}
+
+.scenic-feature-art .scenic-icon-three {
+    right: 10%;
+    bottom: 128px;
+
+    color: #f2a087;
+
+    font-size: 2.7rem;
+
+    transform: rotate(12deg);
+}
+
+.scenic-feature-shape {
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.scenic-feature-shape.shape-one {
+    width: 155px;
+    height: 155px;
+
+    left: -60px;
+    bottom: -62px;
+
+    border:
+        1px solid
+        rgba(227, 173, 99, .20);
+
+    border-radius: 50%;
+
+    transform: rotate(28deg);
+}
+
+.scenic-feature-shape.shape-two {
+    width: 92px;
+    height: 92px;
+
+    right: 18px;
+    top: 15px;
+
+    border:
+        1px solid
+        rgba(76, 113, 155, .27);
+
+    border-radius: 24px;
+
+    transform: rotate(18deg);
+}
+
+.scenic-feature-art::after {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    left: 32%;
+    bottom: -20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(213, 87, 73, .16),
+            rgba(76, 113, 155, .08),
+            transparent 70%
+        );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   PARA QUIÉN
+   ================================================== */
+
+.scenic-course-page .course-audience-card {
+    background:
+
+        radial-gradient(
+            circle at 91% 22%,
+            rgba(213, 87, 73, .20),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 73% 94%,
+            rgba(227, 173, 99, .12),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            120deg,
+            #fff8f5,
+            #fff5f1
+        );
+}
+
+.scenic-course-page
+.course-audience-card > div:first-child > span {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page .course-audience-icon {
+    position: relative;
+
+    border-radius: 32px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-night),
+            var(--scenic-wine) 38%,
+            var(--scenic-coral) 68%,
+            var(--scenic-orange)
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(74, 29, 36, .25);
+}
+
+.scenic-course-page
+.course-audience-icon::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 8px;
+
+    border:
+        1px solid
+        rgba(184, 221, 214, .38);
+
+    border-radius: 24px;
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   OTROS CURSOS
+   ================================================== */
+
+.scenic-course-page .other-courses {
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf7,
+            #fff8f5
+        );
+}
+
+.scenic-course-page .other-courses-grid {
+    grid-template-columns:
+        minmax(0, 360px);
+
+    justify-content: center;
+}
+
+.scenic-course-page
+.other-course-card > span {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page
+.other-course-card {
+    border:
+        1px solid
+        rgba(184, 59, 63, .08);
+}
+
+.scenic-course-page
+.other-course-card:hover {
+    box-shadow:
+        0 24px 50px
+        rgba(74, 29, 36, .14);
+}
+
+.scenic-course-page
+.other-course-card > div:last-child i {
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-wine),
+            var(--scenic-coral),
+            var(--scenic-orange)
+        );
+}
+
+
+/* ==================================================
+   CTA FINAL
+   ================================================== */
+
+.scenic-course-page .course-cta {
+    background:
+
+        radial-gradient(
+            circle at 86% 31%,
+            rgba(227, 173, 99, .15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 68% 92%,
+            rgba(63, 155, 149, .12),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            120deg,
+            #281317 0%,
+            #5b252d 24%,
+            #9c3039 46%,
+            #d55749 73%,
+            #e28b50 100%
+        );
+}
+
+.scenic-course-page
+.course-cta > div > span {
+    color: #f1cd8a;
+}
+
+.scenic-course-page
+.course-cta .discipline-cta-button {
+    color: var(--scenic-night);
+}
+
+.scenic-course-page
+.course-cta .discipline-cta-button i {
+    color: var(--scenic-coral);
+}
+
+.scenic-course-page
+.course-cta .discipline-cta-button:hover {
+    box-shadow:
+        0 18px 45px
+        rgba(43, 21, 25, .33);
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.scenic-course-page
+.discipline-footer-column a:hover,
+
+.scenic-course-page
+.discipline-footer-bottom a:hover {
+    color: #e58a65;
+}
+
+.scenic-course-page
+.discipline-footer-socials a:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--scenic-wine),
+            var(--scenic-coral),
+            var(--scenic-orange)
+        );
+}
+
+
+/* ==================================================
+   RESPONSIVE · ARTES ESCÉNICAS
+   ================================================== */
+
+@media (max-width: 900px) {
+
+    .scenic-course-page .other-courses-grid {
+        grid-template-columns: 1fr;
+
+        width: min(100%, 380px);
+        margin-inline: auto;
+    }
+
+    .scenic-feature-art {
+        height: 180px;
+        margin-top: 35px;
+    }
+
+    .scenic-ribbon.ribbon-one {
+        width: 275px;
+        height: 105px;
+    }
+
+    .scenic-ribbon.ribbon-two {
+        width: 225px;
+        height: 85px;
+    }
+
+    .scenic-feature-art .scenic-icon-one {
+        font-size: 3rem;
+    }
+
+}
