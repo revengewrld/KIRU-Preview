@@ -1706,7 +1706,7 @@ HORARIOS
 
     display:grid;
 
-    grid-template-columns:.8fr 1.2fr;
+    grid-template-columns:.55fr 1.45fr;
 
     gap:75px;
 
@@ -1731,7 +1731,7 @@ HORARIOS
     display:grid;
 
     grid-template-columns:
-        repeat(3,1fr);
+        repeat(4,1fr);
 
     gap:15px;
 }
@@ -1842,7 +1842,7 @@ PRECIOS
     display:grid;
 
     grid-template-columns:
-        repeat(5,1fr);
+        repeat(4,1fr);
 
     gap:14px;
 }
@@ -2903,7 +2903,16 @@ RESPONSIVE
 
     .pricing-grid{
         grid-template-columns:
-            repeat(3,1fr);
+            repeat(2,1fr);
+    }
+
+    .schedule{
+        grid-template-columns:1fr;
+    }
+
+    .schedule-days{
+        grid-template-columns:
+            repeat(4,1fr);
     }
 
     .footer-main{
