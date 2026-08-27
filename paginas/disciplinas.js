@@ -440,3 +440,133 @@ if(theaterSearch && theaterSearchResults){
     );
 
 }
+
+/* ==================================================
+BUSCADOR - ARTES VISUALES
+================================================== */
+
+const canvasSearch =
+    document.getElementById('canvasSearch');
+
+const canvasSearchResults =
+    document.getElementById('canvasSearchResults');
+
+
+const canvasCourses = [
+
+    {
+        name:'Dibujo',
+        category:'Trazo',
+        aliases:[
+            'dibujo',
+            'dibujar',
+            'boceto',
+            'trazo',
+            'lapiz'
+        ],
+        url:'cursos/dibujo.html'
+    },
+
+    {
+        name:'Pintura',
+        category:'Color',
+        aliases:[
+            'pintura',
+            'pintar',
+            'color',
+            'pincel'
+        ],
+        url:'cursos/pintura.html'
+    },
+
+    {
+        name:'Artes plásticas',
+        category:'Creación',
+        aliases:[
+            'artes plasticas',
+            'plasticas',
+            'creacion',
+            'materiales',
+            'manualidades',
+            'escultura'
+        ],
+        url:'cursos/artes-plasticas.html'
+    }
+
+];
+
+
+if(canvasSearch && canvasSearchResults){
+
+    canvasSearch.addEventListener(
+        'input',
+        () => {
+
+            const query =
+                normalizeMusicText(
+                    canvasSearch.value
+                );
+
+            canvasSearchResults.innerHTML = '';
+
+
+            if(query.length < 2){
+                return;
+            }
+
+
+            const results =
+                canvasCourses.filter(course => {
+
+                    const terms = [
+                        course.name,
+                        course.category,
+                        ...course.aliases
+                    ];
+
+                    return terms.some(term =>
+                        normalizeMusicText(term)
+                            .includes(query)
+                    );
+
+                });
+
+
+            results.forEach(course => {
+
+                const link =
+                    document.createElement('a');
+
+                link.href =
+                    course.url;
+
+                link.className =
+                    'music-search-result';
+
+                link.innerHTML = `
+
+                    <div>
+
+                        <strong>
+                            ${course.name}
+                        </strong>
+
+                        <span>
+                            ${course.category}
+                        </span>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                `;
+
+                canvasSearchResults
+                    .appendChild(link);
+
+            });
+
+        }
+    );
+
+}
